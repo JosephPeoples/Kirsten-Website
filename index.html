@@ -3,61 +3,90 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kirsten Peoples | Digital Marketing Manager & Strategist</title>
+  <title>Kirsten Peoples | Digital Marketing Strategist & Content Creator</title>
   
-  <!-- Canonical & Primary Meta Tags -->
+  <!-- ================================================================= -->
+  <!-- [METADATA & SOCIAL SHARE PREVIEWS]                                -->
+  <!-- ================================================================= -->
   <link rel="canonical" href="https://peoplessocialmarketing.com/">
-  <meta name="description" content="Kirsten Peoples — Digital Marketing Manager and Strategist specializing in paid acquisition, full-funnel conversion architecture, and executive thought leadership.">
+  <meta name="description" content="Kirsten Peoples — Digital Marketing Strategist & Content Creator. Human-to-human marketing, paid search acquisition, and authentic executive thought leadership.">
   <meta name="author" content="Kirsten Peoples">
 
-  <!-- Open Graph / Social Sharing (LinkedIn, Slack, Messages) -->
+  <!-- Open Graph for LinkedIn, Text Messages, and Social Previews -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://peoplessocialmarketing.com/">
-  <meta property="og:site_name" content="Kirsten Peoples Portfolio">
-  <meta property="og:title" content="Kirsten Peoples | Digital Marketing Manager & Strategist">
-  <meta property="og:description" content="Full-funnel digital acquisition, paid search architecture, and data-backed content operations.">
+  <meta property="og:site_name" content="Peoples Social | Digital Marketing">
+  <meta property="og:title" content="Kirsten Peoples | Digital Marketing Strategist">
+  <meta property="og:description" content="Real connections. Real growth. Full-funnel digital acquisition and authentic storytelling.">
+  <meta property="og:image" content="https://peoplessocialmarketing.com/brand_logo_card.png">
 
-  <!-- Twitter / X Cards -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Kirsten Peoples | Digital Marketing Manager & Strategist">
-  <meta name="twitter:description" content="Full-funnel digital acquisition, paid search architecture, and data-backed content operations.">
-
-  <!-- Crisp Inline SVG Favicon (No external requests, zero 404s) -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%231d4ed8'/><text x='16' y='21' font-size='14' font-family='system-ui,-apple-system,sans-serif' font-weight='700' fill='white' text-anchor='middle'>KP</text></svg>">
+  <!-- Crisp Inline Flower Favicon Matching Kirsten's Brand Flower -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23FFF0F9'/><path d='M16 7c1 3-1 5-1 5s2-2 5-1c-2 2-2 4-2 4s3-1 4 2c-3 1-4 0-4 0s2 3 0 5c-2-2-2-4-2-4s0 3-3 3c1-3 0-4 0-4s-3 2-4 0c2-2 4-2 4-2s-3-2-2-5c2 2 3 3 3 3s0-3 2-4z' fill='%23E62E8A'/><circle cx='16' cy='16' r='2' fill='%23FDE047'/></svg>">
 
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- EXACT PORTFOLIO FONTS: Droid Serif (Headlines) & Garet / Outfit (Geometric Sans) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Droid+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Outfit:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
   <style>
-    body { font-family: 'Inter', sans-serif; }
+    /* Primary Body Typography matching Garet from Kirsten's Portfolio */
+    body {
+      font-family: 'Garet', 'Outfit', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+      letter-spacing: -0.01em;
+    }
+    
+    /* Editorial Serif Headlines matching Droid Serif from Kirsten's Portfolio */
+    .font-serif, h1, h2, h3, .heading-serif {
+      font-family: 'Droid Serif', Georgia, Cambria, serif;
+    }
+
+    /* Wide Letter-Spaced Sub-Tagline matching the Brand Logo */
+    .brand-tagline {
+      letter-spacing: 0.18em;
+    }
+
+    /* Soft transition utility */
+    .transition-smooth {
+      transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    }
   </style>
 </head>
-<body class="bg-[#F8FAFC] text-slate-800 antialiased selection:bg-blue-100 selection:text-blue-900 min-h-screen flex flex-col justify-between">
+<body class="bg-[#FCF9FA] text-slate-800 antialiased selection:bg-pink-100 selection:text-pink-900 min-h-screen flex flex-col justify-between">
 
-  <!-- TOP NAVIGATION BAR -->
-  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200">
-    <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-      <a href="#" class="font-bold text-slate-900 text-lg tracking-tight hover:text-blue-700 transition">
-        Kirsten Peoples
+  <!-- ================================================================= -->
+  <!-- [HEADER & NAVIGATION BAR]                                         -->
+  <!-- FEATURING KIRSTEN'S COMPLETE BRAND LOGO DESIGN                    -->
+  <!-- ================================================================= -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-pink-100 shadow-[0_2px_15px_-3px_rgba(244,114,182,0.07)]">
+    <div class="max-w-6xl mx-auto px-6 h-20 sm:h-24 flex items-center justify-between">
+      
+      <!-- Complete Brand Logo (Flower + Peoples Social | Digital Marketing) -->
+      <a href="#" class="flex items-center space-x-3 group py-2">
+        <img src="brand_logo_transparent.png" alt="Peoples Social | Digital Marketing Logo" class="h-12 sm:h-14 w-auto object-contain transition duration-300 group-hover:scale-105">
       </a>
       
-      <!-- Desktop Navigation -->
+      <!-- Desktop Navigation Links (Clean Garet Typography) -->
       <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-600">
-        <a href="#work" class="hover:text-blue-700 transition">Case Studies</a>
-        <a href="#competencies" class="hover:text-blue-700 transition">Core Skills</a>
-        <a href="#endorsements" class="hover:text-blue-700 transition">Endorsements</a>
-        <a href="#contact" class="hover:text-blue-700 transition">Contact</a>
+        <a href="#about" class="hover:text-pink-600 transition">About</a>
+        <a href="#what-i-do" class="hover:text-pink-600 transition">What I Do</a>
+        <a href="#work" class="hover:text-pink-600 transition">Case Studies</a>
+        <a href="#skills" class="hover:text-pink-600 transition">Skills</a>
+        <a href="#endorsements" class="hover:text-pink-600 transition">Endorsements</a>
+        <a href="#contact" class="hover:text-pink-600 transition">Contact</a>
       </nav>
 
+      <!-- Contact CTA Button -->
       <div class="flex items-center space-x-3">
-        <a href="#contact" class="hidden sm:inline-block text-xs font-semibold uppercase tracking-wider bg-blue-700 hover:bg-blue-800 text-white px-4 py-2 rounded transition shadow-sm">
-          Get in Touch
+        <a href="#contact" class="hidden sm:inline-flex items-center space-x-2 text-xs font-semibold uppercase tracking-wider bg-pink-600 hover:bg-pink-700 text-white px-5 py-2.5 rounded-full transition shadow-sm hover:shadow-md">
+          <span>Let's Connect</span>
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
         </a>
 
         <!-- Mobile Menu Toggle Button -->
-        <button id="mobile-menu-btn" type="button" class="md:hidden p-2 rounded text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition focus:outline-none" aria-label="Toggle navigation menu">
+        <button id="mobile-menu-btn" type="button" class="md:hidden p-2 rounded-lg text-slate-600 hover:text-pink-600 hover:bg-pink-50 transition" aria-label="Toggle navigation">
           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path id="menu-icon-bars" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
             <path id="menu-icon-close" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
@@ -67,160 +96,427 @@
     </div>
 
     <!-- Mobile Navigation Drawer -->
-    <div id="mobile-menu" class="hidden md:hidden border-t border-slate-200 bg-white px-6 py-4 space-y-3">
-      <a href="#work" class="mobile-nav-link block text-sm font-medium text-slate-700 hover:text-blue-700 py-1 transition">Case Studies</a>
-      <a href="#competencies" class="mobile-nav-link block text-sm font-medium text-slate-700 hover:text-blue-700 py-1 transition">Core Skills</a>
-      <a href="#endorsements" class="mobile-nav-link block text-sm font-medium text-slate-700 hover:text-blue-700 py-1 transition">Endorsements</a>
-      <a href="#contact" class="mobile-nav-link block text-sm font-medium text-slate-700 hover:text-blue-700 py-1 transition">Contact</a>
-      <a href="#contact" class="mobile-nav-link block text-center text-xs font-semibold uppercase tracking-wider bg-blue-700 text-white px-4 py-2.5 rounded mt-2">Get in Touch</a>
+    <div id="mobile-menu" class="hidden md:hidden border-t border-pink-100 bg-white px-6 py-5 space-y-3">
+      <a href="#about" class="mobile-nav-link block text-sm font-medium text-slate-700 hover:text-pink-600 py-1 transition">About Kirsten</a>
+      <a href="#what-i-do" class="mobile-nav-link block text-sm font-medium text-slate-700 hover:text-pink-600 py-1 transition">What I Do</a>
+      <a href="#work" class="mobile-nav-link block text-sm font-medium text-slate-700 hover:text-pink-600 py-1 transition">Case Studies</a>
+      <a href="#skills" class="mobile-nav-link block text-sm font-medium text-slate-700 hover:text-pink-600 py-1 transition">Skills & Tools</a>
+      <a href="#endorsements" class="mobile-nav-link block text-sm font-medium text-slate-700 hover:text-pink-600 py-1 transition">Testimonials</a>
+      <a href="#contact" class="mobile-nav-link block text-sm font-medium text-slate-700 hover:text-pink-600 py-1 transition">Contact</a>
+      <a href="#contact" class="mobile-nav-link block text-center text-xs font-semibold uppercase tracking-wider bg-pink-600 text-white px-4 py-2.5 rounded-full mt-2">Get in Touch</a>
     </div>
   </header>
 
   <main>
-    <!-- HERO SECTION -->
-    <section class="max-w-6xl mx-auto px-6 py-16 sm:py-20 lg:py-24">
-      <div class="max-w-3xl">
-        <span class="inline-block text-xs font-bold uppercase tracking-wider px-3 py-1 bg-blue-50 text-blue-700 border border-blue-200 rounded-full mb-4">
-          Digital Marketing Manager & Strategist • Remote
-        </span>
-        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight mb-6">
-          Full-funnel digital acquisition and data-backed content operations.
-        </h1>
-        <p class="text-base sm:text-lg text-slate-600 leading-relaxed mb-8">
-          6+ years managing paid search campaigns, conversion rate optimization, executive thought leadership, and multi-channel editorial operations across B2B and direct-to-consumer brands. Focused on measurable conversions and bottom-line revenue over vanity metrics.
-        </p>
-        <div class="flex flex-wrap gap-4">
-          <a href="#work" class="bg-blue-700 hover:bg-blue-800 text-white px-6 py-3 rounded font-medium text-sm transition shadow-sm">
-            View Case Studies
-          </a>
-          <a href="#contact" class="bg-white hover:bg-slate-50 border border-slate-300 text-slate-700 px-6 py-3 rounded font-medium text-sm transition shadow-sm">
-            Contact Kirsten
-          </a>
+
+    <!-- ================================================================= -->
+    <!-- [SECTION 1: HERO & PHOTO SHOWCASE]                                -->
+    <!-- HIGHLIGHTING KIRSTEN'S PHOTO AND HER FULL BRAND IDENTITY          -->
+    <!-- ================================================================= -->
+    <section class="relative overflow-hidden pt-12 pb-20 lg:pt-20 lg:pb-28">
+      
+      <!-- Soft Brand Radial Background Glow -->
+      <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[34rem] h-[34rem] bg-pink-200/35 rounded-full blur-3xl pointer-events-none -z-10"></div>
+      
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+          
+          <!-- Left Column: Value Proposition & Personal Narrative -->
+          <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+            
+            <!-- Category Badge -->
+            <div class="inline-flex items-center space-x-2 px-4 py-1.5 bg-pink-50 border border-pink-200/80 rounded-full text-xs font-semibold text-pink-700 uppercase tracking-wider">
+              <span class="w-2 h-2 rounded-full bg-pink-500 animate-pulse"></span>
+              <span>Digital Marketing Strategist & Content Creator</span>
+            </div>
+
+            <!-- Main Headline in Droid Serif -->
+            <h1 class="font-serif text-4xl sm:text-5xl lg:text-[3.25rem] font-bold text-slate-900 leading-[1.18] tracking-tight">
+              Real connections.<br>
+              <span class="text-pink-600 italic">Real growth.</span>
+            </h1>
+
+            <!-- Authentic, Human Bio Copy (Direct from Page 1 & 2) -->
+            <p class="text-base sm:text-lg text-slate-600 leading-relaxed max-w-2xl mx-auto lg:mx-0">
+              I build marketing campaigns and digital stories that connect with real people and drive measurable revenue. Combining 6+ years in digital marketing with a background in customer care, I approach strategy through genuine empathy—turning ad spend into profitable sales and corporate feeds into active communities.
+            </p>
+
+            <!-- Call to Action Buttons -->
+            <div class="flex flex-wrap justify-center lg:justify-start gap-4 pt-2">
+              <a href="#work" class="bg-pink-600 hover:bg-pink-700 text-white font-medium text-sm px-7 py-3.5 rounded-full transition shadow-sm hover:shadow-md">
+                Explore My Work
+              </a>
+              <a href="#about" class="bg-white hover:bg-pink-50/50 border border-pink-200 text-slate-700 font-medium text-sm px-7 py-3.5 rounded-full transition">
+                About My Approach
+              </a>
+            </div>
+
+            <!-- Quick Trust Highlights Bar -->
+            <div class="pt-6 border-t border-pink-100 flex flex-wrap justify-center lg:justify-start gap-6 text-xs text-slate-500">
+              <div class="flex items-center space-x-2">
+                <svg class="w-4 h-4 text-pink-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                <span>6+ Years Experience</span>
+              </div>
+              <div class="flex items-center space-x-2">
+                <svg class="w-4 h-4 text-pink-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                <span>Google Ads & Analytics</span>
+              </div>
+              <div class="flex items-center space-x-2">
+                <svg class="w-4 h-4 text-pink-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                <span>Open to Fully Remote</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right Column: Kirsten's Portrait with Full Brand Badge -->
+          <div class="lg:col-span-5 flex justify-center">
+            <div class="relative max-w-sm sm:max-w-md w-full">
+              
+              <!-- Soft Decorative Frame Background -->
+              <div class="absolute inset-0 bg-gradient-to-tr from-pink-300 to-rose-100 rounded-3xl transform rotate-3 scale-95 opacity-80 filter blur-[1px]"></div>
+              
+              <!-- Main Photo Card -->
+              <div class="relative bg-white p-3 sm:p-4 rounded-3xl shadow-xl border border-pink-100 overflow-hidden">
+                <img src="kirsten.jpg" alt="Kirsten Peoples — Digital Marketing Strategist" class="w-full h-auto aspect-[3/4] object-cover object-top rounded-2xl">
+                
+                <!-- Floating Card Featuring Kirsten's Whole Brand Design -->
+                <div class="absolute bottom-6 left-6 right-6 bg-white/95 backdrop-blur-md p-4 rounded-2xl border border-pink-100 shadow-lg flex items-center space-x-4">
+                  <img src="brand_logo_transparent.png" alt="Peoples Social Brand Design" class="h-14 w-auto object-contain flex-shrink-0">
+                  <div class="border-l border-pink-100 pl-3">
+                    <p class="font-serif font-bold text-slate-900 text-xs">Human-to-Human Marketing</p>
+                    <p class="text-[11px] text-pink-600 font-medium">Authenticity is our greatest competitive edge.</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
 
-    <!-- CORE METRICS SCORECARD -->
-    <section class="border-y border-slate-200 bg-white py-10">
-      <div class="max-w-6xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8">
-        <div>
-          <p class="text-2xl sm:text-3xl font-extrabold text-slate-900">$25,930+</p>
-          <p class="text-xs font-medium text-slate-500 uppercase tracking-wider mt-1">Attributed Paid Search Revenue</p>
+    <!-- ================================================================= -->
+    <!-- [SECTION 2: CORE METRICS SCORECARD]                               -->
+    <!-- DATA PROOF FROM HER CLIENT WORK                                   -->
+    <!-- ================================================================= -->
+    <section class="border-y border-pink-100 bg-white py-12">
+      <div class="max-w-6xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center md:text-left">
+        <div class="border-b md:border-b-0 md:border-r border-pink-50 pb-6 md:pb-0 md:pr-6">
+          <p class="font-serif text-3xl lg:text-4xl font-bold text-slate-900">$25,930+</p>
+          <p class="text-xs font-semibold text-pink-600 uppercase tracking-wider mt-1.5">Attributed Search Revenue</p>
+          <p class="text-[11px] text-slate-500 mt-0.5">Profitable Google Ads acquisitions</p>
+        </div>
+        <div class="border-b md:border-b-0 md:border-r border-pink-50 pb-6 md:pb-0 md:pr-6">
+          <p class="font-serif text-3xl lg:text-4xl font-bold text-slate-900">+37.5%</p>
+          <p class="text-xs font-semibold text-pink-600 uppercase tracking-wider mt-1.5">Average Executive Lift</p>
+          <p class="text-[11px] text-slate-500 mt-0.5">Across 7 leadership client accounts</p>
+        </div>
+        <div class="border-b md:border-b-0 md:border-r border-pink-50 pb-6 md:pb-0 md:pr-6">
+          <p class="font-serif text-3xl lg:text-4xl font-bold text-slate-900">37</p>
+          <p class="text-xs font-semibold text-pink-600 uppercase tracking-wider mt-1.5">Competitive Audits</p>
+          <p class="text-[11px] text-slate-500 mt-0.5">Empirical peer account benchmarking</p>
         </div>
         <div>
-          <p class="text-2xl sm:text-3xl font-extrabold text-slate-900">+37.5%</p>
-          <p class="text-xs font-medium text-slate-500 uppercase tracking-wider mt-1">Average Lift Across 7 Accounts</p>
-        </div>
-        <div>
-          <p class="text-2xl sm:text-3xl font-extrabold text-slate-900">37</p>
-          <p class="text-xs font-medium text-slate-500 uppercase tracking-wider mt-1">Competitor Audits Completed</p>
-        </div>
-        <div>
-          <p class="text-2xl sm:text-3xl font-extrabold text-slate-900">44.4%</p>
-          <p class="text-xs font-medium text-slate-500 uppercase tracking-wider mt-1">Top Organic Interaction Rate</p>
+          <p class="font-serif text-3xl lg:text-4xl font-bold text-slate-900">44.4%</p>
+          <p class="text-xs font-semibold text-pink-600 uppercase tracking-wider mt-1.5">Top Organic Interaction</p>
+          <p class="text-[11px] text-slate-500 mt-0.5">Beating industry averages on IG & LI</p>
         </div>
       </div>
     </section>
 
-    <!-- CASE STUDIES -->
-    <section id="work" class="max-w-6xl mx-auto px-6 py-20 space-y-20 sm:space-y-24">
+    <!-- ================================================================= -->
+    <!-- [SECTION 3: ABOUT ME & PHILOSOPHY]                                -->
+    <!-- GROUNDED IN HUMAN-TO-HUMAN MARKETING & REAL EXPERIENCE            -->
+    <!-- ================================================================= -->
+    <section id="about" class="max-w-6xl mx-auto px-6 py-20 lg:py-28">
+      <div class="grid lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left: Full Brand Card & Mission / Vision Blocks -->
+        <div class="lg:col-span-5 space-y-6">
+          
+          <!-- Kirsten's Complete Brand Design Card -->
+          <div class="bg-[#FFF0F9] p-8 rounded-3xl border border-pink-200/80 shadow-sm text-center">
+            <img src="brand_logo_transparent.png" alt="Peoples Social Brand Design" class="max-h-36 mx-auto object-contain mb-4">
+            <p class="text-xs text-pink-700 font-medium">Rooted in strategic empathy & human connection.</p>
+          </div>
 
-      <!-- CASE STUDY 1: MICROSUN -->
-      <article class="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm">
-        <div class="p-6 sm:p-8 lg:p-10 border-b border-slate-100">
+          <!-- Mission Card -->
+          <div class="bg-white p-7 rounded-3xl border border-pink-100 shadow-sm">
+            <h3 class="font-serif text-lg font-bold text-slate-900 mb-2">My Mission</h3>
+            <p class="text-sm text-slate-600 leading-relaxed">
+              Empowering brands through intentional content. By combining data-backed strategy, audience psychology, and honest storytelling, I help professional voices grow alongside digital trends without losing their humanity.
+            </p>
+          </div>
+
+          <!-- Vision Card -->
+          <div class="bg-white p-7 rounded-3xl border border-pink-100 shadow-sm">
+            <h3 class="font-serif text-lg font-bold text-slate-900 mb-2">My Vision</h3>
+            <p class="text-sm text-slate-600 leading-relaxed">
+              To humanize the digital landscape by turning complex business offerings and individual expertise into authentic, approachable narratives that build lasting trust.
+            </p>
+          </div>
+        </div>
+
+        <!-- Right: Story & Philosophy (Streamlined from Portfolio Page 1 & 2) -->
+        <div class="lg:col-span-7 space-y-6">
+          <span class="text-xs font-bold uppercase tracking-wider text-pink-600">About Kirsten</span>
+          <h2 class="font-serif text-3xl sm:text-4xl font-bold text-slate-900 leading-tight">
+            Marketing grounded in human empathy, verified by data.
+          </h2>
+          
+          <div class="space-y-4 text-slate-600 text-sm sm:text-base leading-relaxed">
+            <p>
+              At the core of every high-performing campaign is a simple truth: <strong>humans buy from humans</strong>. In an increasingly automated digital landscape, authenticity is our greatest competitive advantage. Content should feel like a genuine conversation, not an impersonal corporate broadcast.
+            </p>
+            <p>
+              With more than six years in social media and digital marketing and over fourteen years in customer care, I approach strategy through the eyes of the consumer. I don't just ask <em>"what keywords should we bid on?"</em>—I ask <em>"what problem is this person actually trying to solve?"</em>
+            </p>
+            <p>
+              Whether managing Google Search ad budgets to direct e-commerce checkout, conducting competitive landscape audits for healthcare executives, or overseeing multi-channel editorial calendars, I love building creative solutions that people relate to and that deliver measurable bottom-line growth.
+            </p>
+          </div>
+
+          <div class="pt-4 flex items-center space-x-6">
+            <div>
+              <p class="font-serif font-bold text-slate-900 text-lg">Kirsten Peoples</p>
+              <p class="text-xs text-pink-600 font-medium">Digital Marketing Strategist • Englewood, OH • Remote</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- [SECTION 4: WHAT I DO - 3-TIER STRATEGY FRAMEWORK]                -->
+    <!-- PAGE 3 STRATEGY & FRAMEWORK FROM HER PORTFOLIO                    -->
+    <!-- ================================================================= -->
+    <section id="what-i-do" class="border-t border-pink-100 bg-white py-20 lg:py-24">
+      <div class="max-w-6xl mx-auto px-6">
+        
+        <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+          <span class="text-xs font-bold uppercase tracking-wider text-pink-600">Full-Funnel Framework</span>
+          <h2 class="font-serif text-3xl sm:text-4xl font-bold text-slate-900">How I Drive Results</h2>
+          <p class="text-sm text-slate-600">A deliberate 3-stage process connecting upper-funnel awareness to bottom-line conversions.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          
+          <!-- Pillar 1: Awareness & Reach -->
+          <div class="bg-[#FCF9FA] p-8 rounded-3xl border border-pink-100 hover:border-pink-300 transition-smooth space-y-4">
+            <span class="inline-block text-xs font-bold font-serif text-pink-600 px-3 py-1 bg-pink-100/70 rounded-full">01</span>
+            <h3 class="font-serif text-xl font-bold text-slate-900">Awareness & Reach</h3>
+            <p class="text-xs text-slate-500 font-medium uppercase tracking-wider">Top of Funnel</p>
+            <ul class="space-y-2.5 text-sm text-slate-600 pt-2">
+              <li class="flex items-start space-x-2">
+                <span class="text-pink-500 font-bold">•</span>
+                <span>Audience research & persona identification</span>
+              </li>
+              <li class="flex items-start space-x-2">
+                <span class="text-pink-500 font-bold">•</span>
+                <span>Cross-channel distribution (LinkedIn, Meta, YouTube)</span>
+              </li>
+              <li class="flex items-start space-x-2">
+                <span class="text-pink-500 font-bold">•</span>
+                <span>Executive thought leadership & influencer outreach</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Pillar 2: Engagement & Consideration -->
+          <div class="bg-[#FCF9FA] p-8 rounded-3xl border border-pink-100 hover:border-pink-300 transition-smooth space-y-4">
+            <span class="inline-block text-xs font-bold font-serif text-pink-600 px-3 py-1 bg-pink-100/70 rounded-full">02</span>
+            <h3 class="font-serif text-xl font-bold text-slate-900">Engagement & Connection</h3>
+            <p class="text-xs text-slate-500 font-medium uppercase tracking-wider">Mid Funnel</p>
+            <ul class="space-y-2.5 text-sm text-slate-600 pt-2">
+              <li class="flex items-start space-x-2">
+                <span class="text-pink-500 font-bold">•</span>
+                <span>Multimedia creation (carousels, video, relatable copy)</span>
+              </li>
+              <li class="flex items-start space-x-2">
+                <span class="text-pink-500 font-bold">•</span>
+                <span>Active social listening & daily community moderation</span>
+              </li>
+              <li class="flex items-start space-x-2">
+                <span class="text-pink-500 font-bold">•</span>
+                <span>Brand voice standardization & editorial governance</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Pillar 3: Conversion & Optimization -->
+          <div class="bg-[#FCF9FA] p-8 rounded-3xl border border-pink-100 hover:border-pink-300 transition-smooth space-y-4">
+            <span class="inline-block text-xs font-bold font-serif text-pink-600 px-3 py-1 bg-pink-100/70 rounded-full">03</span>
+            <h3 class="font-serif text-xl font-bold text-slate-900">Conversion & Sales</h3>
+            <p class="text-xs text-slate-500 font-medium uppercase tracking-wider">Bottom Funnel</p>
+            <ul class="space-y-2.5 text-sm text-slate-600 pt-2">
+              <li class="flex items-start space-x-2">
+                <span class="text-pink-500 font-bold">•</span>
+                <span>Google Search (SEM) purchase-intent campaigns</span>
+              </li>
+              <li class="flex items-start space-x-2">
+                <span class="text-pink-500 font-bold">•</span>
+                <span>Attribution reporting & multi-touch revenue breakdown</span>
+              </li>
+              <li class="flex items-start space-x-2">
+                <span class="text-pink-500 font-bold">•</span>
+                <span>E-commerce landing page optimization (CRO)</span>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- [SECTION 5: DETAILED CASE STUDIES & DATA PROOF]                   -->
+    <!-- COMPLETE ANALYTICAL CHARTS & STRATEGIC HIGHLIGHTS                 -->
+    <!-- ================================================================= -->
+    <section id="work" class="max-w-6xl mx-auto px-6 py-20 lg:py-28 space-y-24">
+
+      <div class="text-center max-w-2xl mx-auto space-y-3">
+        <span class="text-xs font-bold uppercase tracking-wider text-pink-600">Selected Case Studies</span>
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-slate-900">Data-Backed Growth Stories</h2>
+        <p class="text-sm text-slate-600">Real projects demonstrating how intentional creative and analytical testing drive measurable outcomes.</p>
+      </div>
+
+      <!-- ========================================== -->
+      <!-- [CASE STUDY 1: MICROSUN]                   -->
+      <!-- ========================================== -->
+      <article class="bg-white border border-pink-100 rounded-3xl overflow-hidden shadow-sm hover:shadow-md transition">
+        <div class="p-8 lg:p-12 border-b border-pink-50">
           <div class="flex flex-wrap items-center justify-between gap-4 mb-3">
-            <span class="text-xs font-bold uppercase tracking-wider text-blue-700">In-House Marketing • E-Commerce & Paid Acquisition</span>
+            <span class="text-xs font-bold uppercase tracking-wider text-pink-600 bg-pink-50 px-3 py-1 rounded-full">
+              In-House Marketing • E-Commerce & Paid Acquisition
+            </span>
             <span class="text-xs font-medium text-slate-500">09/2025 – Present</span>
           </div>
-          <h2 class="text-2xl sm:text-3xl font-bold text-slate-900">Microsun: Paid Acquisition & Omnichannel Funnel Architecture</h2>
-          <p class="text-slate-600 mt-3 max-w-3xl leading-relaxed">
-            Restructured Google Search campaigns around purchase-intent keywords and negative-match filtering while using organic social to nurture brand consideration, converting direct traffic into profitable online sales.
+          <h3 class="font-serif text-2xl sm:text-3xl font-bold text-slate-900">
+            Microsun: Paid Acquisition & Conversion Architecture
+          </h3>
+          <p class="text-slate-600 mt-3 max-w-3xl leading-relaxed text-sm sm:text-base">
+            Modernized digital brand presence and captured purchase intent through focused Google Search campaigns, while using educational organic content to nurture buyers toward direct online checkout.
           </p>
         </div>
-        <div class="p-6 sm:p-8 lg:p-10 bg-slate-50/50">
-          <!-- Visual Container -->
-          <div class="bg-white border border-slate-200 rounded-lg p-3 sm:p-4 mb-8 shadow-inner overflow-hidden">
-            <img src="microsun_funnel.png" alt="Microsun Conversion Architecture Funnel Diagram" class="w-full h-auto block rounded border border-slate-100" loading="lazy">
+
+        <div class="p-8 lg:p-12 bg-[#FCF9FA]">
+          <!-- High-Res Sankey Graphic Container -->
+          <div class="bg-white border border-pink-100 rounded-2xl p-4 sm:p-6 mb-8 shadow-inner overflow-hidden">
+            <img src="microsun_funnel.png" alt="Microsun Conversion Architecture Funnel Diagram" class="w-full h-auto block rounded-lg" loading="lazy">
           </div>
+
+          <!-- 3 Analytical Takeaway Cards -->
           <div class="grid md:grid-cols-3 gap-6 text-sm">
-            <div class="bg-white p-5 rounded border border-slate-200">
-              <h3 class="font-bold text-slate-900 mb-1">Search Intent Targeting</h3>
-              <p class="text-slate-600">Applied negative keyword lists to filter non-buyer research queries, focusing budget on bottom-of-funnel conversion terms and lowering CPA.</p>
+            <div class="bg-white p-6 rounded-2xl border border-pink-100/70">
+              <h4 class="font-serif font-bold text-slate-900 mb-2">Search Intent Targeting</h4>
+              <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+                Applied negative keyword lists to filter out non-buyer research queries, ensuring ad budget was invested exclusively in high-intent conversion terms.
+              </p>
             </div>
-            <div class="bg-white p-5 rounded border border-slate-200">
-              <h3 class="font-bold text-slate-900 mb-1">Direct Sales Attribution</h3>
-              <p class="text-slate-600">Generated $25,930+ in revenue from paid search, with assisted organic channels contributing additional sales and lifecycle lead captures.</p>
+            <div class="bg-white p-6 rounded-2xl border border-pink-100/70">
+              <h4 class="font-serif font-bold text-slate-900 mb-2">Direct Revenue Attribution</h4>
+              <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+                Generated $25,930+ in revenue from paid search, with assisted organic channels contributing additional sales and lifecycle lead captures.
+              </p>
             </div>
-            <div class="bg-white p-5 rounded border border-slate-200">
-              <h3 class="font-bold text-slate-900 mb-1">Multi-Channel Balance</h3>
-              <p class="text-slate-600">Sustained organic engagement well above industry averages (16.6% LinkedIn, 44.4% Instagram) to keep customer acquisition costs balanced.</p>
+            <div class="bg-white p-6 rounded-2xl border border-pink-100/70">
+              <h4 class="font-serif font-bold text-slate-900 mb-2">Multi-Channel Balance</h4>
+              <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+                Sustained organic engagement well above industry averages (16.6% LinkedIn, 44.4% Instagram) to keep customer acquisition costs balanced.
+              </p>
             </div>
           </div>
         </div>
       </article>
 
-      <!-- CASE STUDY 2: REAL CHEMISTRY -->
-      <article class="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm">
-        <div class="p-6 sm:p-8 lg:p-10 border-b border-slate-100">
+      <!-- ========================================== -->
+      <!-- [CASE STUDY 2: REAL CHEMISTRY]            -->
+      <!-- ========================================== -->
+      <article class="bg-white border border-pink-100 rounded-3xl overflow-hidden shadow-sm hover:shadow-md transition">
+        <div class="p-8 lg:p-12 border-b border-pink-50">
           <div class="flex flex-wrap items-center justify-between gap-4 mb-3">
-            <span class="text-xs font-bold uppercase tracking-wider text-emerald-800">Agency Practice • Real Chemistry</span>
+            <span class="text-xs font-bold uppercase tracking-wider text-pink-600 bg-pink-50 px-3 py-1 rounded-full">
+              Agency Practice • Real Chemistry
+            </span>
             <span class="text-xs font-medium text-slate-500">01/2025 – 05/2025</span>
           </div>
-          <h2 class="text-2xl sm:text-3xl font-bold text-slate-900">Healthcare Executive Thought Leadership (Dr. Jill J. & Portfolio Roster)</h2>
-          <p class="text-slate-600 mt-3 max-w-3xl leading-relaxed">
+          <h3 class="font-serif text-2xl sm:text-3xl font-bold text-slate-900">
+            Healthcare Executive Thought Leadership (Dr. Jill J. & Portfolio Roster)
+          </h3>
+          <p class="text-slate-600 mt-3 max-w-3xl leading-relaxed text-sm sm:text-base">
             Grounded by 37 competitive landscape audits, this strategy moved 7 clinical and biotech executives away from static corporate press releases into opinion-led, high-dwell educational carousels and video commentary.
           </p>
         </div>
-        <div class="p-6 sm:p-8 lg:p-10 bg-slate-50/50">
-          <!-- Visual Container -->
-          <div class="bg-white border border-slate-200 rounded-lg p-3 sm:p-4 mb-8 shadow-inner overflow-hidden">
-            <img src="real_chemistry_dumbbell.png" alt="Real Chemistry Executive Engagement Dumbbell Plot" class="w-full h-auto block rounded border border-slate-100" loading="lazy">
+
+        <div class="p-8 lg:p-12 bg-[#FCF9FA]">
+          <!-- High-Res Dumbbell Plot Container -->
+          <div class="bg-white border border-pink-100 rounded-2xl p-4 sm:p-6 mb-8 shadow-inner overflow-hidden">
+            <img src="real_chemistry_dumbbell.png" alt="Real Chemistry Executive Engagement Dumbbell Plot" class="w-full h-auto block rounded-lg" loading="lazy">
           </div>
+
+          <!-- 3 Analytical Takeaway Cards -->
           <div class="grid md:grid-cols-3 gap-6 text-sm">
-            <div class="bg-white p-5 rounded border border-slate-200">
-              <h3 class="font-bold text-slate-900 mb-1">37 Competitive Audits</h3>
-              <p class="text-slate-600">Audited industry peer accounts to establish an empirical 2.2% median benchmark, identifying unaddressed content gaps across clinical feeds.</p>
+            <div class="bg-white p-6 rounded-2xl border border-pink-100/70">
+              <h4 class="font-serif font-bold text-slate-900 mb-2">37 Competitive Audits</h4>
+              <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+                Audited peer executive accounts to establish an empirical 2.2% median benchmark, identifying unaddressed content gaps across clinical feeds.
+              </p>
             </div>
-            <div class="bg-white p-5 rounded border border-slate-200">
-              <h3 class="font-bold text-slate-900 mb-1">Systemic Account Growth</h3>
-              <p class="text-slate-600">Lift ranged from +34.3% to +44.4% across all 7 leaders, showing that performance came from repeatable content systems rather than one viral post.</p>
+            <div class="bg-white p-6 rounded-2xl border border-pink-100/70">
+              <h4 class="font-serif font-bold text-slate-900 mb-2">Repeatable Account Lift</h4>
+              <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+                Individual growth ranged from +34.3% to +44.4% across all 7 leaders, showing that performance was driven by repeatable frameworks rather than one viral post.
+              </p>
             </div>
-            <div class="bg-white p-5 rounded border border-slate-200">
-              <h3 class="font-bold text-slate-900 mb-1">Verified Engagement</h3>
-              <p class="text-slate-600">Surpassed 4,500 qualified interactions monthly and earned primary client Dr. Jill J. featured speaking invitations at regional eye care conferences.</p>
+            <div class="bg-white p-6 rounded-2xl border border-pink-100/70">
+              <h4 class="font-serif font-bold text-slate-900 mb-2">Verified Engagement</h4>
+              <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+                Surpassed 4,500 qualified interactions monthly and earned primary client Dr. Jill J. featured speaking invitations at regional eye care conferences.
+              </p>
             </div>
           </div>
         </div>
       </article>
 
-      <!-- CASE STUDY 3: LEADTAIL / SISENSE -->
-      <article class="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm">
-        <div class="p-6 sm:p-8 lg:p-10 border-b border-slate-100">
+      <!-- ========================================== -->
+      <!-- [CASE STUDY 3: LEADTAIL / SISENSE]        -->
+      <!-- ========================================== -->
+      <article class="bg-white border border-pink-100 rounded-3xl overflow-hidden shadow-sm hover:shadow-md transition">
+        <div class="p-8 lg:p-12 border-b border-pink-50">
           <div class="flex flex-wrap items-center justify-between gap-4 mb-3">
-            <span class="text-xs font-bold uppercase tracking-wider text-slate-700">Agency Practice • Leadtail, Inc.</span>
+            <span class="text-xs font-bold uppercase tracking-wider text-pink-600 bg-pink-50 px-3 py-1 rounded-full">
+              Agency Practice • Leadtail, Inc.
+            </span>
             <span class="text-xs font-medium text-slate-500">Client: Sisense Inc.</span>
           </div>
-          <h2 class="text-2xl sm:text-3xl font-bold text-slate-900">B2B SaaS Rebrand Flighting & Community Moderation</h2>
-          <p class="text-slate-600 mt-3 max-w-3xl leading-relaxed">
+          <h3 class="font-serif text-2xl sm:text-3xl font-bold text-slate-900">
+            B2B SaaS Rebrand Flighting & Community Moderation
+          </h3>
+          <p class="text-slate-600 mt-3 max-w-3xl leading-relaxed text-sm sm:text-base">
             Coordinated a 3-month teaser sequence leading up to Sisense's corporate visual rebrand. Combined interactive polls with active daily comment moderation to build anticipation without releasing final branding assets prematurely.
           </p>
         </div>
-        <div class="p-6 sm:p-8 lg:p-10 bg-slate-50/50">
-          <div class="grid sm:grid-cols-3 gap-4 mb-6">
-            <div class="bg-white p-5 rounded border border-slate-200 text-center">
-              <p class="text-2xl font-bold text-slate-900">~22K</p>
-              <p class="text-xs text-slate-500 uppercase mt-1">LinkedIn Impressions</p>
+
+        <div class="p-8 lg:p-12 bg-[#FCF9FA]">
+          <div class="grid sm:grid-cols-3 gap-6 mb-6">
+            <div class="bg-white p-6 rounded-2xl border border-pink-100/70 text-center">
+              <p class="font-serif text-3xl font-bold text-slate-900">~22K</p>
+              <p class="text-xs text-pink-600 font-semibold uppercase tracking-wider mt-1.5">LinkedIn Impressions</p>
             </div>
-            <div class="bg-white p-5 rounded border border-slate-200 text-center">
-              <p class="text-2xl font-bold text-slate-900">~14K</p>
-              <p class="text-xs text-slate-500 uppercase mt-1">Audience Engagements</p>
+            <div class="bg-white p-6 rounded-2xl border border-pink-100/70 text-center">
+              <p class="font-serif text-3xl font-bold text-slate-900">~14K</p>
+              <p class="text-xs text-pink-600 font-semibold uppercase tracking-wider mt-1.5">Audience Engagements</p>
             </div>
-            <div class="bg-white p-5 rounded border border-slate-200 text-center">
-              <p class="text-2xl font-bold text-slate-900">107</p>
-              <p class="text-xs text-slate-500 uppercase mt-1">Avg. Comments per Post</p>
+            <div class="bg-white p-6 rounded-2xl border border-pink-100/70 text-center">
+              <p class="font-serif text-3xl font-bold text-slate-900">107</p>
+              <p class="text-xs text-pink-600 font-semibold uppercase tracking-wider mt-1.5">Avg Comments per Post</p>
             </div>
           </div>
-          <p class="text-sm text-slate-600 leading-relaxed">
+          <p class="text-sm text-slate-600 leading-relaxed bg-white p-6 rounded-2xl border border-pink-100/70">
             Managed editorial flighting across 9 strategic posts. Direct engagement in comment threads kept the conversation active for 90 days, preparing an enterprise audience for launch day while preserving the impact of the official logo reveal.
           </p>
         </div>
@@ -228,88 +524,187 @@
 
     </section>
 
-    <!-- CORE SKILLS / TECH STACK SECTION -->
-    <section id="competencies" class="border-t border-slate-200 bg-white py-20">
+    <!-- ================================================================= -->
+    <!-- [SECTION 6: TECHNICAL SKILLS & SOFTWARE TOOL STACK]               -->
+    <!-- EXACT TOOLS & PLATFORMS FROM HER PORTFOLIO & RESUME               -->
+    <!-- ================================================================= -->
+    <section id="skills" class="border-t border-pink-100 bg-white py-20 lg:py-24">
       <div class="max-w-6xl mx-auto px-6">
-        <h2 class="text-xs font-bold uppercase tracking-wider text-blue-700 mb-2">Technical Proficiency</h2>
-        <p class="text-3xl font-bold text-slate-900 mb-10">Strategy, Measurement & Tool Stack</p>
-        <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-6 text-sm">
-          <div class="border border-slate-200 rounded-lg p-6 bg-slate-50">
-            <h3 class="font-bold text-slate-900 mb-3">Paid & Acquisition</h3>
-            <p class="text-slate-600 leading-relaxed">Google Ads (Search / SEM), Conversion Optimization (CRO), Audience Segmentation, Search Intent Targeting, ROAS & CPA Bidding Strategy</p>
-          </div>
-          <div class="border border-slate-200 rounded-lg p-6 bg-slate-50">
-            <h3 class="font-bold text-slate-900 mb-3">Analytics & Data</h3>
-            <p class="text-slate-600 leading-relaxed">Google Analytics 4 (GA4), Competitor Benchmarking, Attribution Modeling, Cross-Platform KPI Formulation & Reporting</p>
-          </div>
-          <div class="border border-slate-200 rounded-lg p-6 bg-slate-50">
-            <h3 class="font-bold text-slate-900 mb-3">Marketing Platforms</h3>
-            <p class="text-slate-600 leading-relaxed">HubSpot (Inbound & Email Certified), Meta Business Suite, Sprout Social, Shopify, Canva, Adobe Creative Suite</p>
-          </div>
-          <div class="border border-slate-200 rounded-lg p-6 bg-slate-50">
-            <h3 class="font-bold text-slate-900 mb-3">Project Management</h3>
-            <p class="text-slate-600 leading-relaxed">Asana, Monday.com, Wrike, Teamwork, Slack, Editorial Governance, Distributed Remote Team Operations</p>
-          </div>
+        
+        <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+          <span class="text-xs font-bold uppercase tracking-wider text-pink-600">Technical Proficiencies</span>
+          <h2 class="font-serif text-3xl sm:text-4xl font-bold text-slate-900">Tools & Core Disciplines</h2>
+          <p class="text-sm text-slate-600">The platforms and methodologies I use to manage campaigns and measure performance daily.</p>
         </div>
+
+        <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-6 text-sm">
+          
+          <div class="border border-pink-100 rounded-3xl p-6 bg-[#FCF9FA]">
+            <h3 class="font-serif font-bold text-slate-900 mb-3 text-base">Paid & Acquisition</h3>
+            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+              Google Ads (Search / SEM), Conversion Rate Optimization (CRO), Audience Segmentation, Search Intent Targeting, ROAS & CPA Management
+            </p>
+          </div>
+
+          <div class="border border-pink-100 rounded-3xl p-6 bg-[#FCF9FA]">
+            <h3 class="font-serif font-bold text-slate-900 mb-3 text-base">Analytics & Data</h3>
+            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+              Google Analytics 4 (GA4), Competitor Benchmarking, Attribution Modeling, Cross-Platform KPI Formulation & Weekly Scorecards
+            </p>
+          </div>
+
+          <div class="border border-pink-100 rounded-3xl p-6 bg-[#FCF9FA]">
+            <h3 class="font-serif font-bold text-slate-900 mb-3 text-base">Marketing Platforms</h3>
+            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+              HubSpot (Inbound & Email Certified), Meta Business Suite, Sprout Social, Shopify, Canva, Adobe Creative Suite
+            </p>
+          </div>
+
+          <div class="border border-pink-100 rounded-3xl p-6 bg-[#FCF9FA]">
+            <h3 class="font-serif font-bold text-slate-900 mb-3 text-base">Project Management</h3>
+            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+              Asana, Monday.com, Wrike, Teamwork, Slack, Editorial Governance, Distributed Remote Team Operations
+            </p>
+          </div>
+
+        </div>
+
       </div>
     </section>
 
-    <!-- ENDORSEMENTS -->
-    <section id="endorsements" class="border-t border-slate-200 bg-slate-50 py-20">
+    <!-- ================================================================= -->
+    <!-- [SECTION 7: CLIENT & COLLEAGUE TESTIMONIALS]                      -->
+    <!-- EXACT TESTIMONIALS FROM HER PORTFOLIO PAGES 10 & 11               -->
+    <!-- ================================================================= -->
+    <section id="endorsements" class="border-t border-pink-100 bg-[#FCF9FA] py-20 lg:py-28">
       <div class="max-w-6xl mx-auto px-6">
-        <h2 class="text-xs font-bold uppercase tracking-wider text-blue-700 mb-2">Social Proof</h2>
-        <p class="text-3xl font-bold text-slate-900 mb-12">Colleague & Client Endorsements</p>
+        
+        <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+          <span class="text-xs font-bold uppercase tracking-wider text-pink-600">Social Proof</span>
+          <h2 class="font-serif text-3xl sm:text-4xl font-bold text-slate-900">What Partners & Leaders Say</h2>
+          <p class="text-sm text-slate-600">Endorsements from executives, colleagues, and agency partners.</p>
+        </div>
+
         <div class="grid md:grid-cols-2 gap-8">
-          <div class="bg-white p-8 rounded-xl border border-slate-200 shadow-sm">
-            <p class="text-slate-700 italic leading-relaxed mb-6">
+          
+          <!-- Testimonial 1: Dr. Jill J. -->
+          <div class="bg-white p-8 sm:p-10 rounded-3xl border border-pink-100 shadow-sm relative">
+            <span class="font-serif text-5xl text-pink-200 absolute top-6 right-8">“</span>
+            <p class="text-slate-700 italic leading-relaxed mb-6 text-sm sm:text-base relative z-10">
               "Kirsten quickly captured my unique voice and style, creating posts that felt like me while gently nudging me to step outside my comfort zone. Her strategies drove substantial engagement and opened doors to exciting new opportunities."
             </p>
-            <div>
-              <p class="font-bold text-slate-900">Dr. Jill J., OD, FAAO</p>
-              <p class="text-xs text-slate-500">Executive Director of Strategy & Client Partner</p>
+            <div class="border-t border-pink-50 pt-4">
+              <p class="font-serif font-bold text-slate-900">Dr. Jill J., OD, FAAO</p>
+              <p class="text-xs text-pink-600 font-medium">Executive Director of Strategy & Client Partner</p>
             </div>
           </div>
-          <div class="bg-white p-8 rounded-xl border border-slate-200 shadow-sm">
-            <p class="text-slate-700 italic leading-relaxed mb-6">
-              "Kirsten brings an exceptional combination of operational discipline, client empathy, and creative execution. She reliably manages cross-channel complexity while keeping clients aligned and informed."
+
+          <!-- Testimonial 2: Karri C. (Leadtail COO) -->
+          <div class="bg-white p-8 sm:p-10 rounded-3xl border border-pink-100 shadow-sm relative">
+            <span class="font-serif text-5xl text-pink-200 absolute top-6 right-8">“</span>
+            <p class="text-slate-700 italic leading-relaxed mb-6 text-sm sm:text-base relative z-10">
+              "What sets Kirsten apart is her genuine curiosity about what drives business results. Her proactive approach to professional development and data synthesis makes her a valuable asset to any digital marketing or media team. I recommend her wholeheartedly."
             </p>
-            <div>
-              <p class="font-bold text-slate-900">Karri C.</p>
-              <p class="text-xs text-slate-500">Chief Operating Officer, Leadtail, Inc.</p>
+            <div class="border-t border-pink-50 pt-4">
+              <p class="font-serif font-bold text-slate-900">Karri C.</p>
+              <p class="text-xs text-pink-600 font-medium">Chief Operating Officer, Leadtail, Inc.</p>
             </div>
           </div>
+
+          <!-- Testimonial 3: Carisa P. (Holmes Marketing Owner) -->
+          <div class="bg-white p-8 sm:p-10 rounded-3xl border border-pink-100 shadow-sm relative">
+            <span class="font-serif text-5xl text-pink-200 absolute top-6 right-8">“</span>
+            <p class="text-slate-700 italic leading-relaxed mb-6 text-sm sm:text-base relative z-10">
+              "Kirsten has determination, grit, and a work ethic that I found very refreshing. As our Customer Experience Manager, she made sure every client she interacted with felt her warmth and positivity."
+            </p>
+            <div class="border-t border-pink-50 pt-4">
+              <p class="font-serif font-bold text-slate-900">Carisa P.</p>
+              <p class="text-xs text-pink-600 font-medium">Owner, Holmes Marketing Services</p>
+            </div>
+          </div>
+
+          <!-- Testimonial 4: Mike M. (Leadtail Customer) -->
+          <div class="bg-white p-8 sm:p-10 rounded-3xl border border-pink-100 shadow-sm relative">
+            <span class="font-serif text-5xl text-pink-200 absolute top-6 right-8">“</span>
+            <p class="text-slate-700 italic leading-relaxed mb-6 text-sm sm:text-base relative z-10">
+              "Kirsten is an organized, creative marketer with expertise in B2B. She creates efficient processes that deliver intentional and impactful outcomes, managing our content process from ideation to completion with great collaboration."
+            </p>
+            <div class="border-t border-pink-50 pt-4">
+              <p class="font-serif font-bold text-slate-900">Mike M.</p>
+              <p class="text-xs text-pink-600 font-medium">Leadtail Client Partner</p>
+            </div>
+          </div>
+
         </div>
+
       </div>
     </section>
+
   </main>
 
-  <!-- FOOTER & CONTACT -->
-  <footer id="contact" class="bg-slate-950 text-white py-16 border-t border-slate-800">
-    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
-      <div>
-        <p class="text-xl font-bold text-white tracking-tight">Kirsten Peoples</p>
-        <p class="text-slate-400 text-sm mt-1">Englewood, OH • Open to Fully Remote</p>
-        <p class="text-slate-400 text-sm mt-1">peoples.socialmarketing@gmail.com</p>
-        <p class="text-slate-500 text-xs mt-2">peoplessocialmarketing.com</p>
-      </div>
+  <!-- ================================================================= -->
+  <!-- [SECTION 8: FOOTER & CONTACT SECTION]                             -->
+  <!-- FEATURING HER FULL LOGO LOCKUP, EXACT PHONE, EMAIL & LINKEDIN     -->
+  <!-- ================================================================= -->
+  <footer id="contact" class="bg-slate-900 text-white py-20 border-t border-slate-800">
+    <div class="max-w-6xl mx-auto px-6">
       
-      <div class="flex flex-wrap items-center gap-4 text-sm">
-        <a href="https://www.linkedin.com/in/kirsten-peoples" target="_blank" rel="noopener noreferrer" class="text-slate-300 hover:text-white transition px-3 py-2 border border-slate-800 rounded hover:border-slate-700">
-          LinkedIn Profile
-        </a>
-        <button id="copy-email-btn" type="button" class="text-slate-300 hover:text-white transition px-3 py-2 border border-slate-800 rounded hover:border-slate-700 flex items-center space-x-2">
-          <span id="copy-email-text">Copy Email</span>
-        </button>
-        <a href="mailto:peoples.socialmarketing@gmail.com?subject=Digital%20Marketing%20Inquiry%20via%20Portfolio" class="bg-blue-600 hover:bg-blue-500 text-white px-5 py-2.5 rounded font-medium transition shadow-sm">
-          Email Kirsten
-        </a>
+      <div class="grid md:grid-cols-12 gap-12 items-center pb-12 border-b border-slate-800">
+        
+        <!-- Left: Full Brand Lockup & Contact Info -->
+        <div class="md:col-span-7 space-y-5 text-center md:text-left">
+          <div class="inline-block bg-white/95 p-3 rounded-2xl shadow-sm">
+            <img src="brand_logo_transparent.png" alt="Peoples Social | Digital Marketing" class="h-16 w-auto object-contain">
+          </div>
+          
+          <p class="text-slate-300 text-sm max-w-md leading-relaxed">
+            I am always open to new collaborative opportunities and remote digital marketing roles. Let's discuss how we can build a content strategy that connects and converts.
+          </p>
+          
+          <div class="pt-2 text-xs text-slate-400 space-y-1.5 font-sans">
+            <p>📍 Englewood, OH • Open to Fully Remote</p>
+            <p>📞 <a href="tel:9376411625" class="hover:text-pink-400 transition">937-641-1625</a></p>
+            <p>✉️ <a href="mailto:peoples.socialmarketing@gmail.com" class="hover:text-pink-400 transition">peoples.socialmarketing@gmail.com</a></p>
+          </div>
+        </div>
+
+        <!-- Right: Direct Contact Actions (LinkedIn, Copy Email, Mailto) -->
+        <div class="md:col-span-5 flex flex-col sm:flex-row items-center justify-center md:justify-end gap-3 text-sm">
+          
+          <!-- Exact LinkedIn Link from Page 12: in/kirstenpeoples -->
+          <a href="https://www.linkedin.com/in/kirstenpeoples" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto text-center text-slate-300 hover:text-white transition px-5 py-3 border border-slate-700 rounded-full hover:border-pink-500 hover:bg-slate-800 flex items-center justify-center space-x-2">
+            <svg class="w-4 h-4 fill-current text-pink-400" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.45c-.9 0-1.63.73-1.63 1.63s.73 1.63 1.63 1.63 1.63-.73 1.63-1.63-.73-1.63-1.63-1.63Z"/></svg>
+            <span>LinkedIn Profile</span>
+          </a>
+
+          <!-- Copy Email Button -->
+          <button id="copy-email-btn" type="button" class="w-full sm:w-auto text-center text-slate-300 hover:text-white transition px-5 py-3 border border-slate-700 rounded-full hover:border-pink-500 hover:bg-slate-800 flex items-center justify-center space-x-2">
+            <span id="copy-email-text">Copy Email</span>
+          </button>
+
+          <!-- Direct Email Button -->
+          <a href="mailto:peoples.socialmarketing@gmail.com?subject=Digital%20Marketing%20Inquiry%20via%20Portfolio" class="w-full sm:w-auto text-center bg-pink-600 hover:bg-pink-700 text-white px-6 py-3 rounded-full font-medium transition shadow-md">
+            Email Kirsten
+          </a>
+
+        </div>
+
       </div>
+
+      <!-- Bottom Copyright & Domain Note -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4 font-sans">
+        <p>© 2026 Kirsten Peoples. All rights reserved.</p>
+        <p class="tracking-wider">peoplessocialmarketing.com</p>
+      </div>
+
     </div>
   </footer>
 
-  <!-- MINIMAL VANILLA JAVASCRIPT FOR INTERACTION -->
+  <!-- ================================================================= -->
+  <!-- [MINIMAL JAVASCRIPT: MOBILE MENU & CLIPBOARD HELPER]              -->
+  <!-- ================================================================= -->
   <script>
-    // Mobile navigation drawer toggle
+    // 1. Mobile Menu Drawer Toggle
     const menuBtn = document.getElementById('mobile-menu-btn');
     const mobileMenu = document.getElementById('mobile-menu');
     const barsIcon = document.getElementById('menu-icon-bars');
@@ -329,7 +724,7 @@
         }
       });
 
-      // Close mobile drawer when an anchor link is clicked
+      // Auto-close menu when a nav link is clicked
       document.querySelectorAll('.mobile-nav-link').forEach(link => {
         link.addEventListener('click', () => {
           mobileMenu.classList.add('hidden');
@@ -339,17 +734,17 @@
       });
     }
 
-    // One-click copy email button with visual feedback
+    // 2. One-Click Copy Email to Clipboard with Visual Feedback
     const copyBtn = document.getElementById('copy-email-btn');
     const copyText = document.getElementById('copy-email-text');
     if (copyBtn && copyText) {
       copyBtn.addEventListener('click', () => {
         navigator.clipboard.writeText('peoples.socialmarketing@gmail.com').then(() => {
           copyText.textContent = 'Copied to Clipboard!';
-          copyBtn.classList.add('border-emerald-500', 'text-emerald-400');
+          copyBtn.classList.add('border-pink-500', 'text-pink-300');
           setTimeout(() => {
             copyText.textContent = 'Copy Email';
-            copyBtn.classList.remove('border-emerald-500', 'text-emerald-400');
+            copyBtn.classList.remove('border-pink-500', 'text-pink-300');
           }, 2500);
         }).catch(() => {
           window.location.href = 'mailto:peoples.socialmarketing@gmail.com';
