@@ -3,195 +3,290 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kirsten Peoples | Digital Marketing Strategist & Content Creator</title>
+  <title>Kirsten Peoples | Senior Digital Marketing Strategist &amp; Content Operations</title>
+  <meta name="description" content="Senior Digital Marketing Strategist and Content Operations Manager specializing in full-funnel content architectures, paid search (SEM), attribution modeling, and executive thought leadership.">
+  <meta name="keywords" content="Digital Marketing Strategist, Content Operations, B2B Marketing, Paid Search, SEM, GA4 Attribution, Executive Thought Leadership, Kirsten Peoples">
   
-  <!-- ================================================================= -->
-  <!-- [METADATA & SOCIAL SHARE PREVIEWS]                                -->
-  <!-- ================================================================= -->
-  <link rel="canonical" href="https://peoplessocialmarketing.com/">
-  <meta name="description" content="Kirsten Peoples — Digital Marketing Strategist & Content Creator. Human-to-human marketing, paid search acquisition, and authentic executive thought leadership.">
-  <meta name="author" content="Kirsten Peoples">
-
-  <!-- Open Graph for LinkedIn, Text Messages, and Social Previews -->
+  <!-- Open Graph / Meta -->
+  <meta property="og:title" content="Kirsten Peoples | Senior Digital Marketing Strategist">
+  <meta property="og:description" content="Where creative intuition meets empirical attribution. Explore full-funnel frameworks, case studies, and verified performance.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://peoplessocialmarketing.com/">
-  <meta property="og:site_name" content="Peoples Social | Digital Marketing">
-  <meta property="og:title" content="Kirsten Peoples | Digital Marketing Strategist">
-  <meta property="og:description" content="Real connections. Real growth. Full-funnel digital acquisition and authentic storytelling.">
-  <meta property="og:image" content="https://peoplessocialmarketing.com/brand_logo_card.png">
 
-  <!-- Crisp Inline Flower Favicon Matching Kirsten's Brand Flower -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23FFF0F9'/><path d='M16 7c1 3-1 5-1 5s2-2 5-1c-2 2-2 4-2 4s3-1 4 2c-3 1-4 0-4 0s2 3 0 5c-2-2-2-4-2-4s0 3-3 3c1-3 0-4 0-4s-3 2-4 0c2-2 4-2 4-2s-3-2-2-5c2 2 3 3 3 3s0-3 2-4z' fill='%23E62E8A'/><circle cx='16' cy='16' r='2' fill='%23FDE047'/></svg>">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
 
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
-  
-  <!-- EXACT PORTFOLIO FONTS: Droid Serif (Headlines) & Garet / Outfit (Geometric Sans) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Droid+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Outfit:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            serif: ['Playfair Display', 'serif'],
+          },
+          colors: {
+            brand: {
+              50: '#FDF2F8',
+              100: '#FCE7F3',
+              200: '#FBCFE8',
+              500: '#EC4899',
+              600: '#DB2777',
+              700: '#BE185D',
+              800: '#9D174D',
+              900: '#831843',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
   <style>
-    /* Primary Body Typography matching Garet from Kirsten's Portfolio */
-    body {
-      font-family: 'Garet', 'Outfit', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
-      letter-spacing: -0.01em;
+    /* Prevent any horizontal sliding or layout shaking across all viewports */
+    html, body {
+      max-width: 100vw;
+      overflow-x: hidden;
     }
-    
-    /* Editorial Serif Headlines matching Droid Serif from Kirsten's Portfolio */
-    .font-serif, h1, h2, h3, .heading-serif {
-      font-family: 'Droid Serif', Georgia, Cambria, serif;
+    ::selection {
+      background-color: #FCE7F3;
+      color: #9D174D;
     }
-
-    /* Wide Letter-Spaced Sub-Tagline matching the Brand Logo */
-    .brand-tagline {
-      letter-spacing: 0.18em;
-    }
-
-    /* Soft transition utility */
     .transition-smooth {
-      transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
     }
   </style>
 </head>
-<body class="bg-[#FCF9FA] text-slate-800 antialiased selection:bg-pink-100 selection:text-pink-900 min-h-screen flex flex-col justify-between">
+
+<body class="bg-white text-slate-800 antialiased font-sans selection:bg-pink-100 selection:text-pink-900 w-full overflow-x-hidden">
 
   <!-- ================================================================= -->
-  <!-- [HEADER & NAVIGATION BAR]                                         -->
-  <!-- FEATURING KIRSTEN'S COMPLETE BRAND LOGO DESIGN                    -->
+  <!-- NAVIGATION BAR                                                    -->
   <!-- ================================================================= -->
-  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-pink-100 shadow-[0_2px_15px_-3px_rgba(244,114,182,0.07)]">
-    <div class="max-w-6xl mx-auto px-6 h-20 sm:h-24 flex items-center justify-between">
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-pink-100 transition-smooth">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between">
       
-      <!-- Complete Brand Logo (Flower + Peoples Social | Digital Marketing) -->
-      <a href="#" class="flex items-center space-x-3 group py-2">
-        <img src="brand_logo_transparent.png" alt="Peoples Social | Digital Marketing Logo" class="h-12 sm:h-14 w-auto object-contain transition duration-300 group-hover:scale-105">
+      <!-- Logo Lockup -->
+      <a href="#" class="flex items-center gap-3 group focus:outline-none focus:ring-2 focus:ring-pink-500 rounded-lg p-1">
+        <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-pink-600 to-rose-400 flex items-center justify-center text-white font-serif font-bold text-lg shadow-sm group-hover:scale-105 transition-smooth">
+          KP
+        </div>
+        <div class="flex flex-col">
+          <span class="font-serif font-bold text-slate-900 text-lg leading-tight tracking-tight group-hover:text-pink-600 transition-smooth">Kirsten Peoples</span>
+          <span class="text-[10px] font-semibold text-slate-500 uppercase tracking-widest">Digital Marketing Strategist</span>
+        </div>
       </a>
-      
-      <!-- Desktop Navigation Links (Clean Garet Typography) -->
-      <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-600">
-        <a href="#about" class="hover:text-pink-600 transition">About</a>
-        <a href="#what-i-do" class="hover:text-pink-600 transition">What I Do</a>
-        <a href="#work" class="hover:text-pink-600 transition">Case Studies</a>
-        <a href="#skills" class="hover:text-pink-600 transition">Skills</a>
-        <a href="#endorsements" class="hover:text-pink-600 transition">Endorsements</a>
-        <a href="#contact" class="hover:text-pink-600 transition">Contact</a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="hidden md:flex items-center space-x-7 text-xs font-semibold text-slate-600 uppercase tracking-wider">
+        <a href="#about" class="hover:text-pink-600 transition-smooth">Philosophy</a>
+        <a href="#what-i-do" class="hover:text-pink-600 transition-smooth">Funnel Framework</a>
+        <a href="#case-studies" class="hover:text-pink-600 transition-smooth">Case Studies</a>
+        <a href="#disciplines" class="hover:text-pink-600 transition-smooth">Disciplines &amp; Stack</a>
+        <a href="#endorsements" class="hover:text-pink-600 transition-smooth">Endorsements</a>
       </nav>
 
-      <!-- Contact CTA Button -->
-      <div class="flex items-center space-x-3">
-        <a href="#contact" class="hidden sm:inline-flex items-center space-x-2 text-xs font-semibold uppercase tracking-wider bg-pink-600 hover:bg-pink-700 text-white px-5 py-2.5 rounded-full transition shadow-sm hover:shadow-md">
-          <span>Let's Connect</span>
-          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+      <!-- CTA & Mobile Trigger -->
+      <div class="flex items-center gap-3">
+        <a href="#contact" class="hidden sm:inline-flex items-center justify-center px-4 py-2 text-xs font-bold uppercase tracking-wider text-white bg-slate-900 hover:bg-pink-600 rounded-full transition-smooth shadow-sm hover:shadow">
+          Get in Touch
         </a>
-
-        <!-- Mobile Menu Toggle Button -->
-        <button id="mobile-menu-btn" type="button" class="md:hidden p-2 rounded-lg text-slate-600 hover:text-pink-600 hover:bg-pink-50 transition" aria-label="Toggle navigation">
+        <button id="mobile-menu-btn" class="md:hidden p-2 text-slate-700 hover:text-pink-600 focus:outline-none" aria-label="Toggle Navigation Menu">
           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path id="menu-icon-bars" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-            <path id="menu-icon-close" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
           </svg>
         </button>
       </div>
+
     </div>
 
-    <!-- Mobile Navigation Drawer -->
-    <div id="mobile-menu" class="hidden md:hidden border-t border-pink-100 bg-white px-6 py-5 space-y-3">
-      <a href="#about" class="mobile-nav-link block text-sm font-medium text-slate-700 hover:text-pink-600 py-1 transition">About Kirsten</a>
-      <a href="#what-i-do" class="mobile-nav-link block text-sm font-medium text-slate-700 hover:text-pink-600 py-1 transition">What I Do</a>
-      <a href="#work" class="mobile-nav-link block text-sm font-medium text-slate-700 hover:text-pink-600 py-1 transition">Case Studies</a>
-      <a href="#skills" class="mobile-nav-link block text-sm font-medium text-slate-700 hover:text-pink-600 py-1 transition">Skills & Tools</a>
-      <a href="#endorsements" class="mobile-nav-link block text-sm font-medium text-slate-700 hover:text-pink-600 py-1 transition">Testimonials</a>
-      <a href="#contact" class="mobile-nav-link block text-sm font-medium text-slate-700 hover:text-pink-600 py-1 transition">Contact</a>
-      <a href="#contact" class="mobile-nav-link block text-center text-xs font-semibold uppercase tracking-wider bg-pink-600 text-white px-4 py-2.5 rounded-full mt-2">Get in Touch</a>
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobile-menu" class="hidden md:hidden border-b border-pink-100 bg-[#FCF9FA] px-6 py-5 space-y-3 text-sm font-semibold text-slate-700">
+      <a href="#about" class="block hover:text-pink-600 transition-smooth py-1">Philosophy</a>
+      <a href="#what-i-do" class="block hover:text-pink-600 transition-smooth py-1">Funnel Framework</a>
+      <a href="#case-studies" class="block hover:text-pink-600 transition-smooth py-1">Case Studies</a>
+      <a href="#disciplines" class="block hover:text-pink-600 transition-smooth py-1">Disciplines &amp; Tool Stack</a>
+      <a href="#endorsements" class="block hover:text-pink-600 transition-smooth py-1">Endorsements</a>
+      <a href="#contact" class="block text-pink-600 font-bold pt-2 border-t border-pink-100">Contact &amp; Resume &rarr;</a>
     </div>
   </header>
 
+
   <main>
-
     <!-- ================================================================= -->
-    <!-- [SECTION 1: HERO & PHOTO SHOWCASE]                                -->
-    <!-- HIGHLIGHTING KIRSTEN'S PHOTO AND HER FULL BRAND IDENTITY          -->
+    <!-- [SECTION 1: HERO SECTION]                                         -->
     <!-- ================================================================= -->
-    <section class="relative overflow-hidden pt-12 pb-20 lg:pt-20 lg:pb-28">
-      
-      <!-- Soft Brand Radial Background Glow -->
-      <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[34rem] h-[34rem] bg-pink-200/35 rounded-full blur-3xl pointer-events-none -z-10"></div>
-      
-      <div class="max-w-6xl mx-auto px-6">
-        <div class="grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+    <section class="relative bg-gradient-to-b from-[#FCF9FA] to-white py-16 sm:py-24 lg:py-28 border-b border-pink-50">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <div class="max-w-3xl space-y-6">
           
-          <!-- Left Column: Value Proposition & Personal Narrative -->
-          <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
-            
-            <!-- [EDITABLE COPY: Top Availability & Role Badge] -->
-            <div class="inline-flex items-center space-x-2 px-4 py-1.5 bg-pink-50 border border-pink-200/80 rounded-full text-xs font-semibold text-pink-700 uppercase tracking-wider">
-              <span class="w-2 h-2 rounded-full bg-pink-500 animate-pulse"></span>
-              <span>Digital Marketing Strategist & Content Creator</span>
-            </div>
-
-            <!-- Main Headline in Droid Serif -->
-            <!-- [EDITABLE COPY: Main Hero Headline] -->
-            <h1 class="font-serif text-4xl sm:text-5xl lg:text-[3.25rem] font-bold text-slate-900 leading-[1.18] tracking-tight">
-              Real connections.<br>
-              <span class="text-pink-600 italic">Real growth.</span>
-            </h1>
-
-            <!-- [EDITABLE COPY: Main Personal Bio Paragraph] -->
-            <p class="text-base sm:text-lg text-slate-600 leading-relaxed max-w-2xl mx-auto lg:mx-0">
-              I build marketing campaigns and digital stories that connect with real people and drive measurable revenue. Combining 6+ years in digital marketing with a background in customer care, I approach strategy through genuine empathy—turning ad spend into profitable sales and corporate feeds into active communities.
-            </p>
-
-            <!-- Call to Action Buttons -->
-            <div class="flex flex-wrap justify-center lg:justify-start gap-4 pt-2">
-              <a href="#work" class="bg-pink-600 hover:bg-pink-700 text-white font-medium text-sm px-7 py-3.5 rounded-full transition shadow-sm hover:shadow-md">
-                Explore My Work
-              </a>
-              <a href="#about" class="bg-white hover:bg-pink-50/50 border border-pink-200 text-slate-700 font-medium text-sm px-7 py-3.5 rounded-full transition">
-                About My Approach
-              </a>
-            </div>
-
-            <!-- Quick Trust Highlights Bar: Mobile-Optimized Size & Contrast -->
-            <!-- [EDITABLE COPY: Quick Trust Highlights Bar] -->
-            <div class="pt-6 border-t border-pink-100 flex flex-wrap justify-center lg:justify-start gap-3 sm:gap-6 text-sm sm:text-base font-semibold text-slate-800">
-              <div class="flex items-center space-x-2.5 bg-pink-50/80 sm:bg-transparent px-3.5 py-2 sm:px-0 sm:py-0 rounded-xl sm:rounded-none border border-pink-100 sm:border-0 shadow-sm sm:shadow-none">
-                <svg class="w-5 h-5 text-pink-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-                <span>6+ Years Experience</span>
-              </div>
-              <div class="flex items-center space-x-2.5 bg-pink-50/80 sm:bg-transparent px-3.5 py-2 sm:px-0 sm:py-0 rounded-xl sm:rounded-none border border-pink-100 sm:border-0 shadow-sm sm:shadow-none">
-                <svg class="w-5 h-5 text-pink-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-                <span>Google Ads & Analytics</span>
-              </div>
-              <div class="flex items-center space-x-2.5 bg-pink-50/80 sm:bg-transparent px-3.5 py-2 sm:px-0 sm:py-0 rounded-xl sm:rounded-none border border-pink-100 sm:border-0 shadow-sm sm:shadow-none">
-                <svg class="w-5 h-5 text-pink-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-                <span>Open to Fully Remote</span>
-              </div>
-            </div>
-
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-pink-100/80 border border-pink-200 text-pink-700 text-xs font-semibold">
+            <span class="w-2 h-2 rounded-full bg-pink-600 animate-ping"></span>
+            <span>Open to Full-Time Remote Roles &amp; Strategic Contracts</span>
           </div>
 
-          <!-- Right Column: Kirsten's Portrait with Full Brand Badge -->
-          <div class="lg:col-span-5 flex justify-center">
-            <div class="relative max-w-sm sm:max-w-md w-full">
-              
-              <!-- Soft Decorative Frame Background -->
-              <div class="absolute inset-0 bg-gradient-to-tr from-pink-300 to-rose-100 rounded-3xl transform rotate-3 scale-95 opacity-80 filter blur-[1px]"></div>
-              
-              <!-- Main Photo Card -->
-              <div class="relative bg-white p-3 sm:p-4 rounded-3xl shadow-xl border border-pink-100 overflow-hidden">
-                <img src="kirsten.jpg" alt="Kirsten Peoples — Digital Marketing Strategist" class="w-full h-auto aspect-[4/5] sm:aspect-[3/4] object-cover object-[50%_12%] rounded-2xl">
-                
-                <!-- Floating Card Featuring Kirsten's Whole Brand Design -->
-                <div class="absolute bottom-6 left-6 right-6 bg-white/95 backdrop-blur-md p-4 rounded-2xl border border-pink-100 shadow-lg flex items-center space-x-4">
-                  <img src="brand_logo_transparent.png" alt="Peoples Social Brand Design" class="h-14 w-auto object-contain flex-shrink-0">
-                  <div class="border-l border-pink-100 pl-3">
-                    <p class="font-serif font-bold text-slate-900 text-sm">Human-to-Human Marketing</p>
-                    <p class="text-xs sm:text-sm text-pink-600 font-medium">Authenticity is our greatest competitive edge.</p>
-                  </div>
+          <h1 class="font-serif text-3xl sm:text-5xl lg:text-6xl font-bold text-slate-900 tracking-tight leading-[1.15]">
+            Where creative intuition meets <span class="text-pink-600 italic">empirical attribution</span>.
+          </h1>
+
+          <p class="text-base sm:text-lg text-slate-600 leading-relaxed font-normal">
+            I am a <strong>Senior Digital Marketing Strategist &amp; Content Operations Manager</strong> with 6+ years orchestrating omnichannel campaigns, enterprise editorial governance, paid search acquisition, and executive thought leadership.
+          </p>
+
+          <div class="pt-2 flex flex-wrap items-center gap-3 sm:gap-4">
+            <a href="#case-studies" class="px-6 py-3.5 text-xs sm:text-sm font-bold uppercase tracking-wider text-white bg-slate-900 hover:bg-pink-600 rounded-full transition-smooth shadow hover:shadow-md">
+              Explore Case Studies
+            </a>
+            <a href="#what-i-do" class="px-6 py-3.5 text-xs sm:text-sm font-bold uppercase tracking-wider text-slate-700 bg-white border border-slate-200 hover:border-pink-300 hover:bg-pink-50/50 rounded-full transition-smooth">
+              Funnel Architecture
+            </a>
+            <a href="https://www.linkedin.com/in/kirsten-peoples" target="_blank" rel="noopener noreferrer" class="px-5 py-3.5 text-xs sm:text-sm font-bold uppercase tracking-wider text-pink-600 hover:text-pink-700 bg-pink-50 hover:bg-pink-100 rounded-full transition-smooth inline-flex items-center gap-1.5">
+              <span>LinkedIn</span> &rarr;
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- [SECTION 2: CAREER SCORECARD - SANITIZED & BALANCED]              -->
+    <!-- 4 PILLARS: SENIORITY, OPERATIONS, EMPIRICAL RIGOR, GROWTH        -->
+    <!-- ================================================================= -->
+    <section class="border-y border-pink-100 bg-white py-10 sm:py-12">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 text-center sm:text-left">
+          
+          <!-- Stat 1: Seniority -->
+          <div class="border-b sm:border-b-0 sm:border-r border-pink-50 pb-5 sm:pb-0 sm:pr-6 min-w-0">
+            <p class="font-serif text-3xl sm:text-4xl font-bold text-slate-900 tracking-tight">6+ Years</p>
+            <p class="text-xs sm:text-sm font-bold text-pink-600 uppercase tracking-wider mt-1">Digital Marketing Strategy</p>
+            <p class="text-xs text-slate-500 mt-1">Full-funnel B2B &amp; B2C leadership</p>
+          </div>
+
+          <!-- Stat 2: Operational Volume -->
+          <div class="border-b sm:border-b-0 sm:border-r border-pink-50 pb-5 sm:pb-0 sm:pr-6 min-w-0">
+            <p class="font-serif text-3xl sm:text-4xl font-bold text-slate-900 tracking-tight">700+</p>
+            <p class="text-xs sm:text-sm font-bold text-pink-600 uppercase tracking-wider mt-1">Monthly Assets Managed</p>
+            <p class="text-xs text-slate-500 mt-1">Multi-channel editorial governance</p>
+          </div>
+
+          <!-- Stat 3: Analytical Rigor -->
+          <div class="border-b sm:border-b-0 lg:border-r border-pink-50 pb-5 sm:pb-0 sm:pr-6 min-w-0">
+            <p class="font-serif text-3xl sm:text-4xl font-bold text-slate-900 tracking-tight">37</p>
+            <p class="text-xs sm:text-sm font-bold text-pink-600 uppercase tracking-wider mt-1">Competitive Audits</p>
+            <p class="text-xs text-slate-500 mt-1">Empirical peer account benchmarking</p>
+          </div>
+
+          <!-- Stat 4: Measured Impact -->
+          <div class="min-w-0">
+            <p class="font-serif text-3xl sm:text-4xl font-bold text-slate-900 tracking-tight">+36%</p>
+            <p class="text-xs sm:text-sm font-bold text-pink-600 uppercase tracking-wider mt-1">Avg Engagement Lift</p>
+            <p class="text-xs text-slate-500 mt-1">Proven cross-account performance</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- [SECTION 3: STRATEGIC PHILOSOPHY & ABOUT]                         -->
+    <!-- ================================================================= -->
+    <section id="about" class="py-16 sm:py-24 bg-[#FCF9FA] border-b border-pink-100">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <div class="grid lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+          
+          <div class="lg:col-span-7 space-y-5">
+            <span class="text-xs font-bold uppercase tracking-wider text-pink-600">Strategic Philosophy</span>
+            <h2 class="font-serif text-2xl sm:text-4xl font-bold text-slate-900 leading-snug">
+              Marketing should never rely on vanity reach when unit economics matter.
+            </h2>
+            <div class="space-y-4 text-sm sm:text-base text-slate-600 leading-relaxed font-normal">
+              <p>
+                Throughout my work at Leadtail, Real Chemistry, and brand-side growth accounts, I have bridged the historical gap between editorial storytelling and commercial rigor. Creative assets must earn attention, but systems must guide that attention into pipeline revenue.
+              </p>
+              <p>
+                My process pairs qualitative brand voice fidelity with rigorous multi-touch attribution. Whether building an executive thought leadership platform for healthcare leaders or structuring high-intent Google Search campaigns, every initiative is built around clear hypotheses, empirical competitive benchmarking, and sustainable return on investment.
+              </p>
+            </div>
+            
+            <div class="pt-2 grid sm:grid-cols-3 gap-4">
+              <div class="bg-white p-4 rounded-2xl border border-pink-100/70 shadow-sm">
+                <span class="font-serif font-bold text-pink-600 text-lg">01. Empirical</span>
+                <p class="text-xs text-slate-500 mt-1">Decisions backed by competitive auditing and GA4 attribution, not guesswork.</p>
+              </div>
+              <div class="bg-white p-4 rounded-2xl border border-pink-100/70 shadow-sm">
+                <span class="font-serif font-bold text-pink-600 text-lg">02. Full-Funnel</span>
+                <p class="text-xs text-slate-500 mt-1">Connecting organic top-of-funnel discovery directly to commercial checkout.</p>
+              </div>
+              <div class="bg-white p-4 rounded-2xl border border-pink-100/70 shadow-sm">
+                <span class="font-serif font-bold text-pink-600 text-lg">03. Scalable</span>
+                <p class="text-xs text-slate-500 mt-1">Cross-functional workflows capable of sustaining 700+ monthly assets with zero drop in quality.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-5 bg-white p-6 sm:p-8 rounded-3xl border border-pink-100 shadow-sm space-y-4">
+            <h3 class="font-serif text-lg sm:text-xl font-bold text-slate-900">Career Competencies</h3>
+            
+            <div class="space-y-3">
+              <div>
+                <div class="flex justify-between text-xs font-semibold text-slate-700 mb-1">
+                  <span>Full-Funnel Content Architecture</span>
+                  <span class="text-pink-600">Expert</span>
+                </div>
+                <div class="w-full bg-pink-100/60 rounded-full h-2">
+                  <div class="bg-pink-600 h-2 rounded-full w-[95%]"></div>
                 </div>
               </div>
 
+              <div>
+                <div class="flex justify-between text-xs font-semibold text-slate-700 mb-1">
+                  <span>Paid Search (SEM) &amp; Campaign ROAS</span>
+                  <span class="text-pink-600">Advanced</span>
+                </div>
+                <div class="w-full bg-pink-100/60 rounded-full h-2">
+                  <div class="bg-pink-600 h-2 rounded-full w-[90%]"></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex justify-between text-xs font-semibold text-slate-700 mb-1">
+                  <span>Editorial Governance &amp; Scale (700+ Assets/Mo)</span>
+                  <span class="text-pink-600">Mastery</span>
+                </div>
+                <div class="w-full bg-pink-100/60 rounded-full h-2">
+                  <div class="bg-pink-600 h-2 rounded-full w-[98%]"></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex justify-between text-xs font-semibold text-slate-700 mb-1">
+                  <span>Attribution Modeling &amp; GA4 Event Tracking</span>
+                  <span class="text-pink-600">Advanced</span>
+                </div>
+                <div class="w-full bg-pink-100/60 rounded-full h-2">
+                  <div class="bg-pink-600 h-2 rounded-full w-[88%]"></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex justify-between text-xs font-semibold text-slate-700 mb-1">
+                  <span>Executive Ghostwriting &amp; Thought Leadership</span>
+                  <span class="text-pink-600">Expert</span>
+                </div>
+                <div class="w-full bg-pink-100/60 rounded-full h-2">
+                  <div class="bg-pink-600 h-2 rounded-full w-[96%]"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="pt-3 border-t border-pink-50">
+              <p class="text-xs text-slate-500 italic">
+                Cross-trained across enterprise B2B SaaS, healthcare leadership, and direct-to-consumer e-commerce.
+              </p>
             </div>
           </div>
 
@@ -200,178 +295,184 @@
     </section>
 
     <!-- ================================================================= -->
-    <!-- [SECTION 2: CORE METRICS SCORECARD]                               -->
-    <!-- DATA PROOF FROM HER CLIENT WORK                                   -->
+    <!-- [SECTION 4: FULL-FUNNEL FRAMEWORK - CONCEPT 1 ARCHITECTURAL FUNNEL] -->
+    <!-- SPLIT-SCREEN TAPERED VISUAL FUNNEL WITH CONNECTING LEADER LINES   -->
     <!-- ================================================================= -->
-    <section class="border-y border-pink-100 bg-white py-12">
-      <div class="max-w-6xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center md:text-left">
-        <div class="border-b md:border-b-0 md:border-r border-pink-50 pb-6 md:pb-0 md:pr-6">
-          <!-- [EDITABLE COPY: Metric 1 Number & Description] -->
-          <p class="font-serif text-3xl lg:text-4xl font-bold text-slate-900">$25,930+</p>
-          <p class="text-xs sm:text-sm font-bold text-pink-600 uppercase tracking-wider mt-1.5">Attributed Search Revenue</p>
-          <p class="text-xs sm:text-sm text-slate-600 mt-1">Profitable Google Ads acquisitions</p>
-        </div>
-        <div class="border-b md:border-b-0 md:border-r border-pink-50 pb-6 md:pb-0 md:pr-6">
-          <!-- [EDITABLE COPY: Metric 2 Number & Description] -->
-          <p class="font-serif text-3xl lg:text-4xl font-bold text-slate-900">+37.5%</p>
-          <p class="text-xs sm:text-sm font-bold text-pink-600 uppercase tracking-wider mt-1.5">Average Executive Lift</p>
-          <p class="text-xs sm:text-sm text-slate-600 mt-1">Across 7 leadership client accounts</p>
-        </div>
-        <div class="border-b md:border-b-0 md:border-r border-pink-50 pb-6 md:pb-0 md:pr-6">
-          <!-- [EDITABLE COPY: Metric 3 Number & Description] -->
-          <p class="font-serif text-3xl lg:text-4xl font-bold text-slate-900">37</p>
-          <p class="text-xs sm:text-sm font-bold text-pink-600 uppercase tracking-wider mt-1.5">Competitive Audits</p>
-          <p class="text-xs sm:text-sm text-slate-600 mt-1">Empirical peer account benchmarking</p>
-        </div>
-        <div>
-          <!-- [EDITABLE COPY: Metric 4 Number & Description] -->
-          <p class="font-serif text-3xl lg:text-4xl font-bold text-slate-900">44.4%</p>
-          <p class="text-xs sm:text-sm font-bold text-pink-600 uppercase tracking-wider mt-1.5">Top Organic Interaction</p>
-          <p class="text-xs sm:text-sm text-slate-600 mt-1">Beating industry averages on IG & LI</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- ================================================================= -->
-    <!-- [SECTION 3: ABOUT ME & PHILOSOPHY]                                -->
-    <!-- GROUNDED IN HUMAN-TO-HUMAN MARKETING & REAL EXPERIENCE            -->
-    <!-- ================================================================= -->
-    <section id="about" class="max-w-6xl mx-auto px-6 py-20 lg:py-28">
-      <div class="grid lg:grid-cols-12 gap-12 items-center">
+    <section id="what-i-do" class="py-16 sm:py-24 bg-white border-b border-pink-100">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
         
-        <!-- Left: Full Brand Card & Mission / Vision Blocks -->
-        <div class="lg:col-span-5 space-y-6">
-          
-          <!-- Kirsten's Complete Brand Design Card -->
-          <div class="bg-[#FFF0F9] p-8 rounded-3xl border border-pink-200/80 shadow-sm text-center">
-            <img src="brand_logo_transparent.png" alt="Peoples Social Brand Design" class="max-h-36 mx-auto object-contain mb-4">
-            <p class="text-xs text-pink-700 font-medium">Rooted in strategic empathy & human connection.</p>
-          </div>
-
-          <!-- [EDITABLE COPY: Kirsten's Mission Statement] -->
-          <div class="bg-white p-7 rounded-3xl border border-pink-100 shadow-sm">
-            <h3 class="font-serif text-lg font-bold text-slate-900 mb-2">My Mission</h3>
-            <p class="text-sm sm:text-base text-slate-600 leading-relaxed">
-              Empowering brands through intentional content. By combining data-backed strategy, audience psychology, and honest storytelling, I help professional voices grow alongside digital trends without losing their humanity.
-            </p>
-          </div>
-
-          <!-- [EDITABLE COPY: Kirsten's Vision Statement] -->
-          <div class="bg-white p-7 rounded-3xl border border-pink-100 shadow-sm">
-            <h3 class="font-serif text-lg font-bold text-slate-900 mb-2">My Vision</h3>
-            <p class="text-sm sm:text-base text-slate-600 leading-relaxed">
-              To humanize the digital landscape by turning complex business offerings and individual expertise into authentic, approachable narratives that build lasting trust.
-            </p>
-          </div>
-        </div>
-
-        <!-- Right: Story & Philosophy (Streamlined from Portfolio Page 1 & 2) -->
-        <div class="lg:col-span-7 space-y-6">
-          <span class="text-xs font-bold uppercase tracking-wider text-pink-600">About Kirsten</span>
-          <h2 class="font-serif text-3xl sm:text-4xl font-bold text-slate-900 leading-tight">
-            Marketing grounded in human empathy, verified by data.
-          </h2>
-          
-          <!-- [EDITABLE COPY: Human-to-Human Philosophy Paragraphs] -->
-          <div class="space-y-4 text-slate-600 text-sm sm:text-base leading-relaxed">
-            <p>
-              At the core of every high-performing campaign is a simple truth: <strong>humans buy from humans</strong>. In an increasingly automated digital landscape, authenticity is our greatest competitive advantage. Content should feel like a genuine conversation, not an impersonal corporate broadcast.
-            </p>
-            <p>
-              With more than six years in social media and digital marketing and over fourteen years in customer care, I approach strategy through the eyes of the consumer. I don't just ask <em>"what keywords should we bid on?"</em>—I ask <em>"what problem is this person actually trying to solve?"</em>
-            </p>
-            <p>
-              Whether managing Google Search ad budgets to direct e-commerce checkout, conducting competitive landscape audits for healthcare executives, or overseeing multi-channel editorial calendars, I love building creative solutions that people relate to and that deliver measurable bottom-line growth.
-            </p>
-          </div>
-
-          <div class="pt-4 flex items-center space-x-6">
-            <div>
-              <p class="font-serif font-bold text-slate-900 text-lg">Kirsten Peoples</p>
-              <p class="text-sm text-pink-600 font-medium">Digital Marketing Strategist • Englewood, OH • Remote</p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ================================================================= -->
-    <!-- [SECTION 4: WHAT I DO - 3-TIER STRATEGY FRAMEWORK]                -->
-    <!-- PAGE 3 STRATEGY & FRAMEWORK FROM HER PORTFOLIO                    -->
-    <!-- ================================================================= -->
-    <section id="what-i-do" class="border-t border-pink-100 bg-white py-20 lg:py-24">
-      <div class="max-w-6xl mx-auto px-6">
-        
-        <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+        <div class="text-center max-w-2xl mx-auto mb-14 sm:mb-16 space-y-3">
           <span class="text-xs font-bold uppercase tracking-wider text-pink-600">Full-Funnel Framework</span>
           <h2 class="font-serif text-3xl sm:text-4xl font-bold text-slate-900">How I Drive Results</h2>
           <p class="text-sm text-slate-600">A deliberate 3-stage process connecting upper-funnel awareness to bottom-line conversions.</p>
         </div>
 
-        <div class="grid md:grid-cols-3 gap-8">
+        <!-- Concept 1: Split-Screen Architectural Layout -->
+        <div class="grid lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           
-          <!-- Pillar 1: Awareness & Reach -->
-          <div class="bg-[#FCF9FA] p-8 rounded-3xl border border-pink-100 hover:border-pink-300 transition-smooth space-y-4">
-            <span class="inline-block text-xs font-bold font-serif text-pink-600 px-3 py-1 bg-pink-100/70 rounded-full">01</span>
-            <h3 class="font-serif text-xl font-bold text-slate-900">Awareness & Reach</h3>
-            <p class="text-xs sm:text-sm text-slate-500 font-bold uppercase tracking-wider">Top of Funnel</p>
-            <ul class="space-y-2.5 text-sm sm:text-base text-slate-600 pt-2 space-y-3">
-              <li class="flex items-start space-x-2">
-                <span class="text-pink-500 font-bold">•</span>
-                <span>Audience research & persona identification</span>
-              </li>
-              <li class="flex items-start space-x-2">
-                <span class="text-pink-500 font-bold">•</span>
-                <span>Cross-channel distribution (LinkedIn, Meta, YouTube)</span>
-              </li>
-              <li class="flex items-start space-x-2">
-                <span class="text-pink-500 font-bold">•</span>
-                <span>Executive thought leadership & influencer outreach</span>
-              </li>
-            </ul>
+          <!-- Left Column: Visual Architectural Funnel (5 Cols) -->
+          <div class="lg:col-span-5 flex flex-col justify-between py-2">
+            <div class="relative w-full mx-auto max-w-md lg:max-w-none">
+              
+              <div class="space-y-4 sm:space-y-5">
+                
+                <!-- Funnel Tier 1: Top of Funnel (Widest) -->
+                <div class="relative group">
+                  <div class="w-full bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 text-white rounded-2xl p-5 sm:p-6 shadow-md border border-slate-700/60 relative z-10 transition duration-300 group-hover:border-pink-500">
+                    <div class="flex items-center justify-between">
+                      <div>
+                        <span class="text-[10px] font-bold uppercase tracking-widest text-pink-400">Top of Funnel (TOFU)</span>
+                        <h4 class="font-serif text-base sm:text-lg font-bold text-white tracking-wide">01. Awareness &amp; Reach</h4>
+                      </div>
+                      <span class="text-xs font-mono font-bold bg-white/10 text-slate-200 px-2.5 py-1 rounded-full">Wide Intent</span>
+                    </div>
+                    <p class="text-xs text-slate-300 mt-2">Audience discovery, executive positioning &amp; cross-channel distribution.</p>
+                  </div>
+                  <!-- Desktop Leader Line extending to Card 1 -->
+                  <div class="hidden lg:flex items-center absolute -right-8 top-1/2 -translate-y-1/2 w-8 z-20 pointer-events-none">
+                    <div class="w-full border-t-2 border-dashed border-pink-400"></div>
+                    <div class="w-2.5 h-2.5 rounded-full bg-pink-600 ring-4 ring-pink-100 -ml-1"></div>
+                  </div>
+                </div>
+
+                <!-- Funnel Taper Connector 1 -> 2 -->
+                <div class="flex justify-center items-center py-0.5">
+                  <svg class="w-8 h-5 text-pink-500 animate-pulse" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 13l-7 7-7-7m14-8l-7 7-7-7" />
+                  </svg>
+                </div>
+
+                <!-- Funnel Tier 2: Mid Funnel (Slightly Tapered) -->
+                <div class="relative group mx-auto w-[92%] sm:w-[90%] lg:w-[92%]">
+                  <div class="w-full bg-gradient-to-r from-pink-900/95 via-pink-800 to-pink-900/95 text-white rounded-2xl p-5 sm:p-6 shadow-md border border-pink-600/50 relative z-10 transition duration-300 group-hover:border-pink-300">
+                    <div class="flex items-center justify-between">
+                      <div>
+                        <span class="text-[10px] font-bold uppercase tracking-widest text-pink-200">Middle of Funnel (MOFU)</span>
+                        <h4 class="font-serif text-base sm:text-lg font-bold text-white tracking-wide">02. Engagement &amp; Nurture</h4>
+                      </div>
+                      <span class="text-xs font-mono font-bold bg-white/15 text-pink-100 px-2.5 py-1 rounded-full">Active Dwell</span>
+                    </div>
+                    <p class="text-xs text-pink-100 mt-2">Editorial carousels, community trust building &amp; brand voice fidelity.</p>
+                  </div>
+                  <!-- Desktop Leader Line extending to Card 2 -->
+                  <div class="hidden lg:flex items-center absolute -right-8 top-1/2 -translate-y-1/2 w-8 z-20 pointer-events-none">
+                    <div class="w-full border-t-2 border-dashed border-pink-400"></div>
+                    <div class="w-2.5 h-2.5 rounded-full bg-pink-600 ring-4 ring-pink-100 -ml-1"></div>
+                  </div>
+                </div>
+
+                <!-- Funnel Taper Connector 2 -> 3 -->
+                <div class="flex justify-center items-center py-0.5">
+                  <svg class="w-8 h-5 text-pink-500 animate-pulse" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 13l-7 7-7-7m14-8l-7 7-7-7" />
+                  </svg>
+                </div>
+
+                <!-- Funnel Tier 3: Bottom Funnel (Most Focused) -->
+                <div class="relative group mx-auto w-[82%] sm:w-[80%] lg:w-[84%]">
+                  <div class="w-full bg-gradient-to-r from-slate-950 via-slate-900 to-slate-950 text-white rounded-2xl p-5 sm:p-6 shadow-md border border-sky-500/50 relative z-10 transition duration-300 group-hover:border-sky-300">
+                    <div class="flex items-center justify-between">
+                      <div>
+                        <span class="text-[10px] font-bold uppercase tracking-widest text-sky-400">Bottom of Funnel (BOFU)</span>
+                        <h4 class="font-serif text-base sm:text-lg font-bold text-white tracking-wide">03. Conversion &amp; ROAS</h4>
+                      </div>
+                      <span class="text-xs font-mono font-bold bg-sky-900/60 text-sky-200 border border-sky-400/40 px-2.5 py-1 rounded-full">Target ROAS</span>
+                    </div>
+                    <p class="text-xs text-slate-300 mt-2">High-intent paid search, landing page CRO &amp; multi-touch attribution.</p>
+                  </div>
+                  <!-- Desktop Leader Line extending to Card 3 -->
+                  <div class="hidden lg:flex items-center absolute -right-8 top-1/2 -translate-y-1/2 w-8 z-20 pointer-events-none">
+                    <div class="w-full border-t-2 border-dashed border-pink-400"></div>
+                    <div class="w-2.5 h-2.5 rounded-full bg-pink-600 ring-4 ring-pink-100 -ml-1"></div>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
           </div>
 
-          <!-- Pillar 2: Engagement & Consideration -->
-          <div class="bg-[#FCF9FA] p-8 rounded-3xl border border-pink-100 hover:border-pink-300 transition-smooth space-y-4">
-            <span class="inline-block text-xs font-bold font-serif text-pink-600 px-3 py-1 bg-pink-100/70 rounded-full">02</span>
-            <h3 class="font-serif text-xl font-bold text-slate-900">Engagement & Connection</h3>
-            <p class="text-xs sm:text-sm text-slate-500 font-bold uppercase tracking-wider">Mid Funnel</p>
-            <ul class="space-y-2.5 text-sm sm:text-base text-slate-600 pt-2 space-y-3">
-              <li class="flex items-start space-x-2">
-                <span class="text-pink-500 font-bold">•</span>
-                <span>Multimedia creation (carousels, video, relatable copy)</span>
-              </li>
-              <li class="flex items-start space-x-2">
-                <span class="text-pink-500 font-bold">•</span>
-                <span>Active social listening & daily community moderation</span>
-              </li>
-              <li class="flex items-start space-x-2">
-                <span class="text-pink-500 font-bold">•</span>
-                <span>Brand voice standardization & editorial governance</span>
-              </li>
-            </ul>
-          </div>
+          <!-- Right Column: Strategy Implementation Cards (7 Cols) -->
+          <div class="lg:col-span-7 space-y-6">
+            
+            <!-- Pillar 1 Card -->
+            <div class="bg-[#FCF9FA] p-5 sm:p-8 rounded-3xl border border-pink-100 hover:border-pink-300 transition duration-300 shadow-sm relative min-w-0">
+              <div class="flex items-center justify-between mb-3">
+                <span class="inline-block text-xs font-bold font-serif text-pink-600 px-3 py-1 bg-pink-100/70 rounded-full">01</span>
+                <span class="text-xs font-bold text-slate-500 uppercase tracking-wider">Top of Funnel Architecture</span>
+              </div>
+              <h3 class="font-serif text-xl sm:text-2xl font-bold text-slate-900 mb-2">Awareness &amp; Reach</h3>
+              <p class="text-xs sm:text-sm text-slate-600 mb-4 leading-relaxed">
+                Building high-visibility distribution engines that introduce qualified prospects to the brand narrative across organic and executive channels.
+              </p>
+              <ul class="space-y-2.5 text-xs sm:text-sm text-slate-600 border-t border-pink-100/70 pt-3">
+                <li class="flex items-start gap-2.5">
+                  <span class="text-pink-500 font-bold text-base leading-none">•</span>
+                  <span><strong>Audience Research &amp; ICP Identification:</strong> Mapping buyer pain points and search behavior before flighting content.</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <span class="text-pink-500 font-bold text-base leading-none">•</span>
+                  <span><strong>Cross-Channel Distribution:</strong> Coordinated syndication across LinkedIn, Meta, YouTube, and specialized B2B hubs.</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <span class="text-pink-500 font-bold text-base leading-none">•</span>
+                  <span><strong>Executive Voice Modeling:</strong> Ghostwriting high-dwell thought leadership that establishes corporate leadership as industry authorities.</span>
+                </li>
+              </ul>
+            </div>
 
-          <!-- Pillar 3: Conversion & Optimization -->
-          <div class="bg-[#FCF9FA] p-8 rounded-3xl border border-pink-100 hover:border-pink-300 transition-smooth space-y-4">
-            <span class="inline-block text-xs font-bold font-serif text-pink-600 px-3 py-1 bg-pink-100/70 rounded-full">03</span>
-            <h3 class="font-serif text-xl font-bold text-slate-900">Conversion & Sales</h3>
-            <p class="text-xs sm:text-sm text-slate-500 font-bold uppercase tracking-wider">Bottom Funnel</p>
-            <ul class="space-y-2.5 text-sm sm:text-base text-slate-600 pt-2 space-y-3">
-              <li class="flex items-start space-x-2">
-                <span class="text-pink-500 font-bold">•</span>
-                <span>Google Search (SEM) purchase-intent campaigns</span>
-              </li>
-              <li class="flex items-start space-x-2">
-                <span class="text-pink-500 font-bold">•</span>
-                <span>Attribution reporting & multi-touch revenue breakdown</span>
-              </li>
-              <li class="flex items-start space-x-2">
-                <span class="text-pink-500 font-bold">•</span>
-                <span>E-commerce landing page optimization (CRO)</span>
-              </li>
-            </ul>
+            <!-- Pillar 2 Card -->
+            <div class="bg-[#FCF9FA] p-5 sm:p-8 rounded-3xl border border-pink-100 hover:border-pink-300 transition duration-300 shadow-sm relative min-w-0">
+              <div class="flex items-center justify-between mb-3">
+                <span class="inline-block text-xs font-bold font-serif text-pink-600 px-3 py-1 bg-pink-100/70 rounded-full">02</span>
+                <span class="text-xs font-bold text-slate-500 uppercase tracking-wider">Mid Funnel Architecture</span>
+              </div>
+              <h3 class="font-serif text-xl sm:text-2xl font-bold text-slate-900 mb-2">Engagement &amp; Connection</h3>
+              <p class="text-xs sm:text-sm text-slate-600 mb-4 leading-relaxed">
+                Transitioning fleeting impressions into active, repeat dwell time through high-value educational content and community governance.
+              </p>
+              <ul class="space-y-2.5 text-xs sm:text-sm text-slate-600 border-t border-pink-100/70 pt-3">
+                <li class="flex items-start gap-2.5">
+                  <span class="text-pink-500 font-bold text-base leading-none">•</span>
+                  <span><strong>Multimedia Editorial Creation:</strong> High-performing multi-slide document carousels, video teasers, and empirical infographics.</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <span class="text-pink-500 font-bold text-base leading-none">•</span>
+                  <span><strong>Active Social Listening &amp; Moderation:</strong> Real-time dialogue management to protect brand equity and convert commenters into advocates.</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <span class="text-pink-500 font-bold text-base leading-none">•</span>
+                  <span><strong>Editorial Operations &amp; Cadence:</strong> Structuring multi-week content calendars to maintain predictable, high-retention audience habits.</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Pillar 3 Card -->
+            <div class="bg-[#FCF9FA] p-5 sm:p-8 rounded-3xl border border-pink-100 hover:border-pink-300 transition duration-300 shadow-sm relative min-w-0">
+              <div class="flex items-center justify-between mb-3">
+                <span class="inline-block text-xs font-bold font-serif text-pink-600 px-3 py-1 bg-pink-100/70 rounded-full">03</span>
+                <span class="text-xs font-bold text-slate-500 uppercase tracking-wider">Bottom Funnel Architecture</span>
+              </div>
+              <h3 class="font-serif text-xl sm:text-2xl font-bold text-slate-900 mb-2">Conversion &amp; Sales</h3>
+              <p class="text-xs sm:text-sm text-slate-600 mb-4 leading-relaxed">
+                Deploying commercial intent capture that converts established brand equity into verified purchases, pipeline revenue, and client wins.
+              </p>
+              <ul class="space-y-2.5 text-xs sm:text-sm text-slate-600 border-t border-pink-100/70 pt-3">
+                <li class="flex items-start gap-2.5">
+                  <span class="text-pink-500 font-bold text-base leading-none">•</span>
+                  <span><strong>Paid Search (SEM) Intent Targeting:</strong> High-intent Google Search campaigns with strict negative keyword filtering to eliminate budget waste.</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <span class="text-pink-500 font-bold text-base leading-none">•</span>
+                  <span><strong>Landing Page Conversion Optimization (CRO):</strong> Aligning ad messaging with dedicated landing pages to drive conversion rates above retail averages.</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <span class="text-pink-500 font-bold text-base leading-none">•</span>
+                  <span><strong>Multi-Touch Attribution Auditing:</strong> GA4 event tracking and cross-channel modeling that empirically isolates paid vs. assisted performance.</span>
+                </li>
+              </ul>
+            </div>
+
           </div>
 
         </div>
@@ -380,879 +481,465 @@
     </section>
 
     <!-- ================================================================= -->
-        <!-- ================================================================= -->
-    <!-- [SECTION 5: DETAILED CASE STUDIES & DATA PROOF]                   -->
-    <!-- COMBINING ANALYTICAL CHARTS WITH ACTUAL CONTENT & POST EXAMPLES   -->
+    <!-- [SECTION 5: IN-DEPTH CASE STUDIES]                                -->
+    <!-- ZERO DOLLAR AMOUNTS - CONFIDENTIAL EFFICIENCY & MULTIPLES        -->
     <!-- ================================================================= -->
-    <section id="work" class="max-w-6xl mx-auto px-6 py-20 lg:py-28 space-y-24">
-
-      <div class="text-center max-w-2xl mx-auto space-y-3">
-        <!-- [EDITABLE COPY: Case Studies Section Kicker & Heading] -->
-        <span class="text-xs sm:text-sm font-bold uppercase tracking-wider text-pink-600 bg-pink-50 px-3.5 py-1.5 rounded-full border border-pink-200/60">
-          Selected Case Studies & Content Work
-        </span>
-        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-slate-900">Data-Backed Growth & Creative Execution</h2>
-        <p class="text-sm sm:text-base text-slate-600">Demonstrating how intentional content creation, educational video, and analytical testing combine to drive measurable revenue.</p>
-      </div>
-
-      <!-- ========================================== -->
-      <!-- [CASE STUDY 1: MICROSUN]                   -->
-      <!-- ========================================== -->
-      <article class="bg-white border border-pink-100 rounded-3xl overflow-hidden shadow-sm hover:shadow-md transition">
-        <div class="p-8 lg:p-12 border-b border-pink-50">
-          <div class="flex flex-wrap items-center justify-between gap-4 mb-3">
-            <span class="text-xs sm:text-sm font-bold uppercase tracking-wider text-pink-600 bg-pink-50 px-3 py-1 rounded-full border border-pink-200/50">
-              In-House Marketing • E-Commerce & Paid Acquisition
-            </span>
-            <span class="text-xs sm:text-sm font-medium text-slate-500">09/2025 – Present</span>
-          </div>
-          <!-- [EDITABLE COPY: Case Study 1 Title & Summary] -->
-          <h3 class="font-serif text-2xl sm:text-3xl font-bold text-slate-900">
-            Microsun: Paid Acquisition & Conversion Architecture
-          </h3>
-          <p class="text-slate-600 mt-3 max-w-3xl leading-relaxed text-sm sm:text-base">
-            Modernized digital brand presence and captured purchase intent through focused Google Search campaigns, while using educational organic social content and video storytelling to nurture buyers toward direct online checkout.
-          </p>
-        </div>
-
-        <div class="p-8 lg:p-12 bg-[#FCF9FA] space-y-10">
-          
-          <!-- Funnel Chart Visual -->
-          <div>
-            <div class="flex items-center justify-between mb-3">
-              <span class="text-xs sm:text-sm font-bold uppercase tracking-wider text-slate-700">1. Conversion Funnel Attribution</span>
-              <span class="text-xs sm:text-sm text-pink-600 font-semibold">$25,930+ Attributed Revenue</span>
-            </div>
-            <div class="bg-white border border-pink-100 rounded-2xl p-4 sm:p-6 shadow-inner overflow-x-auto">
-              <img src="microsun_funnel.png" alt="Microsun Conversion Architecture Funnel Diagram" class="w-full h-auto block rounded-lg" loading="lazy">
-            </div>
-          </div>
-
-          <!-- Content & Creative Examples: Microsun Educational Posts -->
-          <!-- [EDITABLE COPY: Case Study 1 Content Example - Educational Video & Social Post] -->
-          <div class="bg-white p-6 sm:p-8 rounded-3xl border border-pink-100 shadow-sm space-y-5">
-            <div class="flex flex-wrap items-center justify-between gap-3 border-b border-pink-50 pb-4">
-              <div>
-                <span class="text-xs sm:text-sm font-bold uppercase tracking-wider text-pink-600">2. Content & Creative in Practice</span>
-                <h4 class="font-serif text-xl sm:text-2xl font-bold text-slate-900 mt-1">
-                  Educational Video Snippets & High-Intent Social Feeds
-                </h4>
-              </div>
-              <span class="text-xs sm:text-sm font-semibold bg-pink-50 text-pink-700 px-3 py-1 rounded-full border border-pink-200/60">
-                16K YouTube Views • 44.4% IG Engagement
-              </span>
-            </div>
-
-            <div class="grid lg:grid-cols-12 gap-8 items-center">
-              <div class="lg:col-span-7 space-y-4 text-sm sm:text-base text-slate-600 leading-relaxed">
-                <p>
-                  <strong>The Humanized Content Strategy:</strong> Rather than running static, repetitive product sales pitches, Kirsten restructured Microsun’s content around everyday desk ergonomics and eye strain solutions. She scripted and edited video snippets highlighting the science of optical health during screen time.
-                </p>
-                <div class="bg-[#FCF9FA] p-4 rounded-xl border border-pink-100 space-y-2">
-                  <p class="font-bold text-slate-900 text-sm">Example Content Format & Hook:</p>
-                  <p class="italic text-slate-700 text-xs sm:text-sm">
-                    "If you experience screen fatigue by 3 PM, your monitor isn’t the problem—your ambient lighting contrast is. Here is how balanced spectrum illumination relieves optical strain in 30 seconds."
-                  </p>
-                </div>
-                <p class="text-xs sm:text-sm text-slate-500">
-                  Linked directly into link-in-bio promotional hubs, this educational narrative produced a 44.4% Instagram interaction rate and contributed 100 direct organic sales orders.
-                </p>
-              </div>
-
-              <!-- Content Visual / Drop Container -->
-              <div class="lg:col-span-5">
-                <div class="bg-gradient-to-br from-pink-50 to-rose-50/60 border-2 border-dashed border-pink-200 rounded-2xl p-6 text-center space-y-3 group hover:border-pink-400 transition">
-                  <div class="w-12 h-12 mx-auto bg-white rounded-xl shadow-sm border border-pink-200 flex items-center justify-center text-pink-600">
-                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z"/></svg>
-                  </div>
-                  <div>
-                    <p class="font-serif font-bold text-slate-900 text-sm sm:text-base">Microsun Video & Post Asset</p>
-                    <p class="text-xs text-slate-500 mt-1">Drop image as: <code class="bg-pink-100/70 px-1.5 py-0.5 rounded text-pink-700 font-mono">post_microsun_video.png</code></p>
-                  </div>
-                  <p class="text-xs text-slate-600 leading-normal">
-                    Showcases educational YouTube Shorts / IG Reels thumbnail and product lifestyle carousel.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- 3 Analytical Takeaway Cards -->
-          <!-- [EDITABLE COPY: Case Study 1 Analytical Takeaway Cards] -->
-          <div class="grid md:grid-cols-3 gap-6 text-sm">
-            <div class="bg-white p-6 rounded-2xl border border-pink-100/70">
-              <h4 class="font-serif font-bold text-slate-900 mb-2 text-base">Search Intent Targeting</h4>
-              <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
-                Applied negative keyword lists to filter out non-buyer research queries, ensuring ad budget was invested exclusively in high-intent conversion terms.
-              </p>
-            </div>
-            <div class="bg-white p-6 rounded-2xl border border-pink-100/70">
-              <h4 class="font-serif font-bold text-slate-900 mb-2 text-base">Direct Revenue Attribution</h4>
-              <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
-                Generated $25,930+ in revenue from paid search, with assisted organic channels contributing additional sales and lifecycle lead captures.
-              </p>
-            </div>
-            <div class="bg-white p-6 rounded-2xl border border-pink-100/70">
-              <h4 class="font-serif font-bold text-slate-900 mb-2 text-base">Multi-Channel Balance</h4>
-              <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
-                Sustained organic engagement well above industry averages (16.6% LinkedIn, 44.4% Instagram) to keep customer acquisition costs balanced.
-              </p>
-            </div>
-          </div>
-        </div>
-      </article>
-
-      <!-- ========================================== -->
-      <!-- [CASE STUDY 2: REAL CHEMISTRY]            -->
-      <!-- ========================================== -->
-      <article class="bg-white border border-pink-100 rounded-3xl overflow-hidden shadow-sm hover:shadow-md transition">
-        <div class="p-8 lg:p-12 border-b border-pink-50">
-          <div class="flex flex-wrap items-center justify-between gap-4 mb-3">
-            <span class="text-xs sm:text-sm font-bold uppercase tracking-wider text-pink-600 bg-pink-50 px-3 py-1 rounded-full border border-pink-200/50">
-              Agency Practice • Real Chemistry
-            </span>
-            <span class="text-xs sm:text-sm font-medium text-slate-500">01/2025 – 05/2025</span>
-          </div>
-          <!-- [EDITABLE COPY: Case Study 2 Title & Summary] -->
-          <h3 class="font-serif text-2xl sm:text-3xl font-bold text-slate-900">
-            Healthcare Executive Thought Leadership (Dr. Jill J. & Portfolio Roster)
-          </h3>
-          <p class="text-slate-600 mt-3 max-w-3xl leading-relaxed text-sm sm:text-base">
-            Grounded by 37 competitive landscape audits, this strategy moved 7 clinical and biotech executives away from static corporate press releases into opinion-led, high-dwell educational carousels and video commentary.
-          </p>
-        </div>
-
-        <div class="p-8 lg:p-12 bg-[#FCF9FA] space-y-10">
-          
-          <!-- Cleveland Dumbbell Plot Visual -->
-          <div>
-            <div class="flex items-center justify-between mb-3">
-              <span class="text-xs sm:text-sm font-bold uppercase tracking-wider text-slate-700">1. Executive Engagement Lift vs. Competitor Baseline</span>
-              <span class="text-xs sm:text-sm text-pink-600 font-semibold">+37.5% Average Growth</span>
-            </div>
-            <div class="bg-white border border-pink-100 rounded-2xl p-4 sm:p-6 shadow-inner overflow-x-auto">
-              <img src="real_chemistry_dumbbell.png" alt="Real Chemistry Executive Engagement Dumbbell Plot" class="w-full h-auto block rounded-lg" loading="lazy">
-            </div>
-          </div>
-
-          <!-- Content & Creative Examples: Real Chemistry 68 Assets -->
-          <!-- [EDITABLE COPY: Case Study 2 Content Example - Executive Thought Leadership Carousel] -->
-          <div class="bg-white p-6 sm:p-8 rounded-3xl border border-pink-100 shadow-sm space-y-5">
-            <div class="flex flex-wrap items-center justify-between gap-3 border-b border-pink-50 pb-4">
-              <div>
-                <span class="text-xs sm:text-sm font-bold uppercase tracking-wider text-pink-600">2. Content & Creative in Practice</span>
-                <h4 class="font-serif text-xl sm:text-2xl font-bold text-slate-900 mt-1">
-                  68 Targeted Carousel Assets & Clinical Voice Modeling
-                </h4>
-              </div>
-              <span class="text-xs sm:text-sm font-semibold bg-pink-50 text-pink-700 px-3 py-1 rounded-full border border-pink-200/60">
-                4,500+ Monthly Engagements • 7 Accounts
-              </span>
-            </div>
-
-            <div class="grid lg:grid-cols-12 gap-8 items-center">
-              <div class="lg:col-span-7 space-y-4 text-sm sm:text-base text-slate-600 leading-relaxed">
-                <p>
-                  <strong>The Executive Ghostwriting Framework:</strong> Healthcare feeds are notoriously flooded with dry corporate links and press announcements. Kirsten conducted 37 competitor audits to identify missing topics, designing multi-slide Canva carousels that broke complex clinical trials and health equity issues into relatable, swipeable insights.
-                </p>
-                <div class="bg-[#FCF9FA] p-4 rounded-xl border border-pink-100 space-y-2">
-                  <p class="font-bold text-slate-900 text-sm">Example Thought Leadership Carousel Hook:</p>
-                  <p class="italic text-slate-700 text-xs sm:text-sm">
-                    "Slide 1: 'Most clinical trial recruitment campaigns fail because they speak in regulatory jargon.' Slide 2-4: The 3 community-first adjustments that lifted trial participation by 42%. Slide 5: What executives must change today."
-                  </p>
-                </div>
-                <p class="text-xs sm:text-sm text-slate-500">
-                  This intentional voice modeling helped Dr. Jill J. secure keynote speaking invitations at national conferences and increased sustained comment engagement by 36%.
-                </p>
-              </div>
-
-              <!-- Content Visual / Drop Container -->
-              <div class="lg:col-span-5">
-                <div class="bg-gradient-to-br from-pink-50 to-rose-50/60 border-2 border-dashed border-pink-200 rounded-2xl p-6 text-center space-y-3 group hover:border-pink-400 transition">
-                  <div class="w-12 h-12 mx-auto bg-white rounded-xl shadow-sm border border-pink-200 flex items-center justify-center text-pink-600">
-                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M7 3a1 1 0 000 2h6a1 1 0 100-2H7zM4 7a1 1 0 011-1h10a1 1 0 110 2H5a1 1 0 01-1-1zM2 11a2 2 0 012-2h12a2 2 0 012 2v4a2 2 0 01-2 2H4a2 2 0 01-2-2v-4z"/></svg>
-                  </div>
-                  <div>
-                    <p class="font-serif font-bold text-slate-900 text-sm sm:text-base">Executive Carousel Post Asset</p>
-                    <p class="text-xs text-slate-500 mt-1">Drop image as: <code class="bg-pink-100/70 px-1.5 py-0.5 rounded text-pink-700 font-mono">post_healthcare_carousel.png</code></p>
-                  </div>
-                  <p class="text-xs text-slate-600 leading-normal">
-                    Showcases Dr. Jill J.’s multi-slide educational carousel breakdown and verified peer engagement.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- 3 Analytical Takeaway Cards -->
-          <!-- [EDITABLE COPY: Case Study 2 Analytical Takeaway Cards] -->
-          <div class="grid md:grid-cols-3 gap-6 text-sm">
-            <div class="bg-white p-6 rounded-2xl border border-pink-100/70">
-              <h4 class="font-serif font-bold text-slate-900 mb-2 text-base">37 Competitive Audits</h4>
-              <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
-                Audited peer executive accounts to establish an empirical 2.2% median benchmark, identifying unaddressed content gaps across clinical feeds.
-              </p>
-            </div>
-            <div class="bg-white p-6 rounded-2xl border border-pink-100/70">
-              <h4 class="font-serif font-bold text-slate-900 mb-2 text-base">Repeatable Account Lift</h4>
-              <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
-                Individual growth ranged from +34.3% to +44.4% across all 7 leaders, showing that performance was driven by repeatable frameworks rather than one viral post.
-              </p>
-            </div>
-            <div class="bg-white p-6 rounded-2xl border border-pink-100/70">
-              <h4 class="font-serif font-bold text-slate-900 mb-2 text-base">Verified Engagement</h4>
-              <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
-                Surpassed 4,500 qualified interactions monthly and earned primary client Dr. Jill J. featured speaking invitations at regional eye care conferences.
-              </p>
-            </div>
-          </div>
-        </div>
-      </article>
-
-      <!-- ========================================== -->
-      <!-- [CASE STUDY 3: LEADTAIL / SISENSE]        -->
-      <!-- ========================================== -->
-      <article class="bg-white border border-pink-100 rounded-3xl overflow-hidden shadow-sm hover:shadow-md transition">
-        <div class="p-8 lg:p-12 border-b border-pink-50">
-          <div class="flex flex-wrap items-center justify-between gap-4 mb-3">
-            <span class="text-xs sm:text-sm font-bold uppercase tracking-wider text-pink-600 bg-pink-50 px-3 py-1 rounded-full border border-pink-200/50">
-              Agency Practice • Leadtail, Inc.
-            </span>
-            <span class="text-xs sm:text-sm font-medium text-slate-500">Client: Sisense Inc. & Multi-Brand Roster</span>
-          </div>
-          <!-- [EDITABLE COPY: Case Study 3 Title & Summary] -->
-          <h3 class="font-serif text-2xl sm:text-3xl font-bold text-slate-900">
-            B2B Social Operations, Rebrand Teasers & Editorial Flighting
-          </h3>
-          <p class="text-slate-600 mt-3 max-w-3xl leading-relaxed text-sm sm:text-base">
-            Managed multi-client editorial calendars and high-velocity asset queues—including scheduling 700+ monthly posts, coordinating ~100 creative requests, and flighting a 90-day teaser sequence for Sisense's corporate visual rebrand.
-          </p>
-        </div>
-
-        <div class="p-8 lg:p-12 bg-[#FCF9FA] space-y-10">
-          
-          <!-- Key Metric Highlights -->
-          <div class="grid sm:grid-cols-3 gap-6">
-            <div class="bg-white p-6 rounded-2xl border border-pink-100/70 text-center">
-              <p class="font-serif text-3xl font-bold text-slate-900">700+</p>
-              <p class="text-xs sm:text-sm text-pink-600 font-semibold uppercase tracking-wider mt-1.5">Monthly Posts Managed</p>
-              <p class="text-xs text-slate-500 mt-1">Across multi-brand accounts</p>
-            </div>
-            <div class="bg-white p-6 rounded-2xl border border-pink-100/70 text-center">
-              <p class="font-serif text-3xl font-bold text-slate-900">~100</p>
-              <p class="text-xs sm:text-sm text-pink-600 font-semibold uppercase tracking-wider mt-1.5">Creative Requests</p>
-              <p class="text-xs text-slate-500 mt-1">Cross-functional SLA intake</p>
-            </div>
-            <div class="bg-white p-6 rounded-2xl border border-pink-100/70 text-center">
-              <p class="font-serif text-3xl font-bold text-slate-900">+22%</p>
-              <p class="text-xs sm:text-sm text-pink-600 font-semibold uppercase tracking-wider mt-1.5">Average QoQ Growth</p>
-              <p class="text-xs text-slate-500 mt-1">Consistently across B2B clients</p>
-            </div>
-          </div>
-
-          <!-- Leadtail Operational Schedule Artifact from Portfolio Page 11 -->
-          <!-- [EDITABLE COPY: Case Study 3 Content Example - Multi-Brand Schedule & Calendar Operations] -->
-          <div class="bg-white p-6 sm:p-8 rounded-3xl border border-pink-100 shadow-sm space-y-5">
-            <div class="flex flex-wrap items-center justify-between gap-3 border-b border-pink-50 pb-4">
-              <div>
-                <span class="text-xs sm:text-sm font-bold uppercase tracking-wider text-pink-600">Operations & Content Scheduling in Action</span>
-                <h4 class="font-serif text-xl sm:text-2xl font-bold text-slate-900 mt-1">
-                  Multi-Brand Project Schedules & Editorial Governance
-                </h4>
-              </div>
-              <span class="text-xs sm:text-sm font-semibold bg-pink-50 text-pink-700 px-3 py-1 rounded-full border border-pink-200/60">
-                Sprout Social • Asana • Monday.com
-              </span>
-            </div>
-
-            <p class="text-sm sm:text-base text-slate-600 leading-relaxed">
-              Below is an authentic view of Kirsten’s multi-brand project schedule at Leadtail, illustrating how <strong>Founder Video Snippets</strong>, <strong>Security Thematic Series</strong>, and <strong>Transform Event Campaigns</strong> were coordinated, reviewed, and scheduled across platforms with exact SLA governance:
-            </p>
-
-            <!-- Real High-Res Artifact Extracted from Portfolio Page 11 -->
-            <div class="border border-pink-100 rounded-2xl overflow-hidden shadow-inner bg-slate-900">
-              <img src="leadtail_schedule.png" alt="Leadtail Content Project Schedule Example showing Founder Video Snippets and Campaign Flighting" class="w-full h-auto block" loading="lazy">
-            </div>
-
-            <div class="grid md:grid-cols-2 gap-4 text-xs sm:text-sm text-slate-600 pt-2">
-              <div class="flex items-start space-x-2">
-                <span class="text-pink-600 font-bold">✓</span>
-                <span>Structured thematic tagging (Product, Careers, Events, Meme, Security) for clean attribution.</span>
-              </div>
-              <div class="flex items-start space-x-2">
-                <span class="text-pink-600 font-bold">✓</span>
-                <span>Active comment moderation across 90-day rebrand teasers (averaging 107 comments per post).</span>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </article>
-
-    </section>
-<!-- [SECTION 6: CORE DISCIPLINES, EXPERTISE & TECHNICAL TOOLSET]      -->
-    <!-- STRATEGIC PILLARS, EVIDENCE OF APPLICATION & COMMERCIAL VALUE     -->
-    <!-- ================================================================= -->
-    <section id="skills" class="border-t border-pink-100 bg-white py-20 lg:py-28">
-      <div class="max-w-6xl mx-auto px-6">
+    <section id="case-studies" class="py-16 sm:py-24 bg-[#FCF9FA] border-b border-pink-100">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 space-y-16">
         
-        <!-- Section Header: Clear Competency & Discipline Messaging -->
-        <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
-          <span class="text-xs font-bold uppercase tracking-wider text-pink-600 bg-pink-50 px-3.5 py-1.5 rounded-full border border-pink-200/60">
-            Core Competencies & Capabilities
-          </span>
-          <h2 class="font-serif text-3xl sm:text-4xl font-bold text-slate-900">
-            Core Disciplines, Skills & Toolset
-          </h2>
-          <p class="text-sm sm:text-base text-slate-600 leading-relaxed">
-            A comprehensive look at my core marketing disciplines, hands-on evidence of their execution in production, and how I leverage these capabilities to drive measurable growth for teams and clients.
-          </p>
+        <div class="text-center max-w-2xl mx-auto space-y-3">
+          <span class="text-xs font-bold uppercase tracking-wider text-pink-600">Documented Impact</span>
+          <h2 class="font-serif text-3xl sm:text-4xl font-bold text-slate-900">Featured Case Studies</h2>
+          <p class="text-sm text-slate-600">Empirical audits, paid acquisition architectures, and executive positioning results.</p>
         </div>
 
-        <!-- ============================================================= -->
-        <!-- PART 1: 4 CORE FUNCTIONAL DISCIPLINES (WITH EVIDENCE & VALUE)  -->
-        <!-- ============================================================= -->
-        <div class="grid md:grid-cols-2 gap-8 mb-20">
-
-          <!-- PILLAR 1: PAID SEARCH & PERFORMANCE ACQUISITION -->
-          <div class="bg-[#FCF9FA] rounded-3xl p-8 border border-pink-100 shadow-sm hover:border-pink-300 transition duration-300 flex flex-col justify-between space-y-6">
-            <div class="space-y-4">
-              <div class="flex items-center justify-between">
-                <span class="text-xs sm:text-sm font-bold uppercase tracking-wider text-pink-700 bg-pink-100/80 px-4 py-1.5 rounded-full">
-                  Discipline 01 • Acquisition
-                </span>
-                <span class="font-serif font-bold text-slate-500 text-sm sm:text-base">ROAS & Conversion</span>
-              </div>
-              <h3 class="font-serif text-2xl font-bold text-slate-900">
-                Paid Search (SEM) & Conversion Optimization
-              </h3>
-              
-              <!-- Core Skills Bullets/Tags -->
-              <div class="flex flex-wrap gap-2 pt-1">
-                <span class="text-xs sm:text-sm font-medium bg-white px-3 py-1.5 rounded-md border border-slate-200/80 text-slate-700">Search Intent Targeting</span>
-                <span class="text-xs sm:text-sm font-medium bg-white px-3 py-1.5 rounded-md border border-slate-200/80 text-slate-700">Negative Keyword Match</span>
-                <span class="text-xs sm:text-sm font-medium bg-white px-3 py-1.5 rounded-md border border-slate-200/80 text-slate-700">Landing Page CRO</span>
-                <span class="text-xs sm:text-sm font-medium bg-white px-3 py-1.5 rounded-md border border-slate-200/80 text-slate-700">Performance Max (PMax)</span>
-                <span class="text-xs sm:text-sm font-medium bg-white px-3 py-1.5 rounded-md border border-slate-200/80 text-slate-700">A/B Ad Testing</span>
-              </div>
-
-              <!-- Tools Operated in this Pillar -->
-              <div class="pt-2">
-                <p class="text-xs font-bold uppercase tracking-wider text-slate-500 mb-2">Primary Platforms Operated</p>
-                <div class="flex items-center space-x-3">
-                  <div class="flex items-center space-x-2 bg-white px-3.5 py-1.5 rounded-lg border border-slate-200 text-xs sm:text-sm font-medium text-slate-700">
-                    <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none"><path d="M3.778 14.778L10.333 3.444C11.111 2.111 12.889 1.667 14.222 2.444L17.556 4.333C18.889 5.111 19.333 6.889 18.556 8.222L12 19.556C11.222 20.889 9.444 21.333 8.111 20.556L4.778 18.667C3.444 17.889 3 16.111 3.778 14.778Z" fill="#FBBC04"/><path d="M21.222 17.556C22 16.222 21.556 14.444 20.222 13.667L13.556 9.778C12.222 9 10.444 9.444 9.667 10.778L6.333 16.556C5.556 17.889 6 19.667 7.333 20.444L14 24.333C15.333 25.111 17.111 24.667 17.889 23.333L21.222 17.556Z" fill="#4285F4"/><circle cx="5" cy="18" r="3" fill="#34A853"/></svg>
-                    <span>Google Ads</span>
-                  </div>
-                  <div class="flex items-center space-x-2 bg-white px-3.5 py-1.5 rounded-lg border border-slate-200 text-xs sm:text-sm font-medium text-slate-700">
-                    <svg class="w-4 h-4" viewBox="0 0 24 24" fill="#0081FB"><path d="M12 7.027c-2.02 0-3.57 1.34-4.82 3.12-.96 1.37-1.74 3.09-2.73 3.09-.85 0-1.45-.63-1.45-1.76 0-1.7 1.13-3.69 2.53-5.32C6.98 4.49 8.94 3.5 10.96 3.5c2.47 0 4.26 1.48 4.97 3.23.63-1.57 2.19-3.23 4.54-3.23 2.51 0 4.53 1.93 4.53 4.88 0 3.26-2.15 6.62-5.46 6.62-1.79 0-3.03-.99-4.14-2.45-.92-1.21-1.66-2.52-2.4-2.52h-.01V7.03z"/></svg>
-                    <span>Meta Ads</span>
-                  </div>
-                  <div class="flex items-center space-x-2 bg-white px-3.5 py-1.5 rounded-lg border border-slate-200 text-xs sm:text-sm font-medium text-slate-700">
-                    <svg class="w-4 h-4" viewBox="0 0 24 24" fill="#95BF47"><path d="M19.9 6.2l-2.4-.7c-.1 0-.2 0-.2.1l-.8 1.9c-.1-.3-.2-.5-.4-.7-.9-.9-2.3-1-3.4-.4-.2.1-.4.3-.6.5l-.2-.3c-.3-.4-.8-.7-1.4-.7-.2 0-.4 0-.6.1l-4.4 1.4-1.6 4.9L2 15.3l3.6 7.4 9.8 1.3 6.9-3.9 1.8-13.9zM14.4 7c.6-.3 1.3-.2 1.8.2l.4.4-1.2 2.8-1-3.4zm-1.8.5l1.1 3.6-2.8.9-1.2-3.8 2.9-.7zm-3.8 10.3c-.6-.6-1.5-1.5-1.5-2.8 0-1.8 1.5-2.6 2.8-2.6 1.4 0 2.2.9 2.2.9l-.6 1.7s-.6-.6-1.4-.6c-.6 0-1.1.4-1.1.9 0 1 .9 1.4 1.7 1.9.9.6 1.9 1.5 1.9 3.2 0 2.3-1.7 3.5-3.6 3.5-1.5 0-2.9-.8-2.9-.8l.7-1.8s.9.7 1.9.7c.9 0 1.5-.5 1.5-1.2 0-.8-.7-1.3-1.6-1.8z"/></svg>
-                    <span>Shopify</span>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Evidence of Skills (The Proof) -->
-              <div class="bg-white p-5 rounded-2xl border border-pink-100 text-sm text-slate-600 space-y-2 leading-relaxed">
-                <p class="font-bold text-slate-900 flex items-center space-x-1.5">
-                  <span class="text-pink-600">✓</span>
-                  <span>Evidence & Track Record:</span>
-                </p>
-                <p>
-                  Restructured Google Ads search campaigns for Microsun by implementing negative match lists to filter out non-buyer informational queries. Directly generated <strong>$25,930+ in attributed revenue</strong> across 86 purchases with a <strong>3.2% funnel conversion rate</strong>.
-                </p>
-              </div>
-
-              <!-- How She Leverages It to Help Others -->
-              <div class="bg-pink-50/60 p-5 rounded-2xl border border-pink-200/60 text-sm text-slate-700 space-y-2 leading-relaxed">
-                <p class="font-bold text-pink-900 flex items-center space-x-1.5">
-                  <span class="text-pink-600">✦</span>
-                  <span>How I Leverage This to Help You:</span>
-                </p>
-                <p>
-                  I protect your acquisition budget by stopping ad spend leaks on low-intent search queries. I build tight connections between what users search, the ad copy they see, and the landing page they land on—lowering cost-per-acquisition (CPA) while scaling direct customer conversions.
-                </p>
-              </div>
+        <!-- Case Study 1: Microsun Omnichannel Attribution Architecture -->
+        <article class="bg-white rounded-3xl border border-pink-100 p-6 sm:p-10 shadow-sm space-y-8">
+          <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-pink-50 pb-6">
+            <div>
+              <span class="text-xs font-bold uppercase tracking-wider text-pink-600 bg-pink-50 px-3 py-1 rounded-full">Case Study 01 • Paid Search &amp; Omnichannel Architecture</span>
+              <h3 class="font-serif text-2xl sm:text-3xl font-bold text-slate-900 mt-2">Microsun: Omnichannel Conversion &amp; Attribution Architecture</h3>
+              <p class="text-xs sm:text-sm text-slate-500 mt-1">Multi-touch attribution mapping paid search demand against organic social brand equity.</p>
+            </div>
+            <div class="flex items-center gap-2 self-start md:self-auto">
+              <span class="text-xs font-mono font-bold bg-slate-900 text-white px-3 py-1.5 rounded-full">2.85x Search ROAS</span>
+              <span class="text-xs font-mono font-bold bg-pink-100 text-pink-800 px-3 py-1.5 rounded-full">3.2% Funnel CVR</span>
             </div>
           </div>
 
-          <!-- PILLAR 2: ANALYTICS, ATTRIBUTION & DATA SCIENCE -->
-          <div class="bg-[#FCF9FA] rounded-3xl p-8 border border-pink-100 shadow-sm hover:border-pink-300 transition duration-300 flex flex-col justify-between space-y-6">
-            <div class="space-y-4">
-              <div class="flex items-center justify-between">
-                <span class="text-xs sm:text-sm font-bold uppercase tracking-wider text-pink-700 bg-pink-100/80 px-4 py-1.5 rounded-full">
-                  Discipline 02 • Analytics
-                </span>
-                <span class="font-serif font-bold text-slate-500 text-sm sm:text-base">Measurement & Code</span>
-              </div>
-              <h3 class="font-serif text-2xl font-bold text-slate-900">
-                Attribution, Analytics & Data Modeling
-              </h3>
-              
-              <!-- Core Skills Bullets/Tags -->
-              <div class="flex flex-wrap gap-2 pt-1">
-                <span class="text-xs sm:text-sm font-medium bg-white px-3 py-1.5 rounded-md border border-slate-200/80 text-slate-700">GA4 Custom Events</span>
-                <span class="text-xs sm:text-sm font-medium bg-white px-3 py-1.5 rounded-md border border-slate-200/80 text-slate-700">Funnel Drop-Off Auditing</span>
-                <span class="text-xs sm:text-sm font-medium bg-white px-3 py-1.5 rounded-md border border-slate-200/80 text-slate-700">Multi-Touch Attribution</span>
-                <span class="text-xs sm:text-sm font-medium bg-white px-3 py-1.5 rounded-md border border-slate-200/80 text-slate-700">Python Data Modeling</span>
-                <span class="text-xs sm:text-sm font-medium bg-white px-3 py-1.5 rounded-md border border-slate-200/80 text-slate-700">Competitor Benchmarking</span>
-              </div>
-
-              <!-- Tools Operated in this Pillar -->
-              <div class="pt-2">
-                <p class="text-xs font-bold uppercase tracking-wider text-slate-500 mb-2">Primary Platforms & Development Tools</p>
-                <div class="flex items-center space-x-3">
-                  <div class="flex items-center space-x-2 bg-white px-3.5 py-1.5 rounded-lg border border-slate-200 text-xs sm:text-sm font-medium text-slate-700">
-                    <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none"><rect x="15" y="4" width="5" height="16" rx="2.5" fill="#F9AB00"/><rect x="9.5" y="9" width="5" height="11" rx="2.5" fill="#E37400"/><circle cx="4.5" cy="17.5" r="2.5" fill="#E37400"/></svg>
-                    <span>Google Analytics 4</span>
-                  </div>
-                  <div class="flex items-center space-x-2 bg-white px-3.5 py-1.5 rounded-lg border border-slate-200 text-xs sm:text-sm font-medium text-slate-700">
-                    <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none"><path d="M11.92 0C5.39 0 5.79 2.83 5.79 2.83l.03 2.93h6.21v.88H3.34S0 6.27 0 12.83c0 6.55 2.9 6.33 2.9 6.33h1.74v-2.43s-.1-2.9 2.84-2.9h6.18s2.74.05 2.74-2.65V2.83S16.8 0 11.92 0zm-3.3 1.83a1.05 1.05 0 1 1 0 2.1 1.05 1.05 0 0 1 0-2.1z" fill="#3776AB"/><path d="M12.08 24c6.53 0 6.13-2.83 6.13-2.83l-.03-2.93h-6.21v-.88h8.69s3.34.37 3.34-6.19c0-6.55-2.9-6.33-2.9-6.33h-1.74v2.43s.1 2.9-2.84 2.9H10.3s-2.74-.05-2.74 2.65v8.34S7.2 24 12.08 24zm3.3-1.83a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1z" fill="#FFD438"/></svg>
-                    <span>Python</span>
-                  </div>
-                  <div class="flex items-center space-x-2 bg-white px-3.5 py-1.5 rounded-lg border border-slate-200 text-xs sm:text-sm font-medium text-slate-700">
-                    <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none"><polygon points="12,2 21.5,7.5 21.5,16.5 12,22 2.5,16.5 2.5,7.5" fill="#8C0000"/><circle cx="12" cy="12" r="5.5" stroke="#FFFFFF" stroke-width="1.2" fill="none"/><circle cx="12" cy="12" r="2.8" stroke="#FFFFFF" stroke-width="1" fill="none"/><line x1="12" y1="2" x2="12" y2="22" stroke="#FFFFFF" stroke-width="1.2"/><line x1="2.5" y1="7.5" x2="21.5" y2="16.5" stroke="#FFFFFF" stroke-width="1.2"/><line x1="2.5" y1="16.5" x2="21.5" y2="7.5" stroke="#FFFFFF" stroke-width="1.2"/></svg>
-                    <span>Spyder IDE</span>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Evidence of Skills (The Proof) -->
-              <div class="bg-white p-5 rounded-2xl border border-pink-100 text-sm text-slate-600 space-y-2 leading-relaxed">
-                <p class="font-bold text-slate-900 flex items-center space-x-1.5">
-                  <span class="text-pink-600">✓</span>
-                  <span>Evidence & Track Record:</span>
-                </p>
-                <p>
-                  Audited 37 competitive peer accounts to establish an empirical 2.2% engagement baseline for Real Chemistry. Built data ingestion scripts in Python / Spyder IDE to generate custom full-funnel Sankey and Cleveland dumbbell visualizations directly from multi-source export data.
-                </p>
-              </div>
-
-              <!-- How She Leverages It to Help Others -->
-              <div class="bg-pink-50/60 p-5 rounded-2xl border border-pink-200/60 text-sm text-slate-700 space-y-2 leading-relaxed">
-                <p class="font-bold text-pink-900 flex items-center space-x-1.5">
-                  <span class="text-pink-600">✦</span>
-                  <span>How I Leverage This to Help You:</span>
-                </p>
-                <p>
-                  I turn complex, scattered campaign numbers into crystal-clear executive decision assets. Instead of handing leadership generic platform screenshots, I build transparent attribution models and custom charts that prove exactly what drove revenue and where to allocate next quarter's budget.
-                </p>
-              </div>
+          <div class="grid md:grid-cols-3 gap-6">
+            <div class="space-y-2">
+              <h4 class="font-serif font-bold text-slate-900 text-base">The Strategic Challenge</h4>
+              <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                Microsun needed to transition beyond fragmented social posting to capture high-intent buyers, eliminate wasted ad spend, and empirically measure how organic social assisted paid search purchases.
+              </p>
+            </div>
+            <div class="space-y-2">
+              <h4 class="font-serif font-bold text-slate-900 text-base">The Execution &amp; Testing</h4>
+              <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                Restructured Google Ads search campaigns around exact purchase-intent keywords while applying rigorous negative keyword filtering. Synchronized Instagram Link-in-Bio hubs with dedicated collection pages for assisted conversion paths.
+              </p>
+            </div>
+            <div class="space-y-2">
+              <h4 class="font-serif font-bold text-slate-900 text-base">The Measured Outcome</h4>
+              <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                Delivered a verified <strong>2.85x Return on Ad Spend (ROAS)</strong> with <strong>86 direct purchases</strong> at a <strong>3.2% conversion rate</strong> (more than double the 1.5% e-commerce retail benchmark), alongside sustained organic assisted sales.
+              </p>
             </div>
           </div>
 
-          <!-- PILLAR 3: CONTENT STRATEGY & EXECUTIVE THOUGHT LEADERSHIP -->
-          <div class="bg-[#FCF9FA] rounded-3xl p-8 border border-pink-100 shadow-sm hover:border-pink-300 transition duration-300 flex flex-col justify-between space-y-6">
-            <div class="space-y-4">
-              <div class="flex items-center justify-between">
-                <span class="text-xs sm:text-sm font-bold uppercase tracking-wider text-pink-700 bg-pink-100/80 px-4 py-1.5 rounded-full">
-                  Discipline 03 • Strategy
-                </span>
-                <span class="font-serif font-bold text-slate-500 text-sm sm:text-base">Influence & Voice</span>
-              </div>
-              <h3 class="font-serif text-2xl font-bold text-slate-900">
-                Thought Leadership & Strategic Storytelling
-              </h3>
-              
-              <!-- Core Skills Bullets/Tags -->
-              <div class="flex flex-wrap gap-2 pt-1">
-                <span class="text-xs sm:text-sm font-medium bg-white px-3 py-1.5 rounded-md border border-slate-200/80 text-slate-700">Executive Voice Modeling</span>
-                <span class="text-xs sm:text-sm font-medium bg-white px-3 py-1.5 rounded-md border border-slate-200/80 text-slate-700">High-Dwell Carousels</span>
-                <span class="text-xs sm:text-sm font-medium bg-white px-3 py-1.5 rounded-md border border-slate-200/80 text-slate-700">Audience Persona Mapping</span>
-                <span class="text-xs sm:text-sm font-medium bg-white px-3 py-1.5 rounded-md border border-slate-200/80 text-slate-700">Community Moderation</span>
-                <span class="text-xs sm:text-sm font-medium bg-white px-3 py-1.5 rounded-md border border-slate-200/80 text-slate-700">Video Commentary</span>
-              </div>
+          <!-- Dynamic Funnel Image Display Container (Fallbacks gracefully if image is not yet rendered) -->
+          <div class="bg-[#FCF9FA] border border-pink-100 rounded-2xl p-2 sm:p-4 shadow-inner overflow-hidden">
+            <img src="microsun_executive_final.png" alt="Microsun Omnichannel Conversion Architecture" class="w-full h-auto rounded-xl object-contain mx-auto" onerror="this.onerror=null; this.parentElement.classList.add('hidden');">
+          </div>
 
-              <!-- Tools Operated in this Pillar -->
-              <div class="pt-2">
-                <p class="text-xs font-bold uppercase tracking-wider text-slate-500 mb-2">Primary Creative & Publishing Stack</p>
-                <div class="flex items-center space-x-3">
-                  <div class="flex items-center space-x-2 bg-white px-3.5 py-1.5 rounded-lg border border-slate-200 text-xs sm:text-sm font-medium text-slate-700">
-                    <svg class="w-4 h-4" viewBox="0 0 24 24" fill="#29C85C"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 14.93c-2.25-.33-4-2.27-4-4.6 0-2.56 2.07-4.63 4.63-4.63.26 0 .52.02.77.07v9.16zm2.03-1.32V8.39c1.23.86 2.03 2.28 2.03 3.89 0 1.35-.56 2.57-1.47 3.44l-.56-.11z"/></svg>
-                    <span>Sprout Social</span>
-                  </div>
-                  <div class="flex items-center space-x-2 bg-white px-3.5 py-1.5 rounded-lg border border-slate-200 text-xs sm:text-sm font-medium text-slate-700">
-                    <svg class="w-4 h-4" viewBox="0 0 24 24" fill="#00C4CC"><circle cx="12" cy="12" r="10"/><path d="M15.5 12.2c-.2 1.8-1.5 3-3.2 3-2 0-3.3-1.6-3.3-3.6 0-2.2 1.6-3.8 3.6-3.8 1.4 0 2.5.8 2.8 2h-1.3c-.3-.6-.8-.9-1.5-.9-1.3 0-2.2 1.1-2.2 2.7 0 1.4.8 2.5 2.1 2.5 1 0 1.7-.7 1.8-1.9h1.2z" fill="white"/></svg>
-                    <span>Canva Pro</span>
-                  </div>
-                  <div class="flex items-center space-x-2 bg-white px-3.5 py-1.5 rounded-lg border border-slate-200 text-xs sm:text-sm font-medium text-slate-700">
-                    <svg class="w-4 h-4" viewBox="0 0 24 24" fill="#DA1F26"><path d="M14.6 2H24v20L14.6 2zM9.4 2H0v20L9.4 2zm2.6 9.8L16.2 22h-3.4l-1.8-4.5h-3L12 11.8z"/></svg>
-                    <span>Adobe Suite</span>
-                  </div>
-                </div>
-              </div>
+          <!-- Key Metrics Callout Bar (Confidentiality Compliant - No Raw Dollars) -->
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 p-5 sm:p-6 bg-[#FCF9FA] rounded-2xl border border-pink-100/70 text-center sm:text-left">
+            <div>
+              <p class="font-serif text-2xl sm:text-3xl font-bold text-slate-900">2.85x</p>
+              <p class="text-xs font-bold text-pink-600 uppercase mt-1">Paid Search ROAS</p>
+              <p class="text-[11px] text-slate-500">Profitable acquisition baseline</p>
+            </div>
+            <div>
+              <p class="font-serif text-2xl sm:text-3xl font-bold text-slate-900">86</p>
+              <p class="text-xs font-bold text-pink-600 uppercase mt-1">Direct Conversions</p>
+              <p class="text-[11px] text-slate-500">Exact high-intent purchases</p>
+            </div>
+            <div>
+              <p class="font-serif text-2xl sm:text-3xl font-bold text-slate-900">3.2%</p>
+              <p class="text-xs font-bold text-pink-600 uppercase mt-1">Funnel Conversion Rate</p>
+              <p class="text-[11px] text-slate-500">2x above e-comm baseline</p>
+            </div>
+            <div>
+              <p class="font-serif text-2xl sm:text-3xl font-bold text-slate-900">+44.4%</p>
+              <p class="text-xs font-bold text-pink-600 uppercase mt-1">IG Engagement Lift</p>
+              <p class="text-[11px] text-slate-500">Assisted pathway nurturing</p>
+            </div>
+          </div>
+        </article>
 
-              <!-- Evidence of Skills (The Proof) -->
-              <div class="bg-white p-5 rounded-2xl border border-pink-100 text-sm text-slate-600 space-y-2 leading-relaxed">
-                <p class="font-bold text-slate-900 flex items-center space-x-1.5">
-                  <span class="text-pink-600">✓</span>
-                  <span>Evidence & Track Record:</span>
-                </p>
-                <p>
-                  Transformed 7 clinical and biotech executives away from dry corporate press releases into opinion-led industry authorities, achieving a <strong>+37.5% average engagement lift</strong>, generating <strong>4,500+ monthly interactions</strong>, and earning key conference keynote invitations.
-                </p>
-              </div>
-
-              <!-- How She Leverages It to Help Others -->
-              <div class="bg-pink-50/60 p-5 rounded-2xl border border-pink-200/60 text-sm text-slate-700 space-y-2 leading-relaxed">
-                <p class="font-bold text-pink-900 flex items-center space-x-1.5">
-                  <span class="text-pink-600">✦</span>
-                  <span>How I Leverage This to Help You:</span>
-                </p>
-                <p>
-                  I help your executives and brand build credible industry authority without resorting to generic AI buzzwords. I establish authentic, conversational thought leadership that clinical and enterprise peers actually read, comment on, and remember.
-                </p>
-              </div>
+        <!-- Case Study 2: Real Chemistry Healthcare Thought Leadership -->
+        <article class="bg-white rounded-3xl border border-pink-100 p-6 sm:p-10 shadow-sm space-y-8">
+          <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-pink-50 pb-6">
+            <div>
+              <span class="text-xs font-bold uppercase tracking-wider text-pink-600 bg-pink-50 px-3 py-1 rounded-full">Case Study 02 • Executive Thought Leadership</span>
+              <h3 class="font-serif text-2xl sm:text-3xl font-bold text-slate-900 mt-2">Real Chemistry: Executive Voice Modeling &amp; Auditing</h3>
+              <p class="text-xs sm:text-sm text-slate-500 mt-1">Establishing 7 senior healthcare and biotech leaders as trusted digital authorities.</p>
+            </div>
+            <div class="flex items-center gap-2 self-start md:self-auto">
+              <span class="text-xs font-mono font-bold bg-slate-900 text-white px-3 py-1.5 rounded-full">37 Audits</span>
+              <span class="text-xs font-mono font-bold bg-pink-100 text-pink-800 px-3 py-1.5 rounded-full">+37.5% Lift</span>
             </div>
           </div>
 
-          <!-- PILLAR 4: OPERATIONS, GOVERNANCE & LIFECYCLE NURTURING -->
-          <div class="bg-[#FCF9FA] rounded-3xl p-8 border border-pink-100 shadow-sm hover:border-pink-300 transition duration-300 flex flex-col justify-between space-y-6">
-            <div class="space-y-4">
-              <div class="flex items-center justify-between">
-                <span class="text-xs sm:text-sm font-bold uppercase tracking-wider text-pink-700 bg-pink-100/80 px-4 py-1.5 rounded-full">
-                  Discipline 04 • Operations
-                </span>
-                <span class="font-serif font-bold text-slate-500 text-sm sm:text-base">Scale & Execution</span>
-              </div>
-              <h3 class="font-serif text-2xl font-bold text-slate-900">
-                Editorial Operations & Lifecycle CRM
-              </h3>
-              
-              <!-- Core Skills Bullets/Tags -->
-              <div class="flex flex-wrap gap-2 pt-1">
-                <span class="text-xs sm:text-sm font-medium bg-white px-3 py-1.5 rounded-md border border-slate-200/80 text-slate-700">Editorial Governance</span>
-                <span class="text-xs sm:text-sm font-medium bg-white px-3 py-1.5 rounded-md border border-slate-200/80 text-slate-700">Sprint Planning & Intake</span>
-                <span class="text-xs sm:text-sm font-medium bg-white px-3 py-1.5 rounded-md border border-slate-200/80 text-slate-700">Automated Drip Workflows</span>
-                <span class="text-xs sm:text-sm font-medium bg-white px-3 py-1.5 rounded-md border border-slate-200/80 text-slate-700">MQL Lead Segmentation</span>
-                <span class="text-xs sm:text-sm font-medium bg-white px-3 py-1.5 rounded-md border border-slate-200/80 text-slate-700">Distributed Remote Ops</span>
-              </div>
-
-              <!-- Tools Operated in this Pillar -->
-              <div class="pt-2">
-                <p class="text-xs font-bold uppercase tracking-wider text-slate-500 mb-2">Primary Operations & CRM Suite</p>
-                <div class="flex items-center space-x-3">
-                  <div class="flex items-center space-x-2 bg-white px-3.5 py-1.5 rounded-lg border border-slate-200 text-xs sm:text-sm font-medium text-slate-700">
-                    <svg class="w-4 h-4" viewBox="0 0 24 24" fill="#FF7A59"><path d="M17.8 7.2V4.9c.7-.4 1.2-1.1 1.2-2 0-1.2-1-2.2-2.2-2.2s-2.2 1-2.2 2.2c0 .9.5 1.6 1.2 2v2.3c-.9.3-1.7.9-2.3 1.6l-5.6-4.3c.1-.3.1-.6.1-.9 0-1.8-1.5-3.3-3.3-3.3S1.4 3.2 1.4 5s1.5 3.3 3.3 3.3c.6 0 1.2-.2 1.7-.5l5.4 4.2c-.4.8-.7 1.7-.7 2.7 0 1.2.4 2.3 1 3.2l-2 2c-.3-.1-.6-.2-.9-.2-1.5 0-2.7 1.2-2.7 2.7s1.2 2.7 2.7 2.7 2.7-1.2 2.7-2.7c0-.3-.1-.6-.2-.9l2-2c.9.6 2 1 3.2 1 3.1 0 5.6-2.5 5.6-5.6.1-3-2.3-5.5-5.4-5.7zM16.8 17.8c-1.8 0-3.3-1.5-3.3-3.3s1.5-3.3 3.3-3.3 3.3 1.5 3.3 3.3-1.5 3.3-3.3 3.3z"/></svg>
-                    <span>HubSpot</span>
-                  </div>
-                  <div class="flex items-center space-x-2 bg-white px-3.5 py-1.5 rounded-lg border border-slate-200 text-xs sm:text-sm font-medium text-slate-700">
-                    <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="7" r="4.5" fill="#F06A6A"/><circle cx="6.5" cy="16.5" r="4.5" fill="#F06A6A"/><circle cx="17.5" cy="16.5" r="4.5" fill="#F06A6A"/></svg>
-                    <span>Asana</span>
-                  </div>
-                  <div class="flex items-center space-x-2 bg-white px-3.5 py-1.5 rounded-lg border border-slate-200 text-xs sm:text-sm font-medium text-slate-700">
-                    <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none"><circle cx="6" cy="15.5" r="3.5" fill="#FF3D57"/><rect x="10.5" y="8" width="5" height="11" rx="2.5" fill="#FFCB00"/><rect x="17" y="4" width="5" height="15" rx="2.5" fill="#00C875"/></svg>
-                    <span>Monday.com</span>
-                  </div>
-                  <div class="flex items-center space-x-2 bg-white px-3.5 py-1.5 rounded-lg border border-slate-200 text-xs sm:text-sm font-medium text-slate-700">
-                    <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none"><path d="M5.04 15.12a2.52 2.52 0 0 1-2.52-2.52c0-1.39 1.13-2.52 2.52-2.52h2.52v2.52c0 1.39-1.13 2.52-2.52 2.52z" fill="#E01E5A"/><path d="M6.3 15.12a2.52 2.52 0 0 1 2.52-2.52 2.52 2.52 0 0 1 2.52 2.52v6.3a2.52 2.52 0 0 1-2.52 2.52 2.52 2.52 0 0 1-2.52-2.52v-6.3z" fill="#E01E5A"/><path d="M8.82 5.04a2.52 2.52 0 0 1-2.52-2.52C6.3 1.13 7.43 0 8.82 0s2.52 1.13 2.52 2.52v2.52H8.82z" fill="#36C5F0"/><path d="M8.82 6.3a2.52 2.52 0 0 1 2.52 2.52 2.52 2.52 0 0 1-2.52 2.52H2.52A2.52 2.52 0 0 1 0 8.82c0-1.39 1.13-2.52 2.52-2.52h6.3z" fill="#36C5F0"/><path d="M18.96 8.82a2.52 2.52 0 0 1 2.52 2.52c0 1.39-1.13 2.52-2.52 2.52h-2.52V11.34c0-1.39 1.13-2.52 2.52-2.52z" fill="#2EB67D"/><path d="M17.7 8.82a2.52 2.52 0 0 1-2.52 2.52 2.52 2.52 0 0 1-2.52-2.52V2.52C12.66 1.13 13.79 0 15.18 0c1.39 0 2.52 1.13 2.52 2.52v6.3z" fill="#2EB67D"/><path d="M15.18 18.96a2.52 2.52 0 0 1 2.52 2.52c0 1.39-1.13 2.52-2.52 2.52s-2.52-1.13-2.52-2.52v-2.52h2.52z" fill="#ECB22E"/><path d="M15.18 17.7a2.52 2.52 0 0 1-2.52-2.52 2.52 2.52 0 0 1 2.52-2.52h6.3c1.39 0 2.52 1.13 2.52 2.52 0 1.39-1.13 2.52-2.52 2.52h-6.3z" fill="#ECB22E"/></svg>
-                    <span>Slack</span>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Evidence of Skills (The Proof) -->
-              <div class="bg-white p-5 rounded-2xl border border-pink-100 text-sm text-slate-600 space-y-2 leading-relaxed">
-                <p class="font-bold text-slate-900 flex items-center space-x-1.5">
-                  <span class="text-pink-600">✓</span>
-                  <span>Evidence & Track Record:</span>
-                </p>
-                <p>
-                  Managed publishing operations for <strong>700+ monthly posts</strong> across multiple enterprise B2B accounts at Leadtail, coordinating ~100 monthly creative requests across writers and designers with zero missed SLAs. Holds active <strong>HubSpot Inbound & Email Marketing Certifications</strong>.
-                </p>
-              </div>
-
-              <!-- How She Leverages It to Help Others -->
-              <div class="bg-pink-50/60 p-5 rounded-2xl border border-pink-200/60 text-sm text-slate-700 space-y-2 leading-relaxed">
-                <p class="font-bold text-pink-900 flex items-center space-x-1.5">
-                  <span class="text-pink-600">✦</span>
-                  <span>How I Leverage This to Help You:</span>
-                </p>
-                <p>
-                  I build repeatable marketing operating systems that remove chaos from content production. I establish clear request intake workflows and automated CRM nurture streams so marketing campaigns launch on schedule and leads never fall through the cracks.
-                </p>
-              </div>
+          <div class="grid md:grid-cols-3 gap-6">
+            <div class="space-y-2">
+              <h4 class="font-serif font-bold text-slate-900 text-base">The Strategic Challenge</h4>
+              <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                Biotech executives frequently possess deep clinical insights but struggle to maintain authentic digital visibility, resulting in sterile corporate announcements that generate minimal peer engagement.
+              </p>
+            </div>
+            <div class="space-y-2">
+              <h4 class="font-serif font-bold text-slate-900 text-base">The Execution &amp; Voice Modeling</h4>
+              <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                Conducted 37 comprehensive peer audits to establish baseline benchmarks. Formulated unique persona frameworks and transitioned feeds toward high-dwell educational carousels and humanized clinical commentary.
+              </p>
+            </div>
+            <div class="space-y-2">
+              <h4 class="font-serif font-bold text-slate-900 text-base">The Measured Outcome</h4>
+              <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                Achieved a sustained <strong>+37.5% average engagement rate lift</strong> across 7 executive accounts, opening direct business development doors and earning client partners keynote invitations at top global healthcare summits.
+              </p>
             </div>
           </div>
 
+          <!-- Dynamic Dumbbell Plot Container -->
+          <div class="bg-[#FCF9FA] border border-pink-100 rounded-2xl p-2 sm:p-4 shadow-inner overflow-hidden">
+            <img src="real_chemistry_executive_dumbbell.png" alt="Real Chemistry Thought Leadership Dumbbell Plot" class="w-full h-auto rounded-xl object-contain mx-auto" onerror="this.onerror=null; this.parentElement.classList.add('hidden');">
+          </div>
+
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 p-5 sm:p-6 bg-[#FCF9FA] rounded-2xl border border-pink-100/70 text-center sm:text-left">
+            <div>
+              <p class="font-serif text-2xl sm:text-3xl font-bold text-slate-900">7</p>
+              <p class="text-xs font-bold text-pink-600 uppercase mt-1">Executives Led</p>
+              <p class="text-[11px] text-slate-500">Biotech &amp; healthcare C-suite</p>
+            </div>
+            <div>
+              <p class="font-serif text-2xl sm:text-3xl font-bold text-slate-900">37</p>
+              <p class="text-xs font-bold text-pink-600 uppercase mt-1">Peer Audits</p>
+              <p class="text-[11px] text-slate-500">Empirical gap analysis</p>
+            </div>
+            <div>
+              <p class="font-serif text-2xl sm:text-3xl font-bold text-slate-900">+37.5%</p>
+              <p class="text-xs font-bold text-pink-600 uppercase mt-1">Engagement Lift</p>
+              <p class="text-[11px] text-slate-500">Cross-account average</p>
+            </div>
+            <div>
+              <p class="font-serif text-2xl sm:text-3xl font-bold text-slate-900">100%</p>
+              <p class="text-xs font-bold text-pink-600 uppercase mt-1">Executive Retention</p>
+              <p class="text-[11px] text-slate-500">Continuous advocacy</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Case Study 3: Leadtail & Sisense B2B Rebrand -->
+        <article class="bg-white rounded-3xl border border-pink-100 p-6 sm:p-10 shadow-sm space-y-8">
+          <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-pink-50 pb-6">
+            <div>
+              <span class="text-xs font-bold uppercase tracking-wider text-pink-600 bg-pink-50 px-3 py-1 rounded-full">Case Study 03 • Enterprise Editorial Operations</span>
+              <h3 class="font-serif text-2xl sm:text-3xl font-bold text-slate-900 mt-2">Sisense (Leadtail): Global Rebrand Flighting &amp; Community Governance</h3>
+              <p class="text-xs sm:text-sm text-slate-500 mt-1">Managing high-cadence enterprise social publishing and active community stewardship.</p>
+            </div>
+            <div class="flex items-center gap-2 self-start md:self-auto">
+              <span class="text-xs font-mono font-bold bg-slate-900 text-white px-3 py-1.5 rounded-full">700+ Assets/Mo</span>
+              <span class="text-xs font-mono font-bold bg-pink-100 text-pink-800 px-3 py-1.5 rounded-full">107 Avg Comments</span>
+            </div>
+          </div>
+
+          <div class="grid md:grid-cols-3 gap-6">
+            <div class="space-y-2">
+              <h4 class="font-serif font-bold text-slate-900 text-base">The Strategic Challenge</h4>
+              <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                Coordinating a comprehensive brand repositioning across distributed channels while managing a high-volume monthly publication calendar without delays, voice drift, or compliance oversights.
+              </p>
+            </div>
+            <div class="space-y-2">
+              <h4 class="font-serif font-bold text-slate-900 text-base">The Operational Scale</h4>
+              <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                Structured centralized editorial calendars in Sprout Social and Asana to coordinate asset approval cadences across creative, legal, and executive stakeholders across 6 enterprise B2B accounts.
+              </p>
+            </div>
+            <div class="space-y-2">
+              <h4 class="font-serif font-bold text-slate-900 text-base">The Community Result</h4>
+              <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                Flew rebrand campaigns that generated <strong>22,000+ organic impressions</strong> and <strong>14,000+ engagements</strong>, averaging <strong>107 comments per post</strong> to cultivate an active, engaged developer community.
+              </p>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 p-5 sm:p-6 bg-[#FCF9FA] rounded-2xl border border-pink-100/70 text-center sm:text-left">
+            <div>
+              <p class="font-serif text-2xl sm:text-3xl font-bold text-slate-900">700+</p>
+              <p class="text-xs font-bold text-pink-600 uppercase mt-1">Monthly Posts</p>
+              <p class="text-[11px] text-slate-500">Managed with 0 delay</p>
+            </div>
+            <div>
+              <p class="font-serif text-2xl sm:text-3xl font-bold text-slate-900">22K+</p>
+              <p class="text-xs font-bold text-pink-600 uppercase mt-1">Organic Impressions</p>
+              <p class="text-[11px] text-slate-500">Rebrand flight window</p>
+            </div>
+            <div>
+              <p class="font-serif text-2xl sm:text-3xl font-bold text-slate-900">14K+</p>
+              <p class="text-xs font-bold text-pink-600 uppercase mt-1">Engagements</p>
+              <p class="text-[11px] text-slate-500">High-dwell interactions</p>
+            </div>
+            <div>
+              <p class="font-serif text-2xl sm:text-3xl font-bold text-slate-900">107</p>
+              <p class="text-xs font-bold text-pink-600 uppercase mt-1">Avg Comments / Post</p>
+              <p class="text-[11px] text-slate-500">Active community discourse</p>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- [SECTION 6: CORE DISCIPLINES & TECHNICAL TOOL STACK]              -->
+    <!-- RESPONSIVE MOBILE FIX: BALANCED PADDING & FLEX-WRAPPING           -->
+    <!-- ================================================================= -->
+    <section id="disciplines" class="py-16 sm:py-24 bg-white border-b border-pink-100">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 space-y-16">
+        
+        <div class="text-center max-w-2xl mx-auto space-y-3">
+          <span class="text-xs font-bold uppercase tracking-wider text-pink-600">Execution Capabilities</span>
+          <h2 class="font-serif text-3xl sm:text-4xl font-bold text-slate-900">Core Disciplines &amp; Tool Stack</h2>
+          <p class="text-sm text-slate-600">Enterprise workflows built on proven advertising platforms, attribution engines, and operations software.</p>
         </div>
 
-        <!-- ============================================================= -->
-        <!-- PART 2: THE PRACTITIONER'S SOFTWARE & PLATFORM TOOLKIT        -->
-        <!-- 13 AUTHENTIC PLATFORMS WITH DIRECT APPLICATION SUMMARIES      -->
-        <!-- ============================================================= -->
-        <div class="pt-8 border-t border-pink-100">
-          <div class="text-center max-w-2xl mx-auto mb-12 space-y-2">
-            <h3 class="font-serif text-2xl font-bold text-slate-900">
-              Technical Platform & Software Proficiency
-            </h3>
-            <p class="text-xs sm:text-sm text-slate-600">
-              Hands-on operational fluency across the leading analytics, advertising, workflow, and data platforms.
+        <!-- 4 Discipline Cards (Responsive Fixed Padding & Min-Width) -->
+        <div class="grid md:grid-cols-2 gap-6 lg:gap-8">
+          
+          <!-- Discipline Card 1 -->
+          <div class="bg-[#FCF9FA] p-5 sm:p-8 rounded-3xl border border-pink-100 hover:border-pink-300 transition duration-300 shadow-sm hover:shadow-md space-y-4 min-w-0">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-bold uppercase tracking-wider text-pink-600 bg-pink-100/70 px-3 py-1 rounded-full">Acquisition &amp; ROAS</span>
+              <span class="font-serif font-bold text-slate-400 text-sm">01</span>
+            </div>
+            <h4 class="font-serif text-lg sm:text-xl font-bold text-slate-900 leading-snug">Paid Search (SEM) &amp; Conversion Optimization</h4>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
+              Structuring Google Ads search and Performance Max campaigns around high-intent keywords. Focus on continuous negative match updates to eliminate wasted budget, ad copy A/B testing, and dedicated landing page alignment to maximize ROAS.
             </p>
+            <div class="pt-3 border-t border-pink-100/60 flex flex-col sm:flex-row sm:items-center justify-between gap-1 text-xs text-slate-500 font-medium">
+              <span>Verified Impact:</span>
+              <span class="text-pink-700 font-bold">2.85x Campaign ROAS • 3.2% Funnel CVR</span>
+            </div>
           </div>
 
-          <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+          <!-- Discipline Card 2 -->
+          <div class="bg-[#FCF9FA] p-5 sm:p-8 rounded-3xl border border-pink-100 hover:border-pink-300 transition duration-300 shadow-sm hover:shadow-md space-y-4 min-w-0">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-bold uppercase tracking-wider text-pink-600 bg-pink-100/70 px-3 py-1 rounded-full">Data &amp; Measurement</span>
+              <span class="font-serif font-bold text-slate-400 text-sm">02</span>
+            </div>
+            <h4 class="font-serif text-lg sm:text-xl font-bold text-slate-900 leading-snug">Attribution Modeling &amp; Performance Auditing</h4>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
+              Moving beyond vanity reach to map full customer journeys. Setting up GA4 custom event tracking, calculating multi-touch attribution, and conducting empirical competitor landscape audits to uncover high-opportunity content gaps.
+            </p>
+            <div class="pt-3 border-t border-pink-100/60 flex flex-col sm:flex-row sm:items-center justify-between gap-1 text-xs text-slate-500 font-medium">
+              <span>Verified Impact:</span>
+              <span class="text-pink-700 font-bold">37 Competitive Audits • 2.2% Benchmark Modeling</span>
+            </div>
+          </div>
 
+          <!-- Discipline Card 3 -->
+          <div class="bg-[#FCF9FA] p-5 sm:p-8 rounded-3xl border border-pink-100 hover:border-pink-300 transition duration-300 shadow-sm hover:shadow-md space-y-4 min-w-0">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-bold uppercase tracking-wider text-pink-600 bg-pink-100/70 px-3 py-1 rounded-full">Positioning &amp; Influence</span>
+              <span class="font-serif font-bold text-slate-400 text-sm">03</span>
+            </div>
+            <h4 class="font-serif text-lg sm:text-xl font-bold text-slate-900 leading-snug">Executive Thought Leadership &amp; Voice Modeling</h4>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
+              Transforming clinical and biotech executives into trusted industry voices. Transitioning feeds away from dry press releases into opinion-led, high-dwell educational carousels and commentary that spark peer dialogue and earn speaking invitations.
+            </p>
+            <div class="pt-3 border-t border-pink-100/60 flex flex-col sm:flex-row sm:items-center justify-between gap-1 text-xs text-slate-500 font-medium">
+              <span>Verified Impact:</span>
+              <span class="text-pink-700 font-bold">+37.5% Avg Engagement Lift Across 7 Leaders</span>
+            </div>
+          </div>
+
+          <!-- Discipline Card 4 -->
+          <div class="bg-[#FCF9FA] p-5 sm:p-8 rounded-3xl border border-pink-100 hover:border-pink-300 transition duration-300 shadow-sm hover:shadow-md space-y-4 min-w-0">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-bold uppercase tracking-wider text-pink-600 bg-pink-100/70 px-3 py-1 rounded-full">Operations &amp; Workflow</span>
+              <span class="font-serif font-bold text-slate-400 text-sm">04</span>
+            </div>
+            <h4 class="font-serif text-lg sm:text-xl font-bold text-slate-900 leading-snug">Editorial Governance &amp; Multi-Channel Operations</h4>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
+              Standardizing brand persona guidelines and managing high-volume publishing cadences across distributed remote teams. Coordinating creative intake, editorial flighting, and daily community moderation to maintain brand integrity at scale.
+            </p>
+            <div class="pt-3 border-t border-pink-100/60 flex flex-col sm:flex-row sm:items-center justify-between gap-1 text-xs text-slate-500 font-medium">
+              <span>Verified Impact:</span>
+              <span class="text-pink-700 font-bold">700+ Monthly Posts Managed • 22% QoQ Growth</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Technical Software Stack Grid (Responsive Fixed Widths) -->
+        <div class="space-y-6 pt-6">
+          <div class="flex items-center justify-between border-b border-pink-100 pb-4">
+            <h3 class="font-serif text-xl sm:text-2xl font-bold text-slate-900">Technical Software Stack</h3>
+            <span class="text-xs font-semibold text-slate-500">12 Core Platforms</span>
+          </div>
+
+          <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-5">
+            
             <!-- Tool 1: Google Ads -->
-            <div class="bg-[#FCF9FA] p-5 rounded-2xl border border-pink-100 shadow-sm hover:border-pink-300 transition duration-300 flex flex-col justify-between space-y-3">
-              <div>
-                <div class="flex items-center justify-between mb-2.5">
-                  <div class="w-10 h-10 rounded-xl bg-white p-2 shadow-sm border border-slate-100 flex items-center justify-center">
-                    <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none"><path d="M3.778 14.778L10.333 3.444C11.111 2.111 12.889 1.667 14.222 2.444L17.556 4.333C18.889 5.111 19.333 6.889 18.556 8.222L12 19.556C11.222 20.889 9.444 21.333 8.111 20.556L4.778 18.667C3.444 17.889 3 16.111 3.778 14.778Z" fill="#FBBC04"/><path d="M21.222 17.556C22 16.222 21.556 14.444 20.222 13.667L13.556 9.778C12.222 9 10.444 9.444 9.667 10.778L6.333 16.556C5.556 17.889 6 19.667 7.333 20.444L14 24.333C15.333 25.111 17.111 24.667 17.889 23.333L21.222 17.556Z" fill="#4285F4"/><circle cx="5" cy="18" r="3" fill="#34A853"/></svg>
-                  </div>
-                  <span class="text-xs font-bold px-3 py-1 rounded-full bg-blue-50 text-blue-700 border border-blue-200">
-                    Advanced Operator
-                  </span>
+            <div class="bg-[#FCF9FA] p-4 sm:p-5 rounded-2xl border border-pink-100 hover:border-pink-300 transition duration-300 shadow-sm flex flex-col justify-between min-w-0">
+              <div class="space-y-2">
+                <div class="w-10 h-10 rounded-xl bg-white border border-pink-100 flex items-center justify-center shadow-xs">
+                  <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none"><path d="M3.778 14.778L10.333 3.444C11.111 2.111 12.889 1.667 14.222 2.444L17.556 4.333C18.889 5.111 19.333 6.889 18.556 8.222L12 19.556C11.222 20.889 9.444 21.333 8.111 20.556L4.778 18.667C3.444 17.889 3 16.111 3.778 14.778Z" fill="#FBBC04"/><path d="M21.222 17.556C22 16.222 21.556 14.444 20.222 13.667L13.556 9.778C12.222 9 10.444 9.444 9.667 10.778L6.333 16.556C5.556 17.889 6 19.667 7.333 20.444L14 24.333C15.333 25.111 17.111 24.667 17.889 23.333L21.222 17.556Z" fill="#4285F4"/><circle cx="5" cy="18" r="3" fill="#34A853"/></svg>
                 </div>
-                <h4 class="font-serif font-bold text-slate-900 text-base">Google Ads</h4>
-                <p class="text-xs sm:text-sm font-semibold text-pink-600 mb-1.5">Paid Search & Performance Max</p>
-                <p class="text-sm sm:text-base text-slate-600 leading-relaxed">High-intent keyword bidding, negative match architecture, and direct e-commerce checkout attribution.</p>
+                <h5 class="font-serif font-bold text-slate-900 text-sm">Google Ads</h5>
+                <p class="text-[11px] text-slate-600 leading-snug">Search, PMax, Exact match &amp; negative filtering.</p>
               </div>
-              <div class="pt-2.5 border-t border-pink-100/60 text-xs sm:text-sm text-slate-600 font-medium">
-                Proven Result: $25.9K+ Attributed Rev
+              <div class="mt-3 pt-2.5 border-t border-pink-100/70 text-[11px] text-pink-700 font-semibold truncate">
+                Primary Acquisition: 2.85x ROAS
               </div>
             </div>
 
             <!-- Tool 2: GA4 -->
-            <div class="bg-[#FCF9FA] p-5 rounded-2xl border border-pink-100 shadow-sm hover:border-pink-300 transition duration-300 flex flex-col justify-between space-y-3">
-              <div>
-                <div class="flex items-center justify-between mb-2.5">
-                  <div class="w-10 h-10 rounded-xl bg-white p-2 shadow-sm border border-slate-100 flex items-center justify-center">
-                    <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none"><rect x="15" y="4" width="5" height="16" rx="2.5" fill="#F9AB00"/><rect x="9.5" y="9" width="5" height="11" rx="2.5" fill="#E37400"/><circle cx="4.5" cy="17.5" r="2.5" fill="#E37400"/></svg>
-                  </div>
-                  <span class="text-xs font-bold px-3 py-1 rounded-full bg-amber-50 text-amber-800 border border-amber-200">
-                    Daily Measurement
-                  </span>
+            <div class="bg-[#FCF9FA] p-4 sm:p-5 rounded-2xl border border-pink-100 hover:border-pink-300 transition duration-300 shadow-sm flex flex-col justify-between min-w-0">
+              <div class="space-y-2">
+                <div class="w-10 h-10 rounded-xl bg-white border border-pink-100 flex items-center justify-center shadow-xs">
+                  <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none"><rect x="15" y="4" width="5" height="16" rx="2.5" fill="#F9AB00"/><rect x="9.5" y="9" width="5" height="11" rx="2.5" fill="#E37400"/><circle cx="4.5" cy="17.5" r="2.5" fill="#E37400"/></svg>
                 </div>
-                <h4 class="font-serif font-bold text-slate-900 text-base">Google Analytics 4</h4>
-                <p class="text-xs sm:text-sm font-semibold text-pink-600 mb-1.5">Web Attribution & Conversion Events</p>
-                <p class="text-sm sm:text-base text-slate-600 leading-relaxed">Multi-touch path analysis, custom event tracking, and user drop-off bottleneck audits.</p>
+                <h5 class="font-serif font-bold text-slate-900 text-sm">Google Analytics 4</h5>
+                <p class="text-[11px] text-slate-600 leading-snug">Custom events, attribution modeling &amp; funnels.</p>
               </div>
-              <div class="pt-2.5 border-t border-pink-100/60 text-xs sm:text-sm text-slate-600 font-medium">
-                Proven Result: Full Funnel Mapping
+              <div class="mt-3 pt-2.5 border-t border-pink-100/70 text-[11px] text-pink-700 font-semibold truncate">
+                Attribution &amp; Auditing
               </div>
             </div>
 
-            <!-- Tool 3: Python -->
-            <div class="bg-[#FCF9FA] p-5 rounded-2xl border border-pink-100 shadow-sm hover:border-pink-300 transition duration-300 flex flex-col justify-between space-y-3">
-              <div>
-                <div class="flex items-center justify-between mb-2.5">
-                  <div class="w-10 h-10 rounded-xl bg-white p-2 shadow-sm border border-slate-100 flex items-center justify-center">
-                    <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none"><path d="M11.92 0C5.39 0 5.79 2.83 5.79 2.83l.03 2.93h6.21v.88H3.34S0 6.27 0 12.83c0 6.55 2.9 6.33 2.9 6.33h1.74v-2.43s-.1-2.9 2.84-2.9h6.18s2.74.05 2.74-2.65V2.83S16.8 0 11.92 0zm-3.3 1.83a1.05 1.05 0 1 1 0 2.1 1.05 1.05 0 0 1 0-2.1z" fill="#3776AB"/><path d="M12.08 24c6.53 0 6.13-2.83 6.13-2.83l-.03-2.93h-6.21v-.88h8.69s3.34.37 3.34-6.19c0-6.55-2.9-6.33-2.9-6.33h-1.74v2.43s.1 2.9-2.84 2.9H10.3s-2.74-.05-2.74 2.65v8.34S7.2 24 12.08 24zm3.3-1.83a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1z" fill="#FFD438"/></svg>
-                  </div>
-                  <span class="text-xs font-bold px-3 py-1 rounded-full bg-emerald-50 text-emerald-800 border border-emerald-200">
-                    Actively Applying
-                  </span>
+            <!-- Tool 3: Meta Business Suite -->
+            <div class="bg-[#FCF9FA] p-4 sm:p-5 rounded-2xl border border-pink-100 hover:border-pink-300 transition duration-300 shadow-sm flex flex-col justify-between min-w-0">
+              <div class="space-y-2">
+                <div class="w-10 h-10 rounded-xl bg-white border border-pink-100 flex items-center justify-center shadow-xs">
+                  <svg class="w-6 h-6" viewBox="0 0 24 24" fill="#0081FB"><path d="M12 7.027c-2.02 0-3.57 1.34-4.82 3.12-.96 1.37-1.74 3.09-2.73 3.09-.85 0-1.45-.63-1.45-1.76 0-1.7 1.13-3.69 2.53-5.32C6.98 4.49 8.94 3.5 10.96 3.5c2.47 0 4.26 1.48 4.97 3.23.63-1.57 2.19-3.23 4.54-3.23 2.51 0 4.53 1.93 4.53 4.88 0 3.26-2.15 6.62-5.46 6.62-1.79 0-3.03-.99-4.14-2.45-.92-1.21-1.66-2.52-2.4-2.52h-.01V7.03z"/></svg>
                 </div>
-                <h4 class="font-serif font-bold text-slate-900 text-base">Python</h4>
-                <p class="text-xs sm:text-sm font-semibold text-pink-600 mb-1.5">Data Analysis & Visual Modeling</p>
-                <p class="text-sm sm:text-base text-slate-600 leading-relaxed">Scripting pandas and matplotlib data workflows to generate custom Sankey diagrams and dumbbell benchmark charts.</p>
+                <h5 class="font-serif font-bold text-slate-900 text-sm">Meta Business Suite</h5>
+                <p class="text-[11px] text-slate-600 leading-snug">Instagram &amp; Facebook campaign distribution.</p>
               </div>
-              <div class="pt-2.5 border-t border-pink-100/60 text-xs sm:text-sm text-emerald-700 font-semibold">
-                Applied Marketing Analytics
+              <div class="mt-3 pt-2.5 border-t border-pink-100/70 text-[11px] text-pink-700 font-semibold truncate">
+                Organic &amp; Paid Scaling
               </div>
             </div>
 
-            <!-- Tool 4: Spyder IDE -->
-            <div class="bg-[#FCF9FA] p-5 rounded-2xl border border-pink-100 shadow-sm hover:border-pink-300 transition duration-300 flex flex-col justify-between space-y-3">
-              <div>
-                <div class="flex items-center justify-between mb-2.5">
-                  <div class="w-10 h-10 rounded-xl bg-white p-2 shadow-sm border border-slate-100 flex items-center justify-center">
-                    <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none"><polygon points="12,2 21.5,7.5 21.5,16.5 12,22 2.5,16.5 2.5,7.5" fill="#8C0000"/><circle cx="12" cy="12" r="5.5" stroke="#FFFFFF" stroke-width="1.2" fill="none"/><circle cx="12" cy="12" r="2.8" stroke="#FFFFFF" stroke-width="1" fill="none"/><line x1="12" y1="2" x2="12" y2="22" stroke="#FFFFFF" stroke-width="1.2"/><line x1="2.5" y1="7.5" x2="21.5" y2="16.5" stroke="#FFFFFF" stroke-width="1.2"/><line x1="2.5" y1="16.5" x2="21.5" y2="7.5" stroke="#FFFFFF" stroke-width="1.2"/></svg>
-                  </div>
-                  <span class="text-xs font-bold px-3 py-1 rounded-full bg-emerald-50 text-emerald-800 border border-emerald-200">
-                    Scientific IDE
-                  </span>
+            <!-- Tool 4: Sprout Social -->
+            <div class="bg-[#FCF9FA] p-4 sm:p-5 rounded-2xl border border-pink-100 hover:border-pink-300 transition duration-300 shadow-sm flex flex-col justify-between min-w-0">
+              <div class="space-y-2">
+                <div class="w-10 h-10 rounded-xl bg-white border border-pink-100 flex items-center justify-center shadow-xs">
+                  <svg class="w-6 h-6" viewBox="0 0 24 24" fill="#29C85C"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 14.93c-2.25-.33-4-2.27-4-4.6 0-2.56 2.07-4.63 4.63-4.63.26 0 .52.02.77.07v9.16zm2.03-1.32V8.39c1.23.86 2.03 2.28 2.03 3.89 0 1.35-.56 2.57-1.47 3.44l-.56-.11z"/></svg>
                 </div>
-                <h4 class="font-serif font-bold text-slate-900 text-base">Spyder IDE</h4>
-                <p class="text-xs sm:text-sm font-semibold text-pink-600 mb-1.5">Interactive Python Development</p>
-                <p class="text-sm sm:text-base text-slate-600 leading-relaxed">Developing, testing, and debugging data scripts using variable explorers and interactive visualization panes.</p>
+                <h5 class="font-serif font-bold text-slate-900 text-sm">Sprout Social</h5>
+                <p class="text-[11px] text-slate-600 leading-snug">Enterprise scheduling &amp; listening governance.</p>
               </div>
-              <div class="pt-2.5 border-t border-pink-100/60 text-xs sm:text-sm text-emerald-700 font-semibold">
-                Interactive Scripting & Testing
+              <div class="mt-3 pt-2.5 border-t border-pink-100/70 text-[11px] text-pink-700 font-semibold truncate">
+                700+ Monthly Posts
               </div>
             </div>
 
             <!-- Tool 5: HubSpot -->
-            <div class="bg-[#FCF9FA] p-5 rounded-2xl border border-pink-100 shadow-sm hover:border-pink-300 transition duration-300 flex flex-col justify-between space-y-3">
-              <div>
-                <div class="flex items-center justify-between mb-2.5">
-                  <div class="w-10 h-10 rounded-xl bg-white p-2 shadow-sm border border-slate-100 flex items-center justify-center">
-                    <svg class="w-6 h-6" viewBox="0 0 24 24" fill="#FF7A59"><path d="M17.8 7.2V4.9c.7-.4 1.2-1.1 1.2-2 0-1.2-1-2.2-2.2-2.2s-2.2 1-2.2 2.2c0 .9.5 1.6 1.2 2v2.3c-.9.3-1.7.9-2.3 1.6l-5.6-4.3c.1-.3.1-.6.1-.9 0-1.8-1.5-3.3-3.3-3.3S1.4 3.2 1.4 5s1.5 3.3 3.3 3.3c.6 0 1.2-.2 1.7-.5l5.4 4.2c-.4.8-.7 1.7-.7 2.7 0 1.2.4 2.3 1 3.2l-2 2c-.3-.1-.6-.2-.9-.2-1.5 0-2.7 1.2-2.7 2.7s1.2 2.7 2.7 2.7 2.7-1.2 2.7-2.7c0-.3-.1-.6-.2-.9l2-2c.9.6 2 1 3.2 1 3.1 0 5.6-2.5 5.6-5.6.1-3-2.3-5.5-5.4-5.7zM16.8 17.8c-1.8 0-3.3-1.5-3.3-3.3s1.5-3.3 3.3-3.3 3.3 1.5 3.3 3.3-1.5 3.3-3.3 3.3z"/></svg>
-                  </div>
-                  <span class="text-xs font-bold px-3 py-1 rounded-full bg-pink-50 text-pink-700 border border-pink-200">
-                    Dual Certified
-                  </span>
+            <div class="bg-[#FCF9FA] p-4 sm:p-5 rounded-2xl border border-pink-100 hover:border-pink-300 transition duration-300 shadow-sm flex flex-col justify-between min-w-0">
+              <div class="space-y-2">
+                <div class="w-10 h-10 rounded-xl bg-white border border-pink-100 flex items-center justify-center shadow-xs">
+                  <svg class="w-6 h-6" viewBox="0 0 24 24" fill="#FF7A59"><path d="M17.8 7.2V4.9c.7-.4 1.2-1.1 1.2-2 0-1.2-1-2.2-2.2-2.2s-2.2 1-2.2 2.2c0 .9.5 1.6 1.2 2v2.3c-.9.3-1.7.9-2.3 1.6l-5.6-4.3c.1-.3.1-.6.1-.9 0-1.8-1.5-3.3-3.3-3.3S1.4 3.2 1.4 5s1.5 3.3 3.3 3.3c.6 0 1.2-.2 1.7-.5l5.4 4.2c-.4.8-.7 1.7-.7 2.7 0 1.2.4 2.3 1 3.2l-2 2c-.3-.1-.6-.2-.9-.2-1.5 0-2.7 1.2-2.7 2.7s1.2 2.7 2.7 2.7 2.7-1.2 2.7-2.7c0-.3-.1-.6-.2-.9l2-2c.9.6 2 1 3.2 1 3.1 0 5.6-2.5 5.6-5.6.1-3-2.3-5.5-5.4-5.7zM16.8 17.8c-1.8 0-3.3-1.5-3.3-3.3s1.5-3.3 3.3-3.3 3.3 1.5 3.3 3.3-1.5 3.3-3.3 3.3z"/></svg>
                 </div>
-                <h4 class="font-serif font-bold text-slate-900 text-base">HubSpot</h4>
-                <p class="text-xs sm:text-sm font-semibold text-pink-600 mb-1.5">Inbound & Email Certified</p>
-                <p class="text-sm sm:text-base text-slate-600 leading-relaxed">Automated email drip sequences, lead scoring, and pipeline CRM alignment for content assets.</p>
+                <h5 class="font-serif font-bold text-slate-900 text-sm">HubSpot CRM</h5>
+                <p class="text-[11px] text-slate-600 leading-snug">Inbound workflows, lead scoring &amp; lifecycle.</p>
               </div>
-              <div class="pt-2.5 border-t border-pink-100/60 text-xs sm:text-sm text-pink-700 font-semibold">
-                Certified Inbound & Email Specialist
+              <div class="mt-3 pt-2.5 border-t border-pink-100/70 text-[11px] text-pink-700 font-semibold truncate">
+                Lifecycle Automation
               </div>
             </div>
 
-            <!-- Tool 6: Meta Business Suite -->
-            <div class="bg-[#FCF9FA] p-5 rounded-2xl border border-pink-100 shadow-sm hover:border-pink-300 transition duration-300 flex flex-col justify-between space-y-3">
-              <div>
-                <div class="flex items-center justify-between mb-2.5">
-                  <div class="w-10 h-10 rounded-xl bg-white p-2 shadow-sm border border-slate-100 flex items-center justify-center">
-                    <svg class="w-6 h-6" viewBox="0 0 24 24" fill="#0081FB"><path d="M12 7.027c-2.02 0-3.57 1.34-4.82 3.12-.96 1.37-1.74 3.09-2.73 3.09-.85 0-1.45-.63-1.45-1.76 0-1.7 1.13-3.69 2.53-5.32C6.98 4.49 8.94 3.5 10.96 3.5c2.47 0 4.26 1.48 4.97 3.23.63-1.57 2.19-3.23 4.54-3.23 2.51 0 4.53 1.93 4.53 4.88 0 3.26-2.15 6.62-5.46 6.62-1.79 0-3.03-.99-4.14-2.45-.92-1.21-1.66-2.52-2.4-2.52h-.01V7.03z"/></svg>
-                  </div>
-                  <span class="text-xs font-bold px-3 py-1 rounded-full bg-blue-50 text-blue-700 border border-blue-200">
-                    Core Operations
-                  </span>
+            <!-- Tool 6: Shopify -->
+            <div class="bg-[#FCF9FA] p-4 sm:p-5 rounded-2xl border border-pink-100 hover:border-pink-300 transition duration-300 shadow-sm flex flex-col justify-between min-w-0">
+              <div class="space-y-2">
+                <div class="w-10 h-10 rounded-xl bg-white border border-pink-100 flex items-center justify-center shadow-xs">
+                  <svg class="w-6 h-6" viewBox="0 0 24 24" fill="#95BF47"><path d="M19.9 6.2l-2.4-.7c-.1 0-.2 0-.2.1l-.8 1.9c-.1-.3-.2-.5-.4-.7-.9-.9-2.3-1-3.4-.4-.2.1-.4.3-.6.5l-.2-.3c-.3-.4-.8-.7-1.4-.7-.2 0-.4 0-.6.1l-4.4 1.4-1.6 4.9L2 15.3l3.6 7.4 9.8 1.3 6.9-3.9 1.8-13.9zM14.4 7c.6-.3 1.3-.2 1.8.2l.4.4-1.2 2.8-1-3.4zm-1.8.5l1.1 3.6-2.8.9-1.2-3.8 2.9-.7zm-3.8 10.3c-.6-.6-1.5-1.5-1.5-2.8 0-1.8 1.5-2.6 2.8-2.6 1.4 0 2.2.9 2.2.9l-.6 1.7s-.6-.6-1.4-.6c-.6 0-1.1.4-1.1.9 0 1 .9 1.4 1.7 1.9.9.6 1.9 1.5 1.9 3.2 0 2.3-1.7 3.5-3.6 3.5-1.5 0-2.9-.8-2.9-.8l.7-1.8s.9.7 1.9.7c.9 0 1.5-.5 1.5-1.2 0-.8-.7-1.3-1.6-1.8z"/></svg>
                 </div>
-                <h4 class="font-serif font-bold text-slate-900 text-base">Meta Business Suite</h4>
-                <p class="text-xs sm:text-sm font-semibold text-pink-600 mb-1.5">Instagram & Facebook</p>
-                <p class="text-sm sm:text-base text-slate-600 leading-relaxed">Multi-format asset distribution, audience engagement monitoring, and active community moderation.</p>
+                <h5 class="font-serif font-bold text-slate-900 text-sm">Shopify</h5>
+                <p class="text-[11px] text-slate-600 leading-snug">E-commerce storefront &amp; checkout CRO.</p>
               </div>
-              <div class="pt-2.5 border-t border-pink-100/60 text-xs sm:text-sm text-slate-600 font-medium">
-                Proven Result: 44.4% IG Interaction
+              <div class="mt-3 pt-2.5 border-t border-pink-100/70 text-[11px] text-pink-700 font-semibold truncate">
+                3.2% Conversion Rate
               </div>
             </div>
 
-            <!-- Tool 7: Sprout Social -->
-            <div class="bg-[#FCF9FA] p-5 rounded-2xl border border-pink-100 shadow-sm hover:border-pink-300 transition duration-300 flex flex-col justify-between space-y-3">
-              <div>
-                <div class="flex items-center justify-between mb-2.5">
-                  <div class="w-10 h-10 rounded-xl bg-white p-2 shadow-sm border border-slate-100 flex items-center justify-center">
-                    <svg class="w-6 h-6" viewBox="0 0 24 24" fill="#29C85C"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 14.93c-2.25-.33-4-2.27-4-4.6 0-2.56 2.07-4.63 4.63-4.63.26 0 .52.02.77.07v9.16zm2.03-1.32V8.39c1.23.86 2.03 2.28 2.03 3.89 0 1.35-.56 2.57-1.47 3.44l-.56-.11z"/></svg>
-                  </div>
-                  <span class="text-xs font-bold px-3 py-1 rounded-full bg-green-50 text-green-800 border border-green-200">
-                    Advanced Operator
-                  </span>
+            <!-- Tool 7: Asana -->
+            <div class="bg-[#FCF9FA] p-4 sm:p-5 rounded-2xl border border-pink-100 hover:border-pink-300 transition duration-300 shadow-sm flex flex-col justify-between min-w-0">
+              <div class="space-y-2">
+                <div class="w-10 h-10 rounded-xl bg-white border border-pink-100 flex items-center justify-center shadow-xs">
+                  <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="7" r="4.5" fill="#F06A6A"/><circle cx="6.5" cy="16.5" r="4.5" fill="#F06A6A"/><circle cx="17.5" cy="16.5" r="4.5" fill="#F06A6A"/></svg>
                 </div>
-                <h4 class="font-serif font-bold text-slate-900 text-base">Sprout Social</h4>
-                <p class="text-xs sm:text-sm font-semibold text-pink-600 mb-1.5">Listening & Scheduling</p>
-                <p class="text-sm sm:text-base text-slate-600 leading-relaxed">Enterprise multi-brand editorial calendars, keyword social listening, and consolidated client reporting.</p>
+                <h5 class="font-serif font-bold text-slate-900 text-sm">Asana</h5>
+                <p class="text-[11px] text-slate-600 leading-snug">Editorial workflow sprints &amp; creative intake.</p>
               </div>
-              <div class="pt-2.5 border-t border-pink-100/60 text-xs sm:text-sm text-slate-600 font-medium">
-                Multi-Client Editorial Operations
+              <div class="mt-3 pt-2.5 border-t border-pink-100/70 text-[11px] text-pink-700 font-semibold truncate">
+                Cross-Functional Sprints
               </div>
             </div>
 
-            <!-- Tool 8: Shopify -->
-            <div class="bg-[#FCF9FA] p-5 rounded-2xl border border-pink-100 shadow-sm hover:border-pink-300 transition duration-300 flex flex-col justify-between space-y-3">
-              <div>
-                <div class="flex items-center justify-between mb-2.5">
-                  <div class="w-10 h-10 rounded-xl bg-white p-2 shadow-sm border border-slate-100 flex items-center justify-center">
-                    <svg class="w-6 h-6" viewBox="0 0 24 24" fill="#95BF47"><path d="M19.9 6.2l-2.4-.7c-.1 0-.2 0-.2.1l-.8 1.9c-.1-.3-.2-.5-.4-.7-.9-.9-2.3-1-3.4-.4-.2.1-.4.3-.6.5l-.2-.3c-.3-.4-.8-.7-1.4-.7-.2 0-.4 0-.6.1l-4.4 1.4-1.6 4.9L2 15.3l3.6 7.4 9.8 1.3 6.9-3.9 1.8-13.9zM14.4 7c.6-.3 1.3-.2 1.8.2l.4.4-1.2 2.8-1-3.4zm-1.8.5l1.1 3.6-2.8.9-1.2-3.8 2.9-.7zm-3.8 10.3c-.6-.6-1.5-1.5-1.5-2.8 0-1.8 1.5-2.6 2.8-2.6 1.4 0 2.2.9 2.2.9l-.6 1.7s-.6-.6-1.4-.6c-.6 0-1.1.4-1.1.9 0 1 .9 1.4 1.7 1.9.9.6 1.9 1.5 1.9 3.2 0 2.3-1.7 3.5-3.6 3.5-1.5 0-2.9-.8-2.9-.8l.7-1.8s.9.7 1.9.7c.9 0 1.5-.5 1.5-1.2 0-.8-.7-1.3-1.6-1.8z"/></svg>
-                  </div>
-                  <span class="text-xs font-bold px-3 py-1 rounded-full bg-slate-100 text-slate-700 border border-slate-200">
-                    E-Commerce Core
-                  </span>
+            <!-- Tool 8: Monday.com -->
+            <div class="bg-[#FCF9FA] p-4 sm:p-5 rounded-2xl border border-pink-100 hover:border-pink-300 transition duration-300 shadow-sm flex flex-col justify-between min-w-0">
+              <div class="space-y-2">
+                <div class="w-10 h-10 rounded-xl bg-white border border-pink-100 flex items-center justify-center shadow-xs">
+                  <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none"><circle cx="6" cy="15.5" r="3.5" fill="#FF3D57"/><rect x="10.5" y="8" width="5" height="11" rx="2.5" fill="#FFCB00"/><rect x="17" y="4" width="5" height="15" rx="2.5" fill="#00C875"/></svg>
                 </div>
-                <h4 class="font-serif font-bold text-slate-900 text-base">Shopify</h4>
-                <p class="text-xs sm:text-sm font-semibold text-pink-600 mb-1.5">Direct Checkout & Catalog</p>
-                <p class="text-sm sm:text-base text-slate-600 leading-relaxed">Administered 200+ wholesale accounts, catalog variant management, and tailored social invoicing.</p>
+                <h5 class="font-serif font-bold text-slate-900 text-sm">Monday.com</h5>
+                <p class="text-[11px] text-slate-600 leading-snug">Project governance &amp; client milestone boards.</p>
               </div>
-              <div class="pt-2.5 border-t border-pink-100/60 text-xs sm:text-sm text-slate-600 font-medium">
-                Proven Result: Direct Social Invoicing
+              <div class="mt-3 pt-2.5 border-t border-pink-100/70 text-[11px] text-pink-700 font-semibold truncate">
+                Milestone Tracking
               </div>
             </div>
 
-            <!-- Tool 9: Asana -->
-            <div class="bg-[#FCF9FA] p-5 rounded-2xl border border-pink-100 shadow-sm hover:border-pink-300 transition duration-300 flex flex-col justify-between space-y-3">
-              <div>
-                <div class="flex items-center justify-between mb-2.5">
-                  <div class="w-10 h-10 rounded-xl bg-white p-2 shadow-sm border border-slate-100 flex items-center justify-center">
-                    <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="7" r="4.5" fill="#F06A6A"/><circle cx="6.5" cy="16.5" r="4.5" fill="#F06A6A"/><circle cx="17.5" cy="16.5" r="4.5" fill="#F06A6A"/></svg>
-                  </div>
-                  <span class="text-xs font-bold px-3 py-1 rounded-full bg-rose-50 text-rose-800 border border-rose-200">
-                    Sprint Operations
-                  </span>
+            <!-- Tool 9: Wrike -->
+            <div class="bg-[#FCF9FA] p-4 sm:p-5 rounded-2xl border border-pink-100 hover:border-pink-300 transition duration-300 shadow-sm flex flex-col justify-between min-w-0">
+              <div class="space-y-2">
+                <div class="w-10 h-10 rounded-xl bg-white border border-pink-100 flex items-center justify-center shadow-xs">
+                  <svg class="w-6 h-6" viewBox="0 0 24 24" fill="#04D066"><path d="M12 2.5L2 19h4.8l5.2-8.8 5.2 8.8H22L12 2.5zm0 8.2l3.4 5.8H8.6l3.4-5.8z"/></svg>
                 </div>
-                <h4 class="font-serif font-bold text-slate-900 text-base">Asana</h4>
-                <p class="text-xs sm:text-sm font-semibold text-pink-600 mb-1.5">Sprint Planning & Intake Forms</p>
-                <p class="text-sm sm:text-base text-slate-600 leading-relaxed">Coordinated cross-functional creative queues and editorial flighting across remote writers and designers.</p>
+                <h5 class="font-serif font-bold text-slate-900 text-sm">Wrike</h5>
+                <p class="text-[11px] text-slate-600 leading-snug">Enterprise resource planning &amp; QA tracking.</p>
               </div>
-              <div class="pt-2.5 border-t border-pink-100/60 text-xs sm:text-sm text-slate-600 font-medium">
-                Managed ~100 Monthly Requests
+              <div class="mt-3 pt-2.5 border-t border-pink-100/70 text-[11px] text-pink-700 font-semibold truncate">
+                Resource Allocation
               </div>
             </div>
 
-            <!-- Tool 10: Monday.com -->
-            <div class="bg-[#FCF9FA] p-5 rounded-2xl border border-pink-100 shadow-sm hover:border-pink-300 transition duration-300 flex flex-col justify-between space-y-3">
-              <div>
-                <div class="flex items-center justify-between mb-2.5">
-                  <div class="w-10 h-10 rounded-xl bg-white p-2 shadow-sm border border-slate-100 flex items-center justify-center">
-                    <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none"><circle cx="6" cy="15.5" r="3.5" fill="#FF3D57"/><rect x="10.5" y="8" width="5" height="11" rx="2.5" fill="#FFCB00"/><rect x="17" y="4" width="5" height="15" rx="2.5" fill="#00C875"/></svg>
-                  </div>
-                  <span class="text-xs font-bold px-3 py-1 rounded-full bg-amber-50 text-amber-800 border border-amber-200">
-                    Deliverable Tracking
-                  </span>
+            <!-- Tool 10: Slack -->
+            <div class="bg-[#FCF9FA] p-4 sm:p-5 rounded-2xl border border-pink-100 hover:border-pink-300 transition duration-300 shadow-sm flex flex-col justify-between min-w-0">
+              <div class="space-y-2">
+                <div class="w-10 h-10 rounded-xl bg-white border border-pink-100 flex items-center justify-center shadow-xs">
+                  <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none"><path d="M5.04 15.12a2.52 2.52 0 0 1-2.52-2.52c0-1.39 1.13-2.52 2.52-2.52h2.52v2.52c0 1.39-1.13 2.52-2.52 2.52z" fill="#E01E5A"/><path d="M6.3 15.12a2.52 2.52 0 0 1 2.52-2.52 2.52 2.52 0 0 1 2.52 2.52v6.3a2.52 2.52 0 0 1-2.52 2.52 2.52 2.52 0 0 1-2.52-2.52v-6.3z" fill="#E01E5A"/><path d="M8.82 5.04a2.52 2.52 0 0 1-2.52-2.52C6.3 1.13 7.43 0 8.82 0s2.52 1.13 2.52 2.52v2.52H8.82z" fill="#36C5F0"/><path d="M8.82 6.3a2.52 2.52 0 0 1 2.52 2.52 2.52 2.52 0 0 1-2.52 2.52H2.52A2.52 2.52 0 0 1 0 8.82c0-1.39 1.13-2.52 2.52-2.52h6.3z" fill="#36C5F0"/><path d="M18.96 8.82a2.52 2.52 0 0 1 2.52 2.52c0 1.39-1.13 2.52-2.52 2.52h-2.52V11.34c0-1.39 1.13-2.52 2.52-2.52z" fill="#2EB67D"/><path d="M17.7 8.82a2.52 2.52 0 0 1-2.52 2.52 2.52 2.52 0 0 1-2.52-2.52V2.52C12.66 1.13 13.79 0 15.18 0c1.39 0 2.52 1.13 2.52 2.52v6.3z" fill="#2EB67D"/><path d="M15.18 18.96a2.52 2.52 0 0 1 2.52 2.52c0 1.39-1.13 2.52-2.52 2.52s-2.52-1.13-2.52-2.52v-2.52h2.52z" fill="#ECB22E"/><path d="M15.18 17.7a2.52 2.52 0 0 1-2.52-2.52 2.52 2.52 0 0 1 2.52-2.52h6.3c1.39 0 2.52 1.13 2.52 2.52 0 1.39-1.13 2.52-2.52 2.52h-6.3z" fill="#ECB22E"/></svg>
                 </div>
-                <h4 class="font-serif font-bold text-slate-900 text-base">Monday.com</h4>
-                <p class="text-xs sm:text-sm font-semibold text-pink-600 mb-1.5">Milestone & Delivery Dashboards</p>
-                <p class="text-sm sm:text-base text-slate-600 leading-relaxed">Visual multi-client deliverable tracking from copy drafting through client review and final publishing.</p>
+                <h5 class="font-serif font-bold text-slate-900 text-sm">Slack Enterprise</h5>
+                <p class="text-[11px] text-slate-600 leading-snug">Remote operations &amp; rapid client approvals.</p>
               </div>
-              <div class="pt-2.5 border-t border-pink-100/60 text-xs sm:text-sm text-slate-600 font-medium">
-                Cross-Client Status Dashboards
+              <div class="mt-3 pt-2.5 border-t border-pink-100/70 text-[11px] text-pink-700 font-semibold truncate">
+                Distributed Team Comms
               </div>
             </div>
 
-            <!-- Tool 11: Wrike -->
-            <div class="bg-[#FCF9FA] p-5 rounded-2xl border border-pink-100 shadow-sm hover:border-pink-300 transition duration-300 flex flex-col justify-between space-y-3">
-              <div>
-                <div class="flex items-center justify-between mb-2.5">
-                  <div class="w-10 h-10 rounded-xl bg-white p-2 shadow-sm border border-slate-100 flex items-center justify-center">
-                    <svg class="w-6 h-6" viewBox="0 0 24 24" fill="#04D066"><path d="M12 2.5L2 19h4.8l5.2-8.8 5.2 8.8H22L12 2.5zm0 8.2l3.4 5.8H8.6l3.4-5.8z"/></svg>
-                  </div>
-                  <span class="text-xs font-bold px-3 py-1 rounded-full bg-slate-100 text-slate-700 border border-slate-200">
-                    SLA Operations
-                  </span>
+            <!-- Tool 11: Canva Pro -->
+            <div class="bg-[#FCF9FA] p-4 sm:p-5 rounded-2xl border border-pink-100 hover:border-pink-300 transition duration-300 shadow-sm flex flex-col justify-between min-w-0">
+              <div class="space-y-2">
+                <div class="w-10 h-10 rounded-xl bg-white border border-pink-100 flex items-center justify-center shadow-xs">
+                  <svg class="w-6 h-6" viewBox="0 0 24 24" fill="#00C4CC"><circle cx="12" cy="12" r="10"/><path d="M15.5 12.2c-.2 1.8-1.5 3-3.2 3-2 0-3.3-1.6-3.3-3.6 0-2.2 1.6-3.8 3.6-3.8 1.4 0 2.5.8 2.8 2h-1.3c-.3-.6-.8-.9-1.5-.9-1.3 0-2.2 1.1-2.2 2.7 0 1.4.8 2.5 2.1 2.5 1 0 1.7-.7 1.8-1.9h1.2z" fill="white"/></svg>
                 </div>
-                <h4 class="font-serif font-bold text-slate-900 text-base">Wrike</h4>
-                <p class="text-xs sm:text-sm font-semibold text-pink-600 mb-1.5">Enterprise Task Governance</p>
-                <p class="text-sm sm:text-base text-slate-600 leading-relaxed">Task dependency management, version control review cycles, and enterprise client SLA compliance.</p>
+                <h5 class="font-serif font-bold text-slate-900 text-sm">Canva Pro</h5>
+                <p class="text-[11px] text-slate-600 leading-snug">Carousel templates &amp; agile social collateral.</p>
               </div>
-              <div class="pt-2.5 border-t border-pink-100/60 text-xs sm:text-sm text-slate-600 font-medium">
-                Structured Review Workflows
+              <div class="mt-3 pt-2.5 border-t border-pink-100/70 text-[11px] text-pink-700 font-semibold truncate">
+                Brand Template Systems
               </div>
             </div>
 
-            <!-- Tool 12: Slack -->
-            <div class="bg-[#FCF9FA] p-5 rounded-2xl border border-pink-100 shadow-sm hover:border-pink-300 transition duration-300 flex flex-col justify-between space-y-3">
-              <div>
-                <div class="flex items-center justify-between mb-2.5">
-                  <div class="w-10 h-10 rounded-xl bg-white p-2 shadow-sm border border-slate-100 flex items-center justify-center">
-                    <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none"><path d="M5.04 15.12a2.52 2.52 0 0 1-2.52-2.52c0-1.39 1.13-2.52 2.52-2.52h2.52v2.52c0 1.39-1.13 2.52-2.52 2.52z" fill="#E01E5A"/><path d="M6.3 15.12a2.52 2.52 0 0 1 2.52-2.52 2.52 2.52 0 0 1 2.52 2.52v6.3a2.52 2.52 0 0 1-2.52 2.52 2.52 2.52 0 0 1-2.52-2.52v-6.3z" fill="#E01E5A"/><path d="M8.82 5.04a2.52 2.52 0 0 1-2.52-2.52C6.3 1.13 7.43 0 8.82 0s2.52 1.13 2.52 2.52v2.52H8.82z" fill="#36C5F0"/><path d="M8.82 6.3a2.52 2.52 0 0 1 2.52 2.52 2.52 2.52 0 0 1-2.52 2.52H2.52A2.52 2.52 0 0 1 0 8.82c0-1.39 1.13-2.52 2.52-2.52h6.3z" fill="#36C5F0"/><path d="M18.96 8.82a2.52 2.52 0 0 1 2.52 2.52c0 1.39-1.13 2.52-2.52 2.52h-2.52V11.34c0-1.39 1.13-2.52 2.52-2.52z" fill="#2EB67D"/><path d="M17.7 8.82a2.52 2.52 0 0 1-2.52 2.52 2.52 2.52 0 0 1-2.52-2.52V2.52C12.66 1.13 13.79 0 15.18 0c1.39 0 2.52 1.13 2.52 2.52v6.3z" fill="#2EB67D"/><path d="M15.18 18.96a2.52 2.52 0 0 1 2.52 2.52c0 1.39-1.13 2.52-2.52 2.52s-2.52-1.13-2.52-2.52v-2.52h2.52z" fill="#ECB22E"/><path d="M15.18 17.7a2.52 2.52 0 0 1-2.52-2.52 2.52 2.52 0 0 1 2.52-2.52h6.3c1.39 0 2.52 1.13 2.52 2.52 0 1.39-1.13 2.52-2.52 2.52h-6.3z" fill="#ECB22E"/></svg>
-                  </div>
-                  <span class="text-xs font-bold px-3 py-1 rounded-full bg-blue-50 text-blue-700 border border-blue-200">
-                    Remote Ops
-                  </span>
+            <!-- Tool 12: Adobe Creative Cloud -->
+            <div class="bg-[#FCF9FA] p-4 sm:p-5 rounded-2xl border border-pink-100 hover:border-pink-300 transition duration-300 shadow-sm flex flex-col justify-between min-w-0">
+              <div class="space-y-2">
+                <div class="w-10 h-10 rounded-xl bg-white border border-pink-100 flex items-center justify-center shadow-xs">
+                  <svg class="w-6 h-6" viewBox="0 0 24 24" fill="#DA1F26"><path d="M14.6 2H24v20L14.6 2zM9.4 2H0v20L9.4 2zm2.6 9.8L16.2 22h-3.4l-1.8-4.5h-3L12 11.8z"/></svg>
                 </div>
-                <h4 class="font-serif font-bold text-slate-900 text-base">Slack</h4>
-                <p class="text-xs sm:text-sm font-semibold text-pink-600 mb-1.5">Asynchronous Communication</p>
-                <p class="text-sm sm:text-base text-slate-600 leading-relaxed">Daily team coordination, client Slack Connect channels, and real-time campaign performance triage.</p>
+                <h5 class="font-serif font-bold text-slate-900 text-sm">Adobe Creative Cloud</h5>
+                <p class="text-[11px] text-slate-600 leading-snug">Photoshop, Illustrator, Acrobat pro asset editing.</p>
               </div>
-              <div class="pt-2.5 border-t border-pink-100/60 text-xs sm:text-sm text-slate-600 font-medium">
-                Distributed Remote Workflow
-              </div>
-            </div>
-
-            <!-- Tool 13: Canva Pro -->
-            <div class="bg-[#FCF9FA] p-5 rounded-2xl border border-pink-100 shadow-sm hover:border-pink-300 transition duration-300 flex flex-col justify-between space-y-3">
-              <div>
-                <div class="flex items-center justify-between mb-2.5">
-                  <div class="w-10 h-10 rounded-xl bg-white p-2 shadow-sm border border-slate-100 flex items-center justify-center">
-                    <svg class="w-6 h-6" viewBox="0 0 24 24" fill="#00C4CC"><circle cx="12" cy="12" r="10"/><path d="M15.5 12.2c-.2 1.8-1.5 3-3.2 3-2 0-3.3-1.6-3.3-3.6 0-2.2 1.6-3.8 3.6-3.8 1.4 0 2.5.8 2.8 2h-1.3c-.3-.6-.8-.9-1.5-.9-1.3 0-2.2 1.1-2.2 2.7 0 1.4.8 2.5 2.1 2.5 1 0 1.7-.7 1.8-1.9h1.2z" fill="white"/></svg>
-                  </div>
-                  <span class="text-xs font-bold px-3 py-1 rounded-full bg-cyan-50 text-cyan-800 border border-cyan-200">
-                    Rapid Ideation
-                  </span>
-                </div>
-                <h4 class="font-serif font-bold text-slate-900 text-base">Canva Pro</h4>
-                <p class="text-xs sm:text-sm font-semibold text-pink-600 mb-1.5">Carousels & Social Graphics</p>
-                <p class="text-sm sm:text-base text-slate-600 leading-relaxed">Multi-slide educational carousels, brand kit standardization, and high-velocity social templates.</p>
-              </div>
-              <div class="pt-2.5 border-t border-pink-100/60 text-xs sm:text-sm text-slate-600 font-medium">
-                Proven Result: 68 Custom Assets
+              <div class="mt-3 pt-2.5 border-t border-pink-100/70 text-[11px] text-pink-700 font-semibold truncate">
+                Vector &amp; Raster Production
               </div>
             </div>
 
@@ -1262,65 +949,65 @@
       </div>
     </section>
 
-<!-- [SECTION 7: CLIENT & COLLEAGUE TESTIMONIALS]                      -->
-    <!-- EXACT TESTIMONIALS FROM HER PORTFOLIO PAGES 10 & 11               -->
     <!-- ================================================================= -->
-    <section id="endorsements" class="border-t border-pink-100 bg-[#FCF9FA] py-20 lg:py-28">
-      <div class="max-w-6xl mx-auto px-6">
+    <!-- [SECTION 7: CLIENT & COLLEAGUE TESTIMONIALS]                      -->
+    <!-- ================================================================= -->
+    <section id="endorsements" class="py-16 sm:py-24 bg-[#FCF9FA] border-b border-pink-100">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 space-y-14">
         
-        <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+        <div class="text-center max-w-2xl mx-auto space-y-3">
           <span class="text-xs font-bold uppercase tracking-wider text-pink-600">Social Proof</span>
-          <h2 class="font-serif text-3xl sm:text-4xl font-bold text-slate-900">What Partners & Leaders Say</h2>
-          <p class="text-sm text-slate-600">Endorsements from executives, colleagues, and agency partners.</p>
+          <h2 class="font-serif text-3xl sm:text-4xl font-bold text-slate-900">What Partners &amp; Leaders Say</h2>
+          <p class="text-sm text-slate-600">Endorsements from executives, colleagues, and agency leaders.</p>
         </div>
 
-        <div class="grid md:grid-cols-2 gap-8">
+        <div class="grid md:grid-cols-2 gap-6 lg:gap-8">
           
-          <!-- [EDITABLE COPY: Testimonial 1 - Dr. Jill J.] -->
-          <div class="bg-white p-8 sm:p-10 rounded-3xl border border-pink-100 shadow-sm relative">
-            <span class="font-serif text-5xl text-pink-200 absolute top-6 right-8">“</span>
-            <p class="text-slate-700 italic leading-relaxed mb-6 text-base sm:text-lg relative z-10">
+          <!-- Testimonial 1 - Dr. Jill J. -->
+          <div class="bg-white p-6 sm:p-8 rounded-3xl border border-pink-100 shadow-sm relative flex flex-col justify-between min-w-0">
+            <span class="font-serif text-5xl text-pink-200 absolute top-5 right-6 select-none pointer-events-none">&ldquo;</span>
+            <p class="text-slate-700 italic leading-relaxed mb-6 text-sm sm:text-base relative z-10">
               "Kirsten quickly captured my unique voice and style, creating posts that felt like me while gently nudging me to step outside my comfort zone. Her strategies drove substantial engagement and opened doors to exciting new opportunities."
             </p>
             <div class="border-t border-pink-50 pt-4">
-              <p class="font-serif font-bold text-slate-900">Dr. Jill J., OD, FAAO</p>
-              <p class="text-sm text-pink-600 font-medium">Executive Director of Strategy & Client Partner</p>
+              <p class="font-serif font-bold text-slate-900 text-base">Dr. Jill J., OD, FAAO</p>
+              <p class="text-xs font-semibold text-pink-600">Executive Director of Strategy &amp; Client Partner</p>
             </div>
           </div>
 
-          <!-- [EDITABLE COPY: Testimonial 2 - Karri C. (Leadtail COO)] -->
-          <div class="bg-white p-8 sm:p-10 rounded-3xl border border-pink-100 shadow-sm relative">
-            <span class="font-serif text-5xl text-pink-200 absolute top-6 right-8">“</span>
-            <p class="text-slate-700 italic leading-relaxed mb-6 text-base sm:text-lg relative z-10">
+          <!-- Testimonial 2 - Karri C. -->
+          <div class="bg-white p-6 sm:p-8 rounded-3xl border border-pink-100 shadow-sm relative flex flex-col justify-between min-w-0">
+            <span class="font-serif text-5xl text-pink-200 absolute top-5 right-6 select-none pointer-events-none">&ldquo;</span>
+            <p class="text-slate-700 italic leading-relaxed mb-6 text-sm sm:text-base relative z-10">
               "What sets Kirsten apart is her genuine curiosity about what drives business results. Her proactive approach to professional development and data synthesis makes her a valuable asset to any digital marketing or media team. I recommend her wholeheartedly."
             </p>
             <div class="border-t border-pink-50 pt-4">
-              <p class="font-serif font-bold text-slate-900">Karri C.</p>
-              <p class="text-sm text-pink-600 font-medium">Chief Operating Officer, Leadtail, Inc.</p>
+              <p class="font-serif font-bold text-slate-900 text-base">Karri C.</p>
+              <p class="text-xs font-semibold text-pink-600">Chief Operating Officer, Leadtail, Inc.</p>
             </div>
           </div>
 
-          <!-- [EDITABLE COPY: Testimonial 3 - Carisa P. (Holmes Marketing Owner)] -->
-          <div class="bg-white p-8 sm:p-10 rounded-3xl border border-pink-100 shadow-sm relative">
-            <span class="font-serif text-5xl text-pink-200 absolute top-6 right-8">“</span>
-            <p class="text-slate-700 italic leading-relaxed mb-6 text-base sm:text-lg relative z-10">
+          <!-- Testimonial 3 - Carisa P. -->
+          <div class="bg-white p-6 sm:p-8 rounded-3xl border border-pink-100 shadow-sm relative flex flex-col justify-between min-w-0">
+            <span class="font-serif text-5xl text-pink-200 absolute top-5 right-6 select-none pointer-events-none">&ldquo;</span>
+            <p class="text-slate-700 italic leading-relaxed mb-6 text-sm sm:text-base relative z-10">
               "Kirsten has determination, grit, and a work ethic that I found very refreshing. As our Customer Experience Manager, she made sure every client she interacted with felt her warmth and positivity."
             </p>
             <div class="border-t border-pink-50 pt-4">
-              <p class="font-serif font-bold text-slate-900">Carisa P.</p>
-              <p class="text-sm text-pink-600 font-medium">Owner, Holmes Marketing Services</p>
+              <p class="font-serif font-bold text-slate-900 text-base">Carisa P.</p>
+              <p class="text-xs font-semibold text-pink-600">Owner, Holmes Marketing Services</p>
             </div>
           </div>
 
-          <!-- [EDITABLE COPY: Testimonial 4 - Mike M. (Leadtail Client Partner)] -->
-          <div class="bg-white p-8 sm:p-10 rounded-3xl border border-pink-100 shadow-sm relative">
-            <span class="font-serif text-5xl text-pink-200 absolute top-6 right-8">“</span>
-            <p class="text-slate-700 italic leading-relaxed mb-6 text-base sm:text-lg relative z-10">
+          <!-- Testimonial 4 - Mike M. -->
+          <div class="bg-white p-6 sm:p-8 rounded-3xl border border-pink-100 shadow-sm relative flex flex-col justify-between min-w-0">
+            <span class="font-serif text-5xl text-pink-200 absolute top-5 right-6 select-none pointer-events-none">&ldquo;</span>
+            <p class="text-slate-700 italic leading-relaxed mb-6 text-sm sm:text-base relative z-10">
               "Kirsten is an organized, creative marketer with expertise in B2B. She creates efficient processes that deliver intentional and impactful outcomes, managing our content process from ideation to completion with great collaboration."
             </p>
             <div class="border-t border-pink-50 pt-4">
-              <p class="font-serif font-bold text-slate-900">Mike M.</p>
-              <p class="text-sm text-pink-600 font-medium">Leadtail Client Partner</p>
+              <p class="font-serif font-bold text-slate-900 text-base">Mike M.</p>
+              <p class="text-xs font-semibold text-pink-600">Leadtail Client Partner</p>
             </div>
           </div>
 
@@ -1332,116 +1019,75 @@
   </main>
 
   <!-- ================================================================= -->
-  <!-- [SECTION 8: FOOTER & CONTACT SECTION]                             -->
-  <!-- FEATURING HER FULL LOGO LOCKUP, EXACT PHONE, EMAIL & LINKEDIN     -->
+  <!-- [SECTION 8: FOOTER & DIRECT CONTACT]                              -->
   <!-- ================================================================= -->
-  <footer id="contact" class="bg-slate-900 text-white py-20 border-t border-slate-800">
-    <div class="max-w-6xl mx-auto px-6">
+  <footer id="contact" class="bg-slate-900 text-white py-16 sm:py-20 border-t border-slate-800">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
       
-      <div class="grid md:grid-cols-12 gap-12 items-center pb-12 border-b border-slate-800">
+      <div class="grid md:grid-cols-12 gap-10 items-center pb-12 border-b border-slate-800">
         
-        <!-- Left: Full Brand Lockup & Contact Info -->
-        <div class="md:col-span-7 space-y-5 text-center md:text-left">
-          <div class="inline-block bg-white/95 p-3 rounded-2xl shadow-sm">
-            <img src="brand_logo_transparent.png" alt="Peoples Social | Digital Marketing" class="h-16 w-auto object-contain">
+        <!-- Left: Bio & Coordinates -->
+        <div class="md:col-span-7 space-y-4 text-center md:text-left">
+          <div class="inline-flex items-center gap-3 bg-white/10 px-4 py-2 rounded-2xl border border-white/10">
+            <div class="w-8 h-8 rounded-full bg-pink-600 flex items-center justify-center font-serif font-bold text-white text-sm">
+              KP
+            </div>
+            <div class="text-left">
+              <p class="font-serif font-bold text-white text-sm leading-tight">Kirsten Peoples</p>
+              <p class="text-[10px] text-pink-300 uppercase tracking-wider">Digital Marketing Strategist</p>
+            </div>
           </div>
-          
-          <p class="text-slate-300 text-sm max-w-md leading-relaxed">
-            I am always open to new collaborative opportunities and remote digital marketing roles. Let's discuss how we can build a content strategy that connects and converts.
+
+          <p class="text-slate-300 text-xs sm:text-sm max-w-md leading-relaxed font-normal">
+            Currently open to full-time remote roles and strategic advisory contracts in digital marketing strategy, paid acquisition, and content operations.
           </p>
-          
-          <!-- [EDITABLE COPY: Direct Contact Information & Phone/Email] -->
-          <div class="pt-2 text-sm text-slate-200 space-y-2 font-sans">
-            <p class="text-slate-300">📍 Englewood, OH • Open to Fully Remote</p>
-            <p>📞 <a href="tel:9376411625" class="hover:text-pink-400 transition">937-641-1625</a></p>
-            <p>✉️ <a href="mailto:peoples.socialmarketing@gmail.com" class="hover:text-pink-400 transition">peoples.socialmarketing@gmail.com</a></p>
+
+          <div class="pt-2 text-xs sm:text-sm text-slate-300 space-y-1.5 font-sans">
+            <p>📍 Englewood, OH • Open to Fully Remote</p>
+            <p>📞 <a href="tel:9376411625" class="hover:text-pink-400 transition-smooth">937-641-1625</a></p>
+            <p>✉️ <a href="mailto:peoples.socialmarketing@gmail.com" class="hover:text-pink-400 transition-smooth">peoples.socialmarketing@gmail.com</a></p>
           </div>
         </div>
 
-        <!-- Right: Direct Contact Actions (LinkedIn, Copy Email, Mailto) -->
-        <div class="md:col-span-5 flex flex-col sm:flex-row items-center justify-center md:justify-end gap-3 text-sm">
-          
-          <!-- Exact LinkedIn Link from Page 12: in/kirstenpeoples -->
-          <a href="https://www.linkedin.com/in/kirstenpeoples" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto text-center text-slate-300 hover:text-white transition px-5 py-3 border border-slate-700 rounded-full hover:border-pink-500 hover:bg-slate-800 flex items-center justify-center space-x-2">
-            <svg class="w-4 h-4 fill-current text-pink-400" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.45c-.9 0-1.63.73-1.63 1.63s.73 1.63 1.63 1.63 1.63-.73 1.63-1.63-.73-1.63-1.63-1.63Z"/></svg>
-            <span>LinkedIn Profile</span>
+        <!-- Right: Action Buttons -->
+        <div class="md:col-span-5 flex flex-col sm:flex-row items-center justify-center md:justify-end gap-3.5">
+          <a href="mailto:peoples.socialmarketing@gmail.com" class="w-full sm:w-auto text-center px-6 py-3.5 bg-pink-600 hover:bg-pink-700 text-white text-xs font-bold uppercase tracking-wider rounded-full transition-smooth shadow hover:shadow-md">
+            Send Email
           </a>
-
-          <!-- Copy Email Button -->
-          <button id="copy-email-btn" type="button" class="w-full sm:w-auto text-center text-slate-300 hover:text-white transition px-5 py-3 border border-slate-700 rounded-full hover:border-pink-500 hover:bg-slate-800 flex items-center justify-center space-x-2">
-            <span id="copy-email-text">Copy Email</span>
-          </button>
-
-          <!-- Direct Email Button -->
-          <a href="mailto:peoples.socialmarketing@gmail.com?subject=Digital%20Marketing%20Inquiry%20via%20Portfolio" class="w-full sm:w-auto text-center bg-pink-600 hover:bg-pink-700 text-white px-6 py-3 rounded-full font-medium transition shadow-md">
-            Email Kirsten
+          <a href="https://www.linkedin.com/in/kirsten-peoples" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto text-center px-6 py-3.5 bg-slate-800 hover:bg-slate-700 text-slate-200 hover:text-white text-xs font-bold uppercase tracking-wider rounded-full transition-smooth border border-slate-700">
+            LinkedIn Profile
           </a>
-
         </div>
 
       </div>
 
-      <!-- Bottom Copyright & Domain Note -->
-      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-sm text-slate-400 gap-4 font-sans">
-        <p>© 2026 Kirsten Peoples. All rights reserved.</p>
-        <p class="tracking-wider">peoplessocialmarketing.com</p>
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4 text-center sm:text-left">
+        <p>&copy; 2026 Kirsten Peoples. All rights reserved. Portfolio data presented under commercial attribution standards.</p>
+        <a href="#" class="hover:text-pink-400 transition-smooth flex items-center gap-1 font-semibold">
+          <span>Back to Top</span> &uarr;
+        </a>
       </div>
 
     </div>
   </footer>
 
-  <!-- ================================================================= -->
-  <!-- [MINIMAL JAVASCRIPT: MOBILE MENU & CLIPBOARD HELPER]              -->
-  <!-- ================================================================= -->
+  <!-- Mobile Menu JS Toggle -->
   <script>
-    // 1. Mobile Menu Drawer Toggle
-    const menuBtn = document.getElementById('mobile-menu-btn');
+    const mobileBtn = document.getElementById('mobile-menu-btn');
     const mobileMenu = document.getElementById('mobile-menu');
-    const barsIcon = document.getElementById('menu-icon-bars');
-    const closeIcon = document.getElementById('menu-icon-close');
 
-    if (menuBtn && mobileMenu) {
-      menuBtn.addEventListener('click', () => {
-        const isHidden = mobileMenu.classList.contains('hidden');
-        if (isHidden) {
-          mobileMenu.classList.remove('hidden');
-          barsIcon.classList.add('hidden');
-          closeIcon.classList.remove('hidden');
-        } else {
-          mobileMenu.classList.add('hidden');
-          barsIcon.classList.remove('hidden');
-          closeIcon.classList.add('hidden');
-        }
+    if (mobileBtn && mobileMenu) {
+      mobileBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
       });
 
-      // Auto-close menu when a nav link is clicked
-      document.querySelectorAll('.mobile-nav-link').forEach(link => {
+      // Close menu when clicking any nav link
+      mobileMenu.querySelectorAll('a').forEach(link => {
         link.addEventListener('click', () => {
           mobileMenu.classList.add('hidden');
-          barsIcon.classList.remove('hidden');
-          closeIcon.classList.add('hidden');
-        });
-      });
-    }
-
-    // 2. One-Click Copy Email to Clipboard with Visual Feedback
-    const copyBtn = document.getElementById('copy-email-btn');
-    const copyText = document.getElementById('copy-email-text');
-    if (copyBtn && copyText) {
-      copyBtn.addEventListener('click', () => {
-        navigator.clipboard.writeText('peoples.socialmarketing@gmail.com').then(() => {
-          copyText.textContent = 'Copied to Clipboard!';
-          copyBtn.classList.add('border-pink-500', 'text-pink-300');
-          setTimeout(() => {
-            copyText.textContent = 'Copy Email';
-            copyBtn.classList.remove('border-pink-500', 'text-pink-300');
-          }, 2500);
-        }).catch(() => {
-          window.location.href = 'mailto:peoples.socialmarketing@gmail.com';
         });
       });
     }
   </script>
-
 </body>
 </html>
