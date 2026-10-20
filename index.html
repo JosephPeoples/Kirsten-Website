@@ -2000,12 +2000,12 @@
       });
 
       // Auto-close menu when a nav link is clicked
-      document.querySelectorAll('.mobile-nav-link').forEach(link => {
-        link.addEventListener('click', () => {
+      mobileMenu.addEventListener('click', (event) => {
+        if (event.target.closest('.mobile-nav-link')) {
           mobileMenu.classList.add('hidden');
           barsIcon.classList.remove('hidden');
           closeIcon.classList.add('hidden');
-        });
+        }
       });
     }
 
