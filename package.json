@@ -1,0 +1,16 @@
+{
+  "name": "kirsten-website",
+  "version": "1.0.0",
+  "description": "Professional digital marketing portfolio for Kirsten Peoples.",
+  "main": "index.html",
+  "scripts": {
+    "test": "playwright test",
+    "test:e2e": "playwright test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.43.1"
+  }
+}
