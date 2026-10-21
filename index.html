@@ -18,18 +18,44 @@
   <meta property="og:site_name" content="Peoples Social | Digital Marketing">
   <meta property="og:title" content="Kirsten Peoples | Digital Marketing Strategist">
   <meta property="og:description" content="Real connections. Real growth. Full-funnel digital acquisition and authentic storytelling.">
-  <meta property="og:image" content="https://peoplessocialmarketing.com/brand_logo_card.png">
+  <meta property="og:image" content="https://peoplessocialmarketing.com/assets/img/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Kirsten Peoples, Digital Marketing Strategist &amp; Content Creator">
+
+  <!-- Twitter / X Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Kirsten Peoples | Digital Marketing Strategist">
+  <meta name="twitter:description" content="Real connections. Real growth. Full-funnel digital acquisition and authentic storytelling.">
+  <meta name="twitter:image" content="https://peoplessocialmarketing.com/assets/img/og-image.jpg">
+  <meta name="twitter:image:alt" content="Kirsten Peoples, Digital Marketing Strategist &amp; Content Creator">
+
+  <!-- Structured Data: Person -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Kirsten Peoples",
+    "url": "https://peoplessocialmarketing.com/",
+    "image": "https://peoplessocialmarketing.com/assets/img/kirsten.jpg",
+    "jobTitle": "Digital Marketing Strategist & Content Creator",
+    "email": "mailto:peoples.socialmarketing@gmail.com",
+    "address": { "@type": "PostalAddress", "addressLocality": "Englewood", "addressRegion": "OH", "addressCountry": "US" },
+    "sameAs": ["https://www.linkedin.com/in/kirstenpeoples"],
+    "knowsAbout": ["Google Ads", "Google Analytics 4", "Paid search (SEM)", "Social media marketing", "Content strategy", "Executive thought leadership", "Editorial operations", "HubSpot"]
+  }
+  </script>
 
   <!-- Crisp Inline Flower Favicon Matching Kirsten's Brand Flower -->
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23FFF0F9'/><path d='M16 7c1 3-1 5-1 5s2-2 5-1c-2 2-2 4-2 4s3-1 4 2c-3 1-4 0-4 0s2 3 0 5c-2-2-2-4-2-4s0 3-3 3c1-3 0-4 0-4s-3 2-4 0c2-2 4-2 4-2s-3-2-2-5c2 2 3 3 3 3s0-3 2-4z' fill='%23E62E8A'/><circle cx='16' cy='16' r='2' fill='%23FDE047'/></svg>">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
 
-  <!-- Tailwind CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
   
   <!-- EXACT PORTFOLIO FONTS: Droid Serif (Headlines) & Garet / Outfit (Geometric Sans) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Droid+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Outfit:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Trimmed to the faces that actually render (Outfit 400-700). Droid Serif / Plus Jakarta Sans were requested but never displayed. -->
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
   
   <style>
     /* Primary Body Typography matching Garet from Kirsten's Portfolio */
@@ -52,9 +78,21 @@
     .transition-smooth {
       transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
     }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
   </style>
+
+  <!-- Charts carry aspect-[w/h] of the original full-size files so resized copies keep identical layout. -->
+  <!-- Built, minified Tailwind CSS (v3.4.17, replaces cdn.tailwindcss.com). Rebuild: see _build/README.md.
+       Must stay AFTER the inline <style> above to keep the original cascade order. -->
+  <link rel="stylesheet" href="assets/css/site.css">
 </head>
 <body class="bg-[#FCF9FA] text-slate-800 antialiased selection:bg-pink-100 selection:text-pink-900 min-h-screen flex flex-col justify-between">
+
+  <!-- Skip link: visually hidden until focused -->
+  <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] bg-pink-600 text-white text-sm font-semibold px-5 py-2.5 rounded-full shadow-md">Skip to main content</a>
 
   <!-- ================================================================= -->
   <!-- [START HEADER & NAVIGATION BAR]                                   -->
@@ -65,29 +103,68 @@
       
       <!-- Complete Brand Logo (Flower + Peoples Social | Digital Marketing) -->
       <a href="#" class="flex items-center space-x-3 group py-2">
-        <img src="brand_logo_transparent.png" alt="Peoples Social | Digital Marketing Logo" class="h-12 sm:h-14 w-auto object-contain transition duration-300 group-hover:scale-105">
+        <picture class="contents"><source hidden type="image/webp" srcset="assets/img/brand-logo.webp"><img src="assets/img/brand-logo.png" width="480" height="321" alt="Peoples Social | Digital Marketing Logo" class="h-12 sm:h-14 w-auto object-contain transition duration-300 group-hover:scale-105"></picture>
       </a>
       
       <!-- Desktop Navigation Links (Clean Garet Typography) -->
       <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-600">
-        <a href="#about" class="hover:text-pink-600 transition">About</a>
-        <a href="#what-i-do" class="hover:text-pink-600 transition">What I Do</a>
-        <a href="#work" class="hover:text-pink-600 transition">Case Studies</a>
-        <a href="#skills" class="hover:text-pink-600 transition">Skills</a>
-        <a href="#endorsements" class="hover:text-pink-600 transition">Testimonies</a>
-        <a href="#contact" class="hover:text-pink-600 transition">Contact</a>
+        <a href="#about" data-nav="about" class="hover:text-pink-600 transition">About</a>
+        <a href="#what-i-do" data-nav="what-i-do" class="hover:text-pink-600 transition">What I Do</a>
+
+        <!-- Case Studies + dropdown (opens on hover, keyboard focus, or the chevron button) -->
+        <div id="work-nav" class="relative group">
+          <div class="flex items-center space-x-1">
+            <a href="#work" data-nav="work" class="hover:text-pink-600 transition">Case Studies</a>
+            <button id="work-menu-btn" type="button" aria-expanded="false" aria-controls="work-menu" aria-label="Show case study list" class="p-1 rounded-md text-slate-500 hover:text-pink-600 hover:bg-pink-50 transition">
+              <svg aria-hidden="true" focusable="false" class="w-3.5 h-3.5 transition group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+          </div>
+          <div id="work-menu" class="absolute left-1/2 -translate-x-1/2 top-full pt-4 w-72 invisible opacity-0 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100 data-[open]:visible data-[open]:opacity-100 data-[closed]:!invisible data-[closed]:!opacity-0 transition duration-200">
+            <div class="bg-white border border-pink-100 rounded-2xl shadow-lg p-2">
+              <p class="px-3 pt-2 pb-1 text-xs font-bold uppercase tracking-wider text-pink-600">Case Studies</p>
+              <a href="#case-microsun-funnel" class="work-menu-link block px-3 py-2 rounded-xl hover:bg-pink-50 transition">
+                <span class="block font-semibold text-slate-800">Microsun</span>
+                <span class="block text-xs text-slate-500">Conversion Funnel Attribution</span>
+              </a>
+              <a href="#case-real-chemistry" class="work-menu-link block px-3 py-2 rounded-xl hover:bg-pink-50 transition">
+                <span class="block font-semibold text-slate-800">Real Chemistry</span>
+                <span class="block text-xs text-slate-500">Executive Engagement Lift</span>
+              </a>
+              <a href="#case-leadtail" class="work-menu-link block px-3 py-2 rounded-xl hover:bg-pink-50 transition">
+                <span class="block font-semibold text-slate-800">Leadtail Inc.</span>
+                <span class="block text-xs text-slate-500">Multi-Brand Operations</span>
+              </a>
+              <a href="#case-sisense" class="work-menu-link block px-3 py-2 rounded-xl hover:bg-pink-50 transition">
+                <span class="block font-semibold text-slate-800">Sisense</span>
+                <span class="block text-xs text-slate-500">Motion Creative &amp; Rollout</span>
+              </a>
+              <a href="#case-microsun-blog" class="work-menu-link block px-3 py-2 rounded-xl hover:bg-pink-50 transition">
+                <span class="block font-semibold text-slate-800">Microsun Blog</span>
+                <span class="block text-xs text-slate-500">Editorial Content &amp; Creative Direction</span>
+              </a>
+              <a href="#case-only-one-you" class="work-menu-link block px-3 py-2 rounded-xl hover:bg-pink-50 transition">
+                <span class="block font-semibold text-slate-800">Only One You</span>
+                <span class="block text-xs text-slate-500">Social Growth</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <a href="#skills" data-nav="skills" class="hover:text-pink-600 transition">Skills</a>
+        <a href="#endorsements" data-nav="endorsements" class="hover:text-pink-600 transition">Testimonies</a>
+        <a href="#contact" data-nav="contact" class="hover:text-pink-600 transition">Contact</a>
       </nav>
 
       <!-- Contact CTA Button -->
       <div class="flex items-center space-x-3">
         <a href="#contact" class="hidden sm:inline-flex items-center space-x-2 text-xs font-semibold uppercase tracking-wider bg-pink-600 hover:bg-pink-700 text-white px-5 py-2.5 rounded-full transition shadow-sm hover:shadow-md">
           <span>Let's Connect</span>
-          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+          <svg aria-hidden="true" focusable="false" class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
         </a>
 
         <!-- Mobile Menu Toggle Button -->
-        <button id="mobile-menu-btn" type="button" class="md:hidden p-2 rounded-lg text-slate-600 hover:text-pink-600 hover:bg-pink-50 transition" aria-label="Toggle navigation">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <button id="mobile-menu-btn" type="button" class="md:hidden p-2 rounded-lg text-slate-600 hover:text-pink-600 hover:bg-pink-50 transition" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobile-menu">
+          <svg aria-hidden="true" focusable="false" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path id="menu-icon-bars" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
             <path id="menu-icon-close" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
           </svg>
@@ -97,12 +174,20 @@
 
     <!-- Mobile Navigation Drawer -->
     <div id="mobile-menu" class="hidden md:hidden border-t border-pink-100 bg-white px-6 py-5 space-y-3">
-      <a href="#about" class="mobile-nav-link block text-sm font-medium text-slate-700 hover:text-pink-600 py-1 transition">About Kirsten</a>
-      <a href="#what-i-do" class="mobile-nav-link block text-sm font-medium text-slate-700 hover:text-pink-600 py-1 transition">What I Do</a>
-      <a href="#work" class="mobile-nav-link block text-sm font-medium text-slate-700 hover:text-pink-600 py-1 transition">Case Studies</a>
-      <a href="#skills" class="mobile-nav-link block text-sm font-medium text-slate-700 hover:text-pink-600 py-1 transition">Skills &amp; Tools</a>
-      <a href="#endorsements" class="mobile-nav-link block text-sm font-medium text-slate-700 hover:text-pink-600 py-1 transition">Testimonials</a>
-      <a href="#contact" class="mobile-nav-link block text-sm font-medium text-slate-700 hover:text-pink-600 py-1 transition">Contact</a>
+      <a href="#about" data-nav="about" class="mobile-nav-link block text-sm font-medium text-slate-700 hover:text-pink-600 py-1 transition">About Kirsten</a>
+      <a href="#what-i-do" data-nav="what-i-do" class="mobile-nav-link block text-sm font-medium text-slate-700 hover:text-pink-600 py-1 transition">What I Do</a>
+      <a href="#work" data-nav="work" class="mobile-nav-link block text-sm font-medium text-slate-700 hover:text-pink-600 py-1 transition">Case Studies</a>
+      <div class="ml-1 pl-4 border-l border-pink-100 space-y-1">
+        <a href="#case-microsun-funnel" class="mobile-nav-link block text-sm text-slate-500 hover:text-pink-600 py-1 transition">Microsun</a>
+        <a href="#case-real-chemistry" class="mobile-nav-link block text-sm text-slate-500 hover:text-pink-600 py-1 transition">Real Chemistry</a>
+        <a href="#case-leadtail" class="mobile-nav-link block text-sm text-slate-500 hover:text-pink-600 py-1 transition">Leadtail Inc.</a>
+        <a href="#case-sisense" class="mobile-nav-link block text-sm text-slate-500 hover:text-pink-600 py-1 transition">Sisense</a>
+        <a href="#case-microsun-blog" class="mobile-nav-link block text-sm text-slate-500 hover:text-pink-600 py-1 transition">Microsun Blog</a>
+        <a href="#case-only-one-you" class="mobile-nav-link block text-sm text-slate-500 hover:text-pink-600 py-1 transition">Only One You</a>
+      </div>
+      <a href="#skills" data-nav="skills" class="mobile-nav-link block text-sm font-medium text-slate-700 hover:text-pink-600 py-1 transition">Skills &amp; Tools</a>
+      <a href="#endorsements" data-nav="endorsements" class="mobile-nav-link block text-sm font-medium text-slate-700 hover:text-pink-600 py-1 transition">Testimonials</a>
+      <a href="#contact" data-nav="contact" class="mobile-nav-link block text-sm font-medium text-slate-700 hover:text-pink-600 py-1 transition">Contact</a>
       <a href="#contact" class="mobile-nav-link block text-center text-xs font-semibold uppercase tracking-wider bg-pink-600 text-white px-4 py-2.5 rounded-full mt-2">Get in Touch</a>
     </div>
   </header>
@@ -110,7 +195,7 @@
   <!-- [END HEADER & NAVIGATION BAR]                                     -->
   <!-- ================================================================= -->
 
-  <main class="w-full overflow-hidden">
+  <main id="main" tabindex="-1" class="w-full overflow-hidden focus:outline-none">
 
     <!-- ================================================================= -->
     <!-- [START SECTION 1: HERO & PHOTO SHOWCASE]                          -->
@@ -159,15 +244,15 @@
             <!-- [EDITABLE COPY: Quick Trust Highlights Bar] -->
             <div class="pt-6 border-t border-pink-100 flex flex-wrap justify-center lg:justify-start gap-3 sm:gap-6 text-sm sm:text-base font-semibold text-slate-800">
               <div class="flex items-center space-x-2.5 bg-pink-50/80 sm:bg-transparent px-3.5 py-2 sm:px-0 sm:py-0 rounded-xl sm:rounded-none border border-pink-100 sm:border-0 shadow-sm sm:shadow-none">
-                <svg class="w-5 h-5 text-pink-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                <svg aria-hidden="true" focusable="false" class="w-5 h-5 text-pink-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
                 <span>6+ Years Experience</span>
               </div>
               <div class="flex items-center space-x-2.5 bg-pink-50/80 sm:bg-transparent px-3.5 py-2 sm:px-0 sm:py-0 rounded-xl sm:rounded-none border border-pink-100 sm:border-0 shadow-sm sm:shadow-none">
-                <svg class="w-5 h-5 text-pink-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                <svg aria-hidden="true" focusable="false" class="w-5 h-5 text-pink-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
                 <span>Google Ads &amp; Analytics</span>
               </div>
               <div class="flex items-center space-x-2.5 bg-pink-50/80 sm:bg-transparent px-3.5 py-2 sm:px-0 sm:py-0 rounded-xl sm:rounded-none border border-pink-100 sm:border-0 shadow-sm sm:shadow-none">
-                <svg class="w-5 h-5 text-pink-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                <svg aria-hidden="true" focusable="false" class="w-5 h-5 text-pink-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
                 <span>Open to Fully Remote</span>
               </div>
             </div>
@@ -183,11 +268,11 @@
               
               <!-- Main Photo Card -->
               <div class="relative bg-white p-3 sm:p-4 rounded-3xl shadow-xl border border-pink-100 overflow-hidden">
-                <img src="kirsten.jpg" alt="Kirsten Peoples &mdash; Digital Marketing Strategist" class="w-full h-auto aspect-[4/5] sm:aspect-[3/4] object-cover object-[50%_12%] rounded-2xl">
+                <picture class="contents"><source hidden type="image/webp" srcset="assets/img/kirsten.webp"><img src="assets/img/kirsten.jpg" width="1800" height="1200" fetchpriority="high" alt="Kirsten Peoples &mdash; Digital Marketing Strategist" class="w-full h-auto aspect-[4/5] sm:aspect-[3/4] object-cover object-[50%_12%] rounded-2xl"></picture>
                 
                 <!-- Floating Card Featuring Kirsten's Whole Brand Design -->
                 <div class="absolute bottom-6 left-6 right-6 bg-white/95 backdrop-blur-md p-4 rounded-2xl border border-pink-100 shadow-lg flex items-center space-x-4">
-                  <img src="brand_logo_transparent.png" alt="Peoples Social Brand Design" class="h-14 w-auto object-contain flex-shrink-0">
+                  <picture class="contents"><source hidden type="image/webp" srcset="assets/img/brand-logo.webp"><img src="assets/img/brand-logo.png" width="480" height="321" alt="" class="h-14 w-auto object-contain flex-shrink-0"></picture>
                   <div class="border-l border-pink-100 pl-3">
                     <p class="font-serif font-bold text-slate-900 text-sm">Human-to-Human Marketing</p>
                     <p class="text-xs sm:text-sm text-pink-600 font-medium">Authenticity is our greatest competitive edge.</p>
@@ -245,7 +330,7 @@
     <!-- [START SECTION 3: ABOUT ME & PHILOSOPHY]                          -->
     <!-- GROUNDED IN HUMAN-TO-HUMAN MARKETING & REAL EXPERIENCE            -->
     <!-- ================================================================= -->
-    <section id="about" class="max-w-6xl mx-auto px-6 py-20 lg:py-28">
+    <section id="about" class="scroll-mt-20 sm:scroll-mt-24 max-w-6xl mx-auto px-6 py-20 lg:py-28">
       <div class="grid lg:grid-cols-12 gap-12 items-center">
         
         <!-- Left: Full Brand Card & Mission / Vision Blocks -->
@@ -253,7 +338,7 @@
           
           <!-- Kirsten's Complete Brand Design Card -->
           <div class="bg-[#FFF0F9] p-8 rounded-3xl border border-pink-200/80 shadow-sm text-center">
-            <img src="brand_logo_transparent.png" alt="Peoples Social Brand Design" class="max-h-36 mx-auto object-contain mb-4">
+            <picture class="contents"><source hidden type="image/webp" srcset="assets/img/brand-logo.webp"><img src="assets/img/brand-logo.png" width="480" height="321" alt="" loading="lazy" decoding="async" class="max-h-36 mx-auto object-contain mb-4"></picture>
             <p class="text-xs text-pink-700 font-medium">Rooted in strategic empathy &amp; human connection.</p>
           </div>
 
@@ -312,7 +397,7 @@
     <!-- [START SECTION 4: WHAT I DO - 3-TIER STRATEGY FRAMEWORK]          -->
     <!-- BUG FIX: UNIFIED SINGLE FUNNEL ARCHITECTURE & CLEAN DOT BULLETS   -->
     <!-- ================================================================= -->
-    <section id="what-i-do" class="border-t border-pink-100 bg-white py-20 lg:py-24">
+    <section id="what-i-do" class="scroll-mt-20 sm:scroll-mt-24 border-t border-pink-100 bg-white py-20 lg:py-24">
       <div class="max-w-6xl mx-auto px-6">
         
         <!-- Section Header -->
@@ -367,7 +452,7 @@
                   <span class="w-2.5 h-2.5 rounded-full bg-[#E62E8A] ring-4 ring-pink-100 flex-shrink-0 -mr-1 z-10"></span>
                   <div class="w-full border-t-2 border-dashed border-[#E62E8A] relative">
                     <div class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1">
-                      <svg class="w-3.5 h-3.5 text-[#E62E8A]" fill="currentColor" viewBox="0 0 20 20">
+                      <svg aria-hidden="true" focusable="false" class="w-3.5 h-3.5 text-[#E62E8A]" fill="currentColor" viewBox="0 0 20 20">
                         <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
                       </svg>
                     </div>
@@ -377,7 +462,7 @@
 
               <!-- Mobile Step Divider -->
               <div class="flex lg:hidden justify-center py-2 text-pink-500">
-                <svg class="w-5 h-5 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg aria-hidden="true" focusable="false" class="w-5 h-5 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
                 </svg>
               </div>
@@ -440,7 +525,7 @@
                   <span class="w-2.5 h-2.5 rounded-full bg-[#DB2777] ring-4 ring-pink-100 flex-shrink-0 -mr-1 z-10"></span>
                   <div class="w-full border-t-2 border-dashed border-[#DB2777] relative">
                     <div class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1">
-                      <svg class="w-3.5 h-3.5 text-[#DB2777]" fill="currentColor" viewBox="0 0 20 20">
+                      <svg aria-hidden="true" focusable="false" class="w-3.5 h-3.5 text-[#DB2777]" fill="currentColor" viewBox="0 0 20 20">
                         <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
                       </svg>
                     </div>
@@ -450,7 +535,7 @@
 
               <!-- Mobile Step Divider -->
               <div class="flex lg:hidden justify-center py-2 text-pink-500">
-                <svg class="w-5 h-5 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg aria-hidden="true" focusable="false" class="w-5 h-5 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
                 </svg>
               </div>
@@ -513,7 +598,7 @@
                   <span class="w-2.5 h-2.5 rounded-full bg-[#BE185D] ring-4 ring-pink-100 flex-shrink-0 -mr-1 z-10"></span>
                   <div class="w-full border-t-2 border-dashed border-[#BE185D] relative">
                     <div class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1">
-                      <svg class="w-3.5 h-3.5 text-[#BE185D]" fill="currentColor" viewBox="0 0 20 20">
+                      <svg aria-hidden="true" focusable="false" class="w-3.5 h-3.5 text-[#BE185D]" fill="currentColor" viewBox="0 0 20 20">
                         <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
                       </svg>
                     </div>
@@ -523,7 +608,7 @@
 
               <!-- Mobile Step Divider -->
               <div class="flex lg:hidden justify-center py-2 text-pink-500">
-                <svg class="w-5 h-5 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg aria-hidden="true" focusable="false" class="w-5 h-5 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
                 </svg>
               </div>
@@ -581,7 +666,7 @@
     <!-- [START SECTION 5: DETAILED CASE STUDIES & DATA PROOF]             -->
     <!-- COMBINING ANALYTICAL CHARTS WITH ACTUAL CONTENT & POST EXAMPLES   -->
     <!-- ================================================================= -->
-    <section id="work" class="max-w-6xl mx-auto px-6 py-20 lg:py-28 space-y-24">
+    <section id="work" class="scroll-mt-20 sm:scroll-mt-24 max-w-6xl mx-auto px-6 py-20 lg:py-28 space-y-24">
 
       <div class="text-center max-w-2xl mx-auto space-y-3">
         <!-- [EDITABLE COPY: Case Studies Section Kicker & Heading] -->
@@ -595,7 +680,7 @@
       <!-- ========================================== -->
       <!-- [CASE STUDY 1: MICROSUN FUNNEL]            -->
       <!-- ========================================== -->
-      <article class="bg-white border border-pink-100 rounded-3xl overflow-hidden shadow-sm hover:shadow-md transition min-w-0">
+      <article id="case-microsun-funnel" class="scroll-mt-24 sm:scroll-mt-28 bg-white border border-pink-100 rounded-3xl overflow-hidden shadow-sm hover:shadow-md transition min-w-0">
         <div class="p-6 sm:p-8 lg:p-12 border-b border-pink-50">
           <div class="flex flex-wrap items-center justify-between gap-4 mb-3">
             <span class="text-xs sm:text-sm font-bold uppercase tracking-wider text-pink-600 bg-pink-50 px-3 py-1 rounded-full border border-pink-200/50">
@@ -639,7 +724,7 @@
               <span class="text-xs sm:text-sm text-pink-600 font-semibold">228.5% Annualized ROI</span>
             </div>
             <div class="bg-white border border-pink-100 rounded-2xl p-4 sm:p-6 shadow-inner overflow-x-auto">
-              <img src="microsun_funnel.png" alt="Microsun Conversion Architecture Funnel Diagram" class="w-full h-auto block rounded-lg" loading="lazy">
+              <button type="button" data-lightbox="assets/img/microsun-funnel-large.webp" data-lightbox-alt="Microsun Conversion Architecture Funnel Diagram" aria-label="Enlarge: Microsun Conversion Architecture Funnel Diagram" class="relative block w-full cursor-zoom-in rounded-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-pink-500 focus-visible:ring-offset-2"><picture class="contents"><source hidden type="image/webp" srcset="assets/img/microsun-funnel.webp"><img src="assets/img/microsun-funnel.png" width="2000" height="1130" alt="Microsun Conversion Architecture Funnel Diagram" class="w-full h-auto block rounded-lg aspect-[11040/6240]" loading="lazy" decoding="async"></picture><span aria-hidden="true" class="absolute bottom-2 right-2 inline-flex items-center space-x-1.5 bg-white/95 text-pink-600 text-xs font-semibold px-3 py-1.5 rounded-full border border-pink-100 shadow-sm"><svg aria-hidden="true" focusable="false" class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35M11 8v6m-3-3h6m5 0a8 8 0 11-16 0 8 8 0 0116 0z"/></svg><span>Enlarge</span></span></button>
             </div>
           </div>
 
@@ -670,7 +755,7 @@
       <!-- ========================================== -->
       <!-- [CASE STUDY 2: REAL CHEMISTRY]            -->
       <!-- ========================================== -->
-      <article class="bg-white border border-pink-100 rounded-3xl overflow-hidden shadow-sm hover:shadow-md transition min-w-0">
+      <article id="case-real-chemistry" class="scroll-mt-24 sm:scroll-mt-28 bg-white border border-pink-100 rounded-3xl overflow-hidden shadow-sm hover:shadow-md transition min-w-0">
         <div class="p-6 sm:p-8 lg:p-12 border-b border-pink-50">
           <div class="flex flex-wrap items-center justify-between gap-4 mb-3">
             <span class="text-xs sm:text-sm font-bold uppercase tracking-wider text-pink-600 bg-pink-50 px-3 py-1 rounded-full border border-pink-200/50">
@@ -714,7 +799,7 @@
               <span class="text-xs sm:text-sm text-pink-600 font-semibold">+44.2% Average Growth</span>
             </div>
             <div class="bg-white border border-pink-100 rounded-2xl p-4 sm:p-6 shadow-inner overflow-x-auto">
-              <img src="real_chemistry_dumbbell.png" alt="Real Chemistry Executive Engagement Dumbbell Plot" class="w-full h-auto block rounded-lg" loading="lazy">
+              <button type="button" data-lightbox="assets/img/real-chemistry-dumbbell-large.webp" data-lightbox-alt="Real Chemistry Executive Engagement Dumbbell Plot" aria-label="Enlarge: Real Chemistry Executive Engagement Dumbbell Plot" class="relative block w-full cursor-zoom-in rounded-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-pink-500 focus-visible:ring-offset-2"><picture class="contents"><source hidden type="image/webp" srcset="assets/img/real-chemistry-dumbbell.webp"><img src="assets/img/real-chemistry-dumbbell.png" width="2000" height="1024" alt="Real Chemistry Executive Engagement Dumbbell Plot" class="w-full h-auto block rounded-lg aspect-[7915/4053]" loading="lazy" decoding="async"></picture><span aria-hidden="true" class="absolute bottom-2 right-2 inline-flex items-center space-x-1.5 bg-white/95 text-pink-600 text-xs font-semibold px-3 py-1.5 rounded-full border border-pink-100 shadow-sm"><svg aria-hidden="true" focusable="false" class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35M11 8v6m-3-3h6m5 0a8 8 0 11-16 0 8 8 0 0116 0z"/></svg><span>Enlarge</span></span></button>
             </div>
           </div>
 
@@ -745,7 +830,7 @@
       <!-- ========================================== -->
       <!-- [CASE STUDY 3: LEADTAIL INC.]             -->
       <!-- ========================================== -->
-      <article class="bg-white border border-pink-100 rounded-3xl overflow-hidden shadow-sm hover:shadow-md transition min-w-0">
+      <article id="case-leadtail" class="scroll-mt-24 sm:scroll-mt-28 bg-white border border-pink-100 rounded-3xl overflow-hidden shadow-sm hover:shadow-md transition min-w-0">
         <div class="p-6 sm:p-8 lg:p-12 border-b border-pink-50">
           <div class="flex flex-wrap items-center justify-between gap-4 mb-3">
             <span class="text-xs sm:text-sm font-bold uppercase tracking-wider text-pink-600 bg-pink-50 px-3 py-1 rounded-full border border-pink-200/50">
@@ -801,16 +886,16 @@
             </p>
 
             <div class="border border-pink-100 rounded-2xl overflow-hidden shadow-inner bg-slate-900">
-              <img src="leadtail_schedule.png" alt="Leadtail Content Project Schedule Example showing Founder Video Snippets and Campaign Flighting" class="w-full h-auto block" loading="lazy">
+              <button type="button" data-lightbox="assets/img/leadtail-schedule.webp" data-lightbox-alt="Leadtail Content Project Schedule Example showing Founder Video Snippets and Campaign Flighting" aria-label="Enlarge: Leadtail Content Project Schedule Example showing Founder Video Snippets and Campaign Flighting" class="relative block w-full cursor-zoom-in  focus:outline-none focus-visible:ring-2 focus-visible:ring-pink-500 focus-visible:ring-offset-2"><picture class="contents"><source hidden type="image/webp" srcset="assets/img/leadtail-schedule.webp"><img src="assets/img/leadtail-schedule.png" width="1782" height="726" alt="Leadtail Content Project Schedule Example showing Founder Video Snippets and Campaign Flighting" class="w-full h-auto block" loading="lazy" decoding="async"></picture><span aria-hidden="true" class="absolute bottom-2 right-2 inline-flex items-center space-x-1.5 bg-white/95 text-pink-600 text-xs font-semibold px-3 py-1.5 rounded-full border border-pink-100 shadow-sm"><svg aria-hidden="true" focusable="false" class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35M11 8v6m-3-3h6m5 0a8 8 0 11-16 0 8 8 0 0116 0z"/></svg><span>Enlarge</span></span></button>
             </div>
 
             <div class="grid md:grid-cols-2 gap-4 text-xs sm:text-sm text-slate-600 pt-2">
               <div class="flex items-start space-x-2">
-                <span class="text-pink-600 font-bold">✓</span>
+                <span aria-hidden="true" class="text-pink-600 font-bold">✓</span>
                 <span>Structured thematic tagging (Product, Careers, Events, Meme, Security) for clean attribution.</span>
               </div>
               <div class="flex items-start space-x-2">
-                <span class="text-pink-600 font-bold">✓</span>
+                <span aria-hidden="true" class="text-pink-600 font-bold">✓</span>
                 <span>Active comment moderation across 90-day rebrand teasers (averaging 107 comments per post).</span>
               </div>
             </div>
@@ -822,7 +907,7 @@
       <!-- ========================================== -->
       <!-- [CASE STUDY 4: LEADTAIL CLIENT | SISENSE] -->
       <!-- ========================================== -->
-      <article class="bg-white border border-pink-100 rounded-3xl overflow-hidden shadow-sm hover:shadow-md transition min-w-0">
+      <article id="case-sisense" class="scroll-mt-24 sm:scroll-mt-28 bg-white border border-pink-100 rounded-3xl overflow-hidden shadow-sm hover:shadow-md transition min-w-0">
         <div class="p-6 sm:p-8 lg:p-12 border-b border-pink-50">
           <div class="flex flex-wrap items-center justify-between gap-4 mb-3">
             <span class="text-xs sm:text-sm font-bold uppercase tracking-wider text-pink-600 bg-pink-50 px-3 py-1 rounded-full border border-pink-200/50">
@@ -889,17 +974,18 @@
               <!-- Live Native HTML5 Video Showcase -->
               <div class="lg:col-span-6">
                 <div class="rounded-2xl overflow-hidden border border-slate-200 shadow-sm bg-slate-900 relative group">
+                  <!-- Plays (muted, looped) only while scrolled into view; see assets/js/site.js -->
                   <video 
-                    autoplay 
+                    data-autoplay-inview
                     muted 
                     loop 
                     controls 
                     playsinline 
-                    preload="metadata" 
-                    poster="Sisense_BrandRefreshTeaser_1920x1080_v1.jpg" 
+                    preload="none" 
+                    width="1920" height="1080"
+                    poster="assets/img/sisense-brand-refresh-teaser.jpg" 
                     class="w-full h-auto block rounded-2xl aspect-video bg-black object-contain">
-                    <source src="Sisense_RebrandTeaser_v1_9.6.24.mp4" type="video/mp4">
-                    <source src="sisense_rebrandteaser_v1_9.6.24.mp4" type="video/mp4">
+                    <source src="assets/video/sisense-rebrand-teaser.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                   </video>
                 </div>
@@ -914,7 +1000,7 @@
             <div class="pt-4 border-t border-pink-50">
               <p class="text-xs font-bold uppercase tracking-wider text-slate-500 mb-3">Teaser Graphic Leading to Video Reveal</p>
               <div class="rounded-2xl overflow-hidden border border-slate-200 shadow-sm bg-slate-100">
-                <img src="Sisense_BrandRefreshTeaser_1920x1080_v1.jpg" alt="Sisense Brand Refresh Teaser Creative" class="w-full h-auto block object-cover" onerror="if (!this.dataset.tried) { this.dataset.tried = 1; this.src='Sisense_BrandRefreshTeaser_1920x1080_v1 (1).jpg'; } else if (this.dataset.tried == 1) { this.dataset.tried = 2; this.src='sisense_brandrefreshteaser_1920x1080_v1.jpg'; }" loading="lazy">
+                <picture class="contents"><source hidden type="image/webp" srcset="assets/img/sisense-brand-refresh-teaser.webp"><img src="assets/img/sisense-brand-refresh-teaser.jpg" width="1600" height="900" alt="Sisense Brand Refresh Teaser Creative" class="w-full h-auto block object-cover" loading="lazy" decoding="async"></picture>
               </div>
             </div>
           </div>
@@ -947,7 +1033,7 @@
       <!-- ========================================== -->
       <!-- [CASE STUDY 5: MICROSUN BLOG]              -->
       <!-- ========================================== -->
-      <article class="bg-white border border-pink-100 rounded-3xl overflow-hidden shadow-sm hover:shadow-md transition min-w-0">
+      <article id="case-microsun-blog" class="scroll-mt-24 sm:scroll-mt-28 bg-white border border-pink-100 rounded-3xl overflow-hidden shadow-sm hover:shadow-md transition min-w-0">
         <div class="p-6 sm:p-8 lg:p-12 border-b border-pink-50">
           <div class="flex flex-wrap items-center justify-between gap-4 mb-3">
             <span class="text-xs sm:text-sm font-bold uppercase tracking-wider text-pink-600 bg-pink-50 px-3 py-1 rounded-full border border-pink-200/50">
@@ -1014,7 +1100,7 @@
               <!-- Hero Visual -->
               <div class="lg:col-span-6">
                 <div class="rounded-2xl overflow-hidden border border-slate-200 shadow-sm">
-                  <img src="Blog-Cover-Image-5.jpg" alt="Raising the Bar: The Transition to LED Bulbs - Microsun Blog Cover" class="w-full h-auto block object-cover" onerror="if (!this.dataset.tried) { this.dataset.tried = 1; this.src='blog-cover-image-5.jpg'; } else if (this.dataset.tried == 1) { this.dataset.tried = 2; this.src='Blog-Cover-Image-5.png'; } else if (this.dataset.tried == 2) { this.dataset.tried = 3; this.src='blog-cover-image-5.png'; } else if (this.dataset.tried == 3) { this.dataset.tried = 4; this.src='microsun_blog_cover.png'; }" loading="lazy">
+                  <picture class="contents"><source hidden type="image/webp" srcset="assets/img/microsun-blog-cover.webp"><img src="assets/img/microsun-blog-cover.png" width="1200" height="675" alt="Raising the Bar: The Transition to LED Bulbs - Microsun Blog Cover" class="w-full h-auto block object-cover" loading="lazy" decoding="async"></picture>
                 </div>
                 <p class="text-xs text-slate-500 mt-2 text-center">Hero imagery and design created for the Microsun educational blog</p>
               </div>
@@ -1050,7 +1136,7 @@
       <!-- ========================================== -->
       <!-- [CASE STUDY 6: ONLY ONE YOU (LUBNA S.)]   -->
       <!-- ========================================== -->
-      <article class="bg-white border border-pink-100 rounded-3xl overflow-hidden shadow-sm hover:shadow-md transition min-w-0">
+      <article id="case-only-one-you" class="scroll-mt-24 sm:scroll-mt-28 bg-white border border-pink-100 rounded-3xl overflow-hidden shadow-sm hover:shadow-md transition min-w-0">
         <div class="p-6 sm:p-8 lg:p-12 border-b border-pink-50">
           <div class="flex flex-wrap items-center justify-between gap-4 mb-3">
             <span class="text-xs sm:text-sm font-bold uppercase tracking-wider text-pink-600 bg-pink-50 px-3 py-1 rounded-full border border-pink-200/50">
@@ -1118,12 +1204,12 @@
               <div class="lg:col-span-6">
                 <div class="bg-white p-4 rounded-2xl border border-pink-200/70 shadow-sm space-y-3">
                   <div class="grid grid-cols-2 gap-3">
-                    <img src="pmos_slide-1.png" alt="PMOS Carousel Slide 1 - Big News in Women's Health" class="w-full h-auto rounded-xl border border-slate-100 shadow-sm" onerror="if (!this.dataset.tried) { this.dataset.tried = 1; this.src=\'pmos_slide_1.png\'; } else if (this.dataset.tried == 1) { this.dataset.tried = 2; this.src=\'pmos_page-1.png\'; }" loading="lazy">
-                    <img src="pmos_slide-2.png" alt="PMOS Carousel Slide 2 - PCOS to PMOS" class="w-full h-auto rounded-xl border border-slate-100 shadow-sm" onerror="if (!this.dataset.tried) { this.dataset.tried = 1; this.src=\'pmos_slide_2.png\'; } else if (this.dataset.tried == 1) { this.dataset.tried = 2; this.src=\'pmos_page-2.png\'; }" loading="lazy">
+                    <picture class="contents"><source hidden type="image/webp" srcset="assets/img/pmos-slide-1.webp"><img src="assets/img/pmos-slide-1.jpg" width="600" height="600" alt="PMOS Carousel Slide 1 - Big News in Women's Health" class="w-full h-auto rounded-xl border border-slate-100 shadow-sm" loading="lazy" decoding="async"></picture>
+                    <picture class="contents"><source hidden type="image/webp" srcset="assets/img/pmos-slide-2.webp"><img src="assets/img/pmos-slide-2.jpg" width="600" height="600" alt="PMOS Carousel Slide 2 - PCOS to PMOS" class="w-full h-auto rounded-xl border border-slate-100 shadow-sm" loading="lazy" decoding="async"></picture>
                   </div>
                   <div class="grid grid-cols-2 gap-3 pt-1">
-                    <img src="pmos_slide-3.png" alt="PMOS Carousel Slide 3 - Ovarian vs Whole Body" class="w-full h-auto rounded-xl border border-slate-100 shadow-sm" onerror="if (!this.dataset.tried) { this.dataset.tried = 1; this.src=\'pmos_slide_3.png\'; } else if (this.dataset.tried == 1) { this.dataset.tried = 2; this.src=\'pmos_page-3.png\'; }" loading="lazy">
-                    <img src="pmos_slide-4.png" alt="PMOS Carousel Slide 4 - Endocrine System" class="w-full h-auto rounded-xl border border-slate-100 shadow-sm" onerror="if (!this.dataset.tried) { this.dataset.tried = 1; this.src=\'pmos_slide_4.png\'; } else if (this.dataset.tried == 1) { this.dataset.tried = 2; this.src=\'pmos_page-4.png\'; }" loading="lazy">
+                    <picture class="contents"><source hidden type="image/webp" srcset="assets/img/pmos-slide-3.webp"><img src="assets/img/pmos-slide-3.jpg" width="600" height="600" alt="PMOS Carousel Slide 3 - Ovarian vs Whole Body" class="w-full h-auto rounded-xl border border-slate-100 shadow-sm" loading="lazy" decoding="async"></picture>
+                    <picture class="contents"><source hidden type="image/webp" srcset="assets/img/pmos-slide-4.webp"><img src="assets/img/pmos-slide-4.jpg" width="600" height="600" alt="PMOS Carousel Slide 4 - Endocrine System" class="w-full h-auto rounded-xl border border-slate-100 shadow-sm" loading="lazy" decoding="async"></picture>
                   </div>
                   <p class="text-xs text-slate-500 text-center pt-1">Multi-slide educational carousel created for Only One You</p>
                 </div>
@@ -1139,7 +1225,7 @@
                 <p>The old name pointed to ovaries. But many women diagnosed with PCOS don't even have ovarian cysts. This condition is far more complex; it involves multiple hormone systems, metabolism, inflammation, blood sugar, and so much more.</p>
                 <p class="italic text-slate-600">When a client comes to me with PCOS, one of the first things I look at is insulin. Because elevated insulin levels can ripple through the entire body—affecting hormones, ovulation, energy, weight, cravings, and fertility...</p>
                 <div class="pt-2 text-xs text-pink-600 font-semibold">
-                  💬 Direct Conversion Mechanism: Drove qualified direct messages resulting in a 150% client increase.
+                  <span aria-hidden="true">💬</span> Direct Conversion Mechanism: Drove qualified direct messages resulting in a 150% client increase.
                 </div>
               </div>
             </div>
@@ -1179,7 +1265,7 @@
     <!-- [START SECTION 6: CORE DISCIPLINES, EXPERTISE & TECHNICAL TOOLSET]-->
     <!-- STRATEGIC PILLARS, EVIDENCE OF APPLICATION & COMMERCIAL VALUE     -->
     <!-- ================================================================= -->
-    <section id="skills" class="border-t border-pink-100 bg-white py-20 lg:py-28">
+    <section id="skills" class="scroll-mt-20 sm:scroll-mt-24 border-t border-pink-100 bg-white py-20 lg:py-28">
       <div class="max-w-6xl mx-auto px-6">
         
         <!-- Section Header: Clear Competency & Discipline Messaging -->
@@ -1228,15 +1314,15 @@
                 <p class="text-xs font-bold uppercase tracking-wider text-slate-500 mb-2">Primary Platforms Operated</p>
                 <div class="flex flex-wrap items-center gap-2 sm:gap-2.5">
                   <div class="flex items-center space-x-2 bg-white px-3.5 py-1.5 rounded-lg border border-slate-200 text-xs sm:text-sm font-medium text-slate-700">
-                    <svg class="w-4 h-4 flex-shrink-0" viewBox="0 0 24 24" fill="none"><path d="M3.778 14.778L10.333 3.444C11.111 2.111 12.889 1.667 14.222 2.444L17.556 4.333C18.889 5.111 19.333 6.889 18.556 8.222L12 19.556C11.222 20.889 9.444 21.333 8.111 20.556L4.778 18.667C3.444 17.889 3 16.111 3.778 14.778Z" fill="#FBBC04"/><path d="M21.222 17.556C22 16.222 21.556 14.444 20.222 13.667L13.556 9.778C12.222 9 10.444 9.444 9.667 10.778L6.333 16.556C5.556 17.889 6 19.667 7.333 20.444L14 24.333C15.333 25.111 17.111 24.667 17.889 23.333L21.222 17.556Z" fill="#4285F4"/><circle cx="5" cy="18" r="3" fill="#34A853"/></svg>
+                    <svg aria-hidden="true" focusable="false" class="w-4 h-4 flex-shrink-0" viewBox="0 0 24 24" fill="none"><path d="M3.778 14.778L10.333 3.444C11.111 2.111 12.889 1.667 14.222 2.444L17.556 4.333C18.889 5.111 19.333 6.889 18.556 8.222L12 19.556C11.222 20.889 9.444 21.333 8.111 20.556L4.778 18.667C3.444 17.889 3 16.111 3.778 14.778Z" fill="#FBBC04"/><path d="M21.222 17.556C22 16.222 21.556 14.444 20.222 13.667L13.556 9.778C12.222 9 10.444 9.444 9.667 10.778L6.333 16.556C5.556 17.889 6 19.667 7.333 20.444L14 24.333C15.333 25.111 17.111 24.667 17.889 23.333L21.222 17.556Z" fill="#4285F4"/><circle cx="5" cy="18" r="3" fill="#34A853"/></svg>
                     <span>Google Ads</span>
                   </div>
                   <div class="flex items-center space-x-2 bg-white px-3.5 py-1.5 rounded-lg border border-slate-200 text-xs sm:text-sm font-medium text-slate-700">
-                    <svg class="w-4 h-4 flex-shrink-0" viewBox="0 0 24 24" fill="#0081FB"><path d="M12 7.027c-2.02 0-3.57 1.34-4.82 3.12-.96 1.37-1.74 3.09-2.73 3.09-.85 0-1.45-.63-1.45-1.76 0-1.7 1.13-3.69 2.53-5.32C6.98 4.49 8.94 3.5 10.96 3.5c2.47 0 4.26 1.48 4.97 3.23.63-1.57 2.19-3.23 4.54-3.23 2.51 0 4.53 1.93 4.53 4.88 0 3.26-2.15 6.62-5.46 6.62-1.79 0-3.03-.99-4.14-2.45-.92-1.21-1.66-2.52-2.4-2.52h-.01V7.03z"/></svg>
+                    <svg aria-hidden="true" focusable="false" class="w-4 h-4 flex-shrink-0" viewBox="0 0 24 24" fill="#0081FB"><path d="M12 7.027c-2.02 0-3.57 1.34-4.82 3.12-.96 1.37-1.74 3.09-2.73 3.09-.85 0-1.45-.63-1.45-1.76 0-1.7 1.13-3.69 2.53-5.32C6.98 4.49 8.94 3.5 10.96 3.5c2.47 0 4.26 1.48 4.97 3.23.63-1.57 2.19-3.23 4.54-3.23 2.51 0 4.53 1.93 4.53 4.88 0 3.26-2.15 6.62-5.46 6.62-1.79 0-3.03-.99-4.14-2.45-.92-1.21-1.66-2.52-2.4-2.52h-.01V7.03z"/></svg>
                     <span>Meta Ads</span>
                   </div>
                   <div class="flex items-center space-x-2 bg-white px-3.5 py-1.5 rounded-lg border border-slate-200 text-xs sm:text-sm font-medium text-slate-700">
-                    <svg class="w-4 h-4 flex-shrink-0" viewBox="0 0 24 24" fill="#95BF47"><path d="M19.9 6.2l-2.4-.7c-.1 0-.2 0-.2.1l-.8 1.9c-.1-.3-.2-.5-.4-.7-.9-.9-2.3-1-3.4-.4-.2.1-.4.3-.6.5l-.2-.3c-.3-.4-.8-.7-1.4-.7-.2 0-.4 0-.6.1l-4.4 1.4-1.6 4.9L2 15.3l3.6 7.4 9.8 1.3 6.9-3.9 1.8-13.9zM14.4 7c.6-.3 1.3-.2 1.8.2l.4.4-1.2 2.8-1-3.4zm-1.8.5l1.1 3.6-2.8.9-1.2-3.8 2.9-.7zm-3.8 10.3c-.6-.6-1.5-1.5-1.5-2.8 0-1.8 1.5-2.6 2.8-2.6 1.4 0 2.2.9 2.2.9l-.6 1.7s-.6-.6-1.4-.6c-.6 0-1.1.4-1.1.9 0 1 .9 1.4 1.7 1.9.9.6 1.9 1.5 1.9 3.2 0 2.3-1.7 3.5-3.6 3.5-1.5 0-2.9-.8-2.9-.8l.7-1.8s.9.7 1.9.7c.9 0 1.5-.5 1.5-1.2 0-.8-.7-1.3-1.6-1.8z"/></svg>
+                    <svg aria-hidden="true" focusable="false" class="w-4 h-4 flex-shrink-0" viewBox="0 0 24 24" fill="#95BF47"><path d="M19.9 6.2l-2.4-.7c-.1 0-.2 0-.2.1l-.8 1.9c-.1-.3-.2-.5-.4-.7-.9-.9-2.3-1-3.4-.4-.2.1-.4.3-.6.5l-.2-.3c-.3-.4-.8-.7-1.4-.7-.2 0-.4 0-.6.1l-4.4 1.4-1.6 4.9L2 15.3l3.6 7.4 9.8 1.3 6.9-3.9 1.8-13.9zM14.4 7c.6-.3 1.3-.2 1.8.2l.4.4-1.2 2.8-1-3.4zm-1.8.5l1.1 3.6-2.8.9-1.2-3.8 2.9-.7zm-3.8 10.3c-.6-.6-1.5-1.5-1.5-2.8 0-1.8 1.5-2.6 2.8-2.6 1.4 0 2.2.9 2.2.9l-.6 1.7s-.6-.6-1.4-.6c-.6 0-1.1.4-1.1.9 0 1 .9 1.4 1.7 1.9.9.6 1.9 1.5 1.9 3.2 0 2.3-1.7 3.5-3.6 3.5-1.5 0-2.9-.8-2.9-.8l.7-1.8s.9.7 1.9.7c.9 0 1.5-.5 1.5-1.2 0-.8-.7-1.3-1.6-1.8z"/></svg>
                     <span>Shopify</span>
                   </div>
                 </div>
@@ -1245,7 +1331,7 @@
               <!-- Evidence of Skills (The Proof) -->
               <div class="bg-white p-5 rounded-2xl border border-pink-100 text-sm text-slate-600 space-y-2 leading-relaxed">
                 <p class="font-bold text-slate-900 flex items-center space-x-1.5">
-                  <span class="text-pink-600">&check;</span>
+                  <span aria-hidden="true" class="text-pink-600">&check;</span>
                   <span>Evidence &amp; Track Record:</span>
                 </p>
                 <p>
@@ -1256,7 +1342,7 @@
               <!-- How She Leverages It to Help Others -->
               <div class="bg-pink-50/60 p-5 rounded-2xl border border-pink-200/60 text-sm text-slate-700 space-y-2 leading-relaxed">
                 <p class="font-bold text-pink-900 flex items-center space-x-1.5">
-                  <span class="text-pink-600">&starf;</span>
+                  <span aria-hidden="true" class="text-pink-600">&starf;</span>
                   <span>How I Leverage This to Help You:</span>
                 </p>
                 <p>
@@ -1294,11 +1380,11 @@
                 <p class="text-xs font-bold uppercase tracking-wider text-slate-500 mb-2">Primary Platforms &amp; Statistical Suites</p>
                 <div class="flex flex-wrap items-center gap-2 sm:gap-2.5">
                   <div class="flex items-center space-x-2 bg-white px-3.5 py-1.5 rounded-lg border border-slate-200 text-xs sm:text-sm font-medium text-slate-700">
-                    <svg class="w-4 h-4 flex-shrink-0" viewBox="0 0 24 24" fill="none"><rect x="15" y="4" width="5" height="16" rx="2.5" fill="#F9AB00"/><rect x="9.5" y="9" width="5" height="11" rx="2.5" fill="#E37400"/><circle cx="4.5" cy="17.5" r="2.5" fill="#E37400"/></svg>
+                    <svg aria-hidden="true" focusable="false" class="w-4 h-4 flex-shrink-0" viewBox="0 0 24 24" fill="none"><rect x="15" y="4" width="5" height="16" rx="2.5" fill="#F9AB00"/><rect x="9.5" y="9" width="5" height="11" rx="2.5" fill="#E37400"/><circle cx="4.5" cy="17.5" r="2.5" fill="#E37400"/></svg>
                     <span>Google Analytics 4</span>
                   </div>
                   <div class="flex items-center space-x-2 bg-white px-3.5 py-1.5 rounded-lg border border-slate-200 text-xs sm:text-sm font-medium text-slate-700">
-                    <svg class="w-4 h-4 flex-shrink-0" viewBox="0 0 24 24" fill="none"><path d="M11.92 0C5.39 0 5.79 2.83 5.79 2.83l.03 2.93h6.21v.88H3.34S0 6.27 0 12.83c0 6.55 2.9 6.33 2.9 6.33h1.74v-2.43s-.1-2.9 2.84-2.9h6.18s2.74.05 2.74-2.65V2.83S16.8 0 11.92 0zm-3.3 1.83a1.05 1.05 0 1 1 0 2.1 1.05 1.05 0 0 1 0-2.1z" fill="#3776AB"/><path d="M12.08 24c6.53 0 6.13-2.83 6.13-2.83l-.03-2.93h-6.21v-.88h8.69s3.34.37 3.34-6.19c0-6.55-2.9-6.33-2.9-6.33h-1.74v2.43s.1 2.9-2.84 2.9H10.3s-2.74-.05-2.74 2.65v8.34S7.2 24 12.08 24zm3.3-1.83a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1z" fill="#FFD438"/></svg>
+                    <svg aria-hidden="true" focusable="false" class="w-4 h-4 flex-shrink-0" viewBox="0 0 24 24" fill="none"><path d="M11.92 0C5.39 0 5.79 2.83 5.79 2.83l.03 2.93h6.21v.88H3.34S0 6.27 0 12.83c0 6.55 2.9 6.33 2.9 6.33h1.74v-2.43s-.1-2.9 2.84-2.9h6.18s2.74.05 2.74-2.65V2.83S16.8 0 11.92 0zm-3.3 1.83a1.05 1.05 0 1 1 0 2.1 1.05 1.05 0 0 1 0-2.1z" fill="#3776AB"/><path d="M12.08 24c6.53 0 6.13-2.83 6.13-2.83l-.03-2.93h-6.21v-.88h8.69s3.34.37 3.34-6.19c0-6.55-2.9-6.33-2.9-6.33h-1.74v2.43s.1 2.9-2.84 2.9H10.3s-2.74-.05-2.74 2.65v8.34S7.2 24 12.08 24zm3.3-1.83a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1z" fill="#FFD438"/></svg>
                     <span>Python / Anaconda</span>
                   </div>
                   <div class="flex items-center space-x-2 bg-white px-3.5 py-1.5 rounded-lg border border-slate-200 text-xs sm:text-sm font-medium text-slate-700">
@@ -1311,7 +1397,7 @@
               <!-- Evidence of Skills (The Proof) -->
               <div class="bg-white p-5 rounded-2xl border border-pink-100 text-sm text-slate-600 space-y-2 leading-relaxed">
                 <p class="font-bold text-slate-900 flex items-center space-x-1.5">
-                  <span class="text-pink-600">&check;</span>
+                  <span aria-hidden="true" class="text-pink-600">&check;</span>
                   <span>Evidence &amp; Track Record:</span>
                 </p>
                 <p>
@@ -1322,7 +1408,7 @@
               <!-- How She Leverages It to Help Others -->
               <div class="bg-pink-50/60 p-5 rounded-2xl border border-pink-200/60 text-sm text-slate-700 space-y-2 leading-relaxed">
                 <p class="font-bold text-pink-900 flex items-center space-x-1.5">
-                  <span class="text-pink-600">&starf;</span>
+                  <span aria-hidden="true" class="text-pink-600">&starf;</span>
                   <span>How I Leverage This to Help You:</span>
                 </p>
                 <p>
@@ -1360,15 +1446,15 @@
                 <p class="text-xs font-bold uppercase tracking-wider text-slate-500 mb-2">Primary Creative &amp; Publishing Stack</p>
                 <div class="flex flex-wrap items-center gap-2 sm:gap-2.5">
                   <div class="flex items-center space-x-2 bg-white px-3.5 py-1.5 rounded-lg border border-slate-200 text-xs sm:text-sm font-medium text-slate-700">
-                    <svg class="w-4 h-4 flex-shrink-0" viewBox="0 0 24 24" fill="#29C85C"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 14.93c-2.25-.33-4-2.27-4-4.6 0-2.56 2.07-4.63 4.63-4.63.26 0 .52.02.77.07v9.16zm2.03-1.32V8.39c1.23.86 2.03 2.28 2.03 3.89 0 1.35-.56 2.57-1.47 3.44l-.56-.11z"/></svg>
+                    <svg aria-hidden="true" focusable="false" class="w-4 h-4 flex-shrink-0" viewBox="0 0 24 24" fill="#29C85C"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 14.93c-2.25-.33-4-2.27-4-4.6 0-2.56 2.07-4.63 4.63-4.63.26 0 .52.02.77.07v9.16zm2.03-1.32V8.39c1.23.86 2.03 2.28 2.03 3.89 0 1.35-.56 2.57-1.47 3.44l-.56-.11z"/></svg>
                     <span>Sprout Social</span>
                   </div>
                   <div class="flex items-center space-x-2 bg-white px-3.5 py-1.5 rounded-lg border border-slate-200 text-xs sm:text-sm font-medium text-slate-700">
-                    <svg class="w-4 h-4 flex-shrink-0" viewBox="0 0 24 24" fill="#00C4CC"><circle cx="12" cy="12" r="10"/><path d="M15.5 12.2c-.2 1.8-1.5 3-3.2 3-2 0-3.3-1.6-3.3-3.6 0-2.2 1.6-3.8 3.6-3.8 1.4 0 2.5.8 2.8 2h-1.3c-.3-.6-.8-.9-1.5-.9-1.3 0-2.2 1.1-2.2 2.7 0 1.4.8 2.5 2.1 2.5 1 0 1.7-.7 1.8-1.9h1.2z" fill="white"/></svg>
+                    <svg aria-hidden="true" focusable="false" class="w-4 h-4 flex-shrink-0" viewBox="0 0 24 24" fill="#00C4CC"><circle cx="12" cy="12" r="10"/><path d="M15.5 12.2c-.2 1.8-1.5 3-3.2 3-2 0-3.3-1.6-3.3-3.6 0-2.2 1.6-3.8 3.6-3.8 1.4 0 2.5.8 2.8 2h-1.3c-.3-.6-.8-.9-1.5-.9-1.3 0-2.2 1.1-2.2 2.7 0 1.4.8 2.5 2.1 2.5 1 0 1.7-.7 1.8-1.9h1.2z" fill="white"/></svg>
                     <span>Canva Pro</span>
                   </div>
                   <div class="flex items-center space-x-2 bg-white px-3.5 py-1.5 rounded-lg border border-slate-200 text-xs sm:text-sm font-medium text-slate-700">
-                    <svg class="w-4 h-4 flex-shrink-0" viewBox="0 0 24 24" fill="#DA1F26"><path d="M14.6 2H24v20L14.6 2zM9.4 2H0v20L9.4 2zm2.6 9.8L16.2 22h-3.4l-1.8-4.5h-3L12 11.8z"/></svg>
+                    <svg aria-hidden="true" focusable="false" class="w-4 h-4 flex-shrink-0" viewBox="0 0 24 24" fill="#DA1F26"><path d="M14.6 2H24v20L14.6 2zM9.4 2H0v20L9.4 2zm2.6 9.8L16.2 22h-3.4l-1.8-4.5h-3L12 11.8z"/></svg>
                     <span>Adobe Suite</span>
                   </div>
                 </div>
@@ -1377,7 +1463,7 @@
               <!-- Evidence of Skills (The Proof) -->
               <div class="bg-white p-5 rounded-2xl border border-pink-100 text-sm text-slate-600 space-y-2 leading-relaxed">
                 <p class="font-bold text-slate-900 flex items-center space-x-1.5">
-                  <span class="text-pink-600">&check;</span>
+                  <span aria-hidden="true" class="text-pink-600">&check;</span>
                   <span>Evidence &amp; Track Record:</span>
                 </p>
                 <p>
@@ -1388,7 +1474,7 @@
               <!-- How She Leverages It to Help Others -->
               <div class="bg-pink-50/60 p-5 rounded-2xl border border-pink-200/60 text-sm text-slate-700 space-y-2 leading-relaxed">
                 <p class="font-bold text-pink-900 flex items-center space-x-1.5">
-                  <span class="text-pink-600">&starf;</span>
+                  <span aria-hidden="true" class="text-pink-600">&starf;</span>
                   <span>How I Leverage This to Help You:</span>
                 </p>
                 <p>
@@ -1426,19 +1512,19 @@
                 <p class="text-xs font-bold uppercase tracking-wider text-slate-500 mb-2">Primary Operations &amp; CRM Suite</p>
                 <div class="flex flex-wrap items-center gap-2 sm:gap-2.5">
                   <div class="flex items-center space-x-2 bg-white px-3.5 py-1.5 rounded-lg border border-slate-200 text-xs sm:text-sm font-medium text-slate-700">
-                    <svg class="w-4 h-4 flex-shrink-0" viewBox="0 0 24 24" fill="#FF7A59"><path d="M17.8 7.2V4.9c.7-.4 1.2-1.1 1.2-2 0-1.2-1-2.2-2.2-2.2s-2.2 1-2.2 2.2c0 .9.5 1.6 1.2 2v2.3c-.9.3-1.7.9-2.3 1.6l-5.6-4.3c.1-.3.1-.6.1-.9 0-1.8-1.5-3.3-3.3-3.3S1.4 3.2 1.4 5s1.5 3.3 3.3 3.3c.6 0 1.2-.2 1.7-.5l5.4 4.2c-.4.8-.7 1.7-.7 2.7 0 1.2.4 2.3 1 3.2l-2 2c-.3-.1-.6-.2-.9-.2-1.5 0-2.7 1.2-2.7 2.7s1.2 2.7 2.7 2.7 2.7-1.2 2.7-2.7c0-.3-.1-.6-.2-.9l2-2c.9.6 2 1 3.2 1 3.1 0 5.6-2.5 5.6-5.6.1-3-2.3-5.5-5.4-5.7zM16.8 17.8c-1.8 0-3.3-1.5-3.3-3.3s1.5-3.3 3.3-3.3 3.3 1.5 3.3 3.3-1.5 3.3-3.3 3.3z"/></svg>
+                    <svg aria-hidden="true" focusable="false" class="w-4 h-4 flex-shrink-0" viewBox="0 0 24 24" fill="#FF7A59"><path d="M17.8 7.2V4.9c.7-.4 1.2-1.1 1.2-2 0-1.2-1-2.2-2.2-2.2s-2.2 1-2.2 2.2c0 .9.5 1.6 1.2 2v2.3c-.9.3-1.7.9-2.3 1.6l-5.6-4.3c.1-.3.1-.6.1-.9 0-1.8-1.5-3.3-3.3-3.3S1.4 3.2 1.4 5s1.5 3.3 3.3 3.3c.6 0 1.2-.2 1.7-.5l5.4 4.2c-.4.8-.7 1.7-.7 2.7 0 1.2.4 2.3 1 3.2l-2 2c-.3-.1-.6-.2-.9-.2-1.5 0-2.7 1.2-2.7 2.7s1.2 2.7 2.7 2.7 2.7-1.2 2.7-2.7c0-.3-.1-.6-.2-.9l2-2c.9.6 2 1 3.2 1 3.1 0 5.6-2.5 5.6-5.6.1-3-2.3-5.5-5.4-5.7zM16.8 17.8c-1.8 0-3.3-1.5-3.3-3.3s1.5-3.3 3.3-3.3 3.3 1.5 3.3 3.3-1.5 3.3-3.3 3.3z"/></svg>
                     <span>HubSpot</span>
                   </div>
                   <div class="flex items-center space-x-2 bg-white px-3.5 py-1.5 rounded-lg border border-slate-200 text-xs sm:text-sm font-medium text-slate-700">
-                    <svg class="w-4 h-4 flex-shrink-0" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="7" r="4.5" fill="#F06A6A"/><circle cx="6.5" cy="16.5" r="4.5" fill="#F06A6A"/><circle cx="17.5" cy="16.5" r="4.5" fill="#F06A6A"/></svg>
+                    <svg aria-hidden="true" focusable="false" class="w-4 h-4 flex-shrink-0" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="7" r="4.5" fill="#F06A6A"/><circle cx="6.5" cy="16.5" r="4.5" fill="#F06A6A"/><circle cx="17.5" cy="16.5" r="4.5" fill="#F06A6A"/></svg>
                     <span>Asana</span>
                   </div>
                   <div class="flex items-center space-x-2 bg-white px-3.5 py-1.5 rounded-lg border border-slate-200 text-xs sm:text-sm font-medium text-slate-700">
-                    <svg class="w-4 h-4 flex-shrink-0" viewBox="0 0 24 24" fill="none"><circle cx="6" cy="15.5" r="3.5" fill="#FF3D57"/><rect x="10.5" y="8" width="5" height="11" rx="2.5" fill="#FFCB00"/><rect x="17" y="4" width="5" height="15" rx="2.5" fill="#00C875"/></svg>
+                    <svg aria-hidden="true" focusable="false" class="w-4 h-4 flex-shrink-0" viewBox="0 0 24 24" fill="none"><circle cx="6" cy="15.5" r="3.5" fill="#FF3D57"/><rect x="10.5" y="8" width="5" height="11" rx="2.5" fill="#FFCB00"/><rect x="17" y="4" width="5" height="15" rx="2.5" fill="#00C875"/></svg>
                     <span>Monday.com</span>
                   </div>
                   <div class="flex items-center space-x-2 bg-white px-3.5 py-1.5 rounded-lg border border-slate-200 text-xs sm:text-sm font-medium text-slate-700">
-                    <svg class="w-4 h-4 flex-shrink-0" viewBox="0 0 24 24" fill="none"><path d="M5.04 15.12a2.52 2.52 0 0 1-2.52-2.52c0-1.39 1.13-2.52 2.52-2.52h2.52v2.52c0 1.39-1.13 2.52-2.52 2.52z" fill="#E01E5A"/><path d="M6.3 15.12a2.52 2.52 0 0 1 2.52-2.52 2.52 2.52 0 0 1 2.52 2.52v6.3a2.52 2.52 0 0 1-2.52 2.52 2.52 2.52 0 0 1-2.52-2.52v-6.3z" fill="#E01E5A"/><path d="M8.82 5.04a2.52 2.52 0 0 1-2.52-2.52C6.3 1.13 7.43 0 8.82 0s2.52 1.13 2.52 2.52v2.52H8.82z" fill="#36C5F0"/><path d="M8.82 6.3a2.52 2.52 0 0 1 2.52 2.52 2.52 2.52 0 0 1-2.52 2.52H2.52A2.52 2.52 0 0 1 0 8.82c0-1.39 1.13-2.52 2.52-2.52h6.3z" fill="#36C5F0"/><path d="M18.96 8.82a2.52 2.52 0 0 1 2.52 2.52c0 1.39-1.13 2.52-2.52 2.52h-2.52V11.34c0-1.39 1.13-2.52 2.52-2.52z" fill="#2EB67D"/><path d="M17.7 8.82a2.52 2.52 0 0 1-2.52-2.52 2.52 2.52 0 0 1-2.52-2.52V2.52C12.66 1.13 13.79 0 15.18 0c1.39 0 2.52 1.13 2.52 2.52v6.3z" fill="#2EB67D"/><path d="M15.18 18.96a2.52 2.52 0 0 1 2.52 2.52c0 1.39-1.13 2.52-2.52 2.52s-2.52-1.13-2.52-2.52v-2.52h2.52z" fill="#ECB22E"/><path d="M15.18 17.7a2.52 2.52 0 0 1-2.52-2.52 2.52 2.52 0 0 1 2.52 2.52h6.3c1.39 0 2.52 1.13 2.52 2.52 0 1.39-1.13 2.52-2.52 2.52h-6.3z" fill="#ECB22E"/></svg>
+                    <svg aria-hidden="true" focusable="false" class="w-4 h-4 flex-shrink-0" viewBox="0 0 24 24" fill="none"><path d="M5.04 15.12a2.52 2.52 0 0 1-2.52-2.52c0-1.39 1.13-2.52 2.52-2.52h2.52v2.52c0 1.39-1.13 2.52-2.52 2.52z" fill="#E01E5A"/><path d="M6.3 15.12a2.52 2.52 0 0 1 2.52-2.52 2.52 2.52 0 0 1 2.52 2.52v6.3a2.52 2.52 0 0 1-2.52 2.52 2.52 2.52 0 0 1-2.52-2.52v-6.3z" fill="#E01E5A"/><path d="M8.82 5.04a2.52 2.52 0 0 1-2.52-2.52C6.3 1.13 7.43 0 8.82 0s2.52 1.13 2.52 2.52v2.52H8.82z" fill="#36C5F0"/><path d="M8.82 6.3a2.52 2.52 0 0 1 2.52 2.52 2.52 2.52 0 0 1-2.52 2.52H2.52A2.52 2.52 0 0 1 0 8.82c0-1.39 1.13-2.52 2.52-2.52h6.3z" fill="#36C5F0"/><path d="M18.96 8.82a2.52 2.52 0 0 1 2.52 2.52c0 1.39-1.13 2.52-2.52 2.52h-2.52V11.34c0-1.39 1.13-2.52 2.52-2.52z" fill="#2EB67D"/><path d="M17.7 8.82a2.52 2.52 0 0 1-2.52-2.52 2.52 2.52 0 0 1-2.52-2.52V2.52C12.66 1.13 13.79 0 15.18 0c1.39 0 2.52 1.13 2.52 2.52v6.3z" fill="#2EB67D"/><path d="M15.18 18.96a2.52 2.52 0 0 1 2.52 2.52c0 1.39-1.13 2.52-2.52 2.52s-2.52-1.13-2.52-2.52v-2.52h2.52z" fill="#ECB22E"/><path d="M15.18 17.7a2.52 2.52 0 0 1-2.52-2.52 2.52 2.52 0 0 1 2.52 2.52h6.3c1.39 0 2.52 1.13 2.52 2.52 0 1.39-1.13 2.52-2.52 2.52h-6.3z" fill="#ECB22E"/></svg>
                     <span>Slack</span>
                   </div>
                 </div>
@@ -1447,7 +1533,7 @@
               <!-- Evidence of Skills (The Proof) -->
               <div class="bg-white p-5 rounded-2xl border border-pink-100 text-sm text-slate-600 space-y-2 leading-relaxed">
                 <p class="font-bold text-slate-900 flex items-center space-x-1.5">
-                  <span class="text-pink-600">&check;</span>
+                  <span aria-hidden="true" class="text-pink-600">&check;</span>
                   <span>Evidence &amp; Track Record:</span>
                 </p>
                 <p>
@@ -1458,7 +1544,7 @@
               <!-- How She Leverages It to Help Others -->
               <div class="bg-pink-50/60 p-5 rounded-2xl border border-pink-200/60 text-sm text-slate-700 space-y-2 leading-relaxed">
                 <p class="font-bold text-pink-900 flex items-center space-x-1.5">
-                  <span class="text-pink-600">&starf;</span>
+                  <span aria-hidden="true" class="text-pink-600">&starf;</span>
                   <span>How I Leverage This to Help You:</span>
                 </p>
                 <p>
@@ -1491,7 +1577,7 @@
               <div>
                 <div class="flex items-center justify-between mb-2.5">
                   <div class="w-10 h-10 rounded-xl bg-white p-2 shadow-sm border border-slate-100 flex items-center justify-center">
-                    <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none"><path d="M3.778 14.778L10.333 3.444C11.111 2.111 12.889 1.667 14.222 2.444L17.556 4.333C18.889 5.111 19.333 6.889 18.556 8.222L12 19.556C11.222 20.889 9.444 21.333 8.111 20.556L4.778 18.667C3.444 17.889 3 16.111 3.778 14.778Z" fill="#FBBC04"/><path d="M21.222 17.556C22 16.222 21.556 14.444 20.222 13.667L13.556 9.778C12.222 9 10.444 9.444 9.667 10.778L6.333 16.556C5.556 17.889 6 19.667 7.333 20.444L14 24.333C15.333 25.111 17.111 24.667 17.889 23.333L21.222 17.556Z" fill="#4285F4"/><circle cx="5" cy="18" r="3" fill="#34A853"/></svg>
+                    <svg aria-hidden="true" focusable="false" class="w-6 h-6" viewBox="0 0 24 24" fill="none"><path d="M3.778 14.778L10.333 3.444C11.111 2.111 12.889 1.667 14.222 2.444L17.556 4.333C18.889 5.111 19.333 6.889 18.556 8.222L12 19.556C11.222 20.889 9.444 21.333 8.111 20.556L4.778 18.667C3.444 17.889 3 16.111 3.778 14.778Z" fill="#FBBC04"/><path d="M21.222 17.556C22 16.222 21.556 14.444 20.222 13.667L13.556 9.778C12.222 9 10.444 9.444 9.667 10.778L6.333 16.556C5.556 17.889 6 19.667 7.333 20.444L14 24.333C15.333 25.111 17.111 24.667 17.889 23.333L21.222 17.556Z" fill="#4285F4"/><circle cx="5" cy="18" r="3" fill="#34A853"/></svg>
                   </div>
                   <span class="text-xs font-bold px-3 py-1 rounded-full bg-blue-50 text-blue-700 border border-blue-200">
                     Advanced Operator
@@ -1511,7 +1597,7 @@
               <div>
                 <div class="flex items-center justify-between mb-2.5">
                   <div class="w-10 h-10 rounded-xl bg-white p-2 shadow-sm border border-slate-100 flex items-center justify-center">
-                    <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none"><rect x="15" y="4" width="5" height="16" rx="2.5" fill="#F9AB00"/><rect x="9.5" y="9" width="5" height="11" rx="2.5" fill="#E37400"/><circle cx="4.5" cy="17.5" r="2.5" fill="#E37400"/></svg>
+                    <svg aria-hidden="true" focusable="false" class="w-6 h-6" viewBox="0 0 24 24" fill="none"><rect x="15" y="4" width="5" height="16" rx="2.5" fill="#F9AB00"/><rect x="9.5" y="9" width="5" height="11" rx="2.5" fill="#E37400"/><circle cx="4.5" cy="17.5" r="2.5" fill="#E37400"/></svg>
                   </div>
                   <span class="text-xs font-bold px-3 py-1 rounded-full bg-amber-50 text-amber-800 border border-amber-200">
                     Daily Measurement
@@ -1531,7 +1617,7 @@
               <div>
                 <div class="flex items-center justify-between mb-2.5">
                   <div class="w-10 h-10 rounded-xl bg-white p-2 shadow-sm border border-slate-100 flex items-center justify-center">
-                    <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none"><path d="M11.92 0C5.39 0 5.79 2.83 5.79 2.83l.03 2.93h6.21v.88H3.34S0 6.27 0 12.83c0 6.55 2.9 6.33 2.9 6.33h1.74v-2.43s-.1-2.9 2.84-2.9h6.18s2.74.05 2.74-2.65V2.83S16.8 0 11.92 0zm-3.3 1.83a1.05 1.05 0 1 1 0 2.1 1.05 1.05 0 0 1 0-2.1z" fill="#3776AB"/><path d="M12.08 24c6.53 0 6.13-2.83 6.13-2.83l-.03-2.93h-6.21v-.88h8.69s3.34.37 3.34-6.19c0-6.55-2.9-6.33-2.9-6.33h-1.74v2.43s.1 2.9-2.84 2.9H10.3s-2.74-.05-2.74 2.65v8.34S7.2 24 12.08 24zm3.3-1.83a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1z" fill="#FFD438"/></svg>
+                    <svg aria-hidden="true" focusable="false" class="w-6 h-6" viewBox="0 0 24 24" fill="none"><path d="M11.92 0C5.39 0 5.79 2.83 5.79 2.83l.03 2.93h6.21v.88H3.34S0 6.27 0 12.83c0 6.55 2.9 6.33 2.9 6.33h1.74v-2.43s-.1-2.9 2.84-2.9h6.18s2.74.05 2.74-2.65V2.83S16.8 0 11.92 0zm-3.3 1.83a1.05 1.05 0 1 1 0 2.1 1.05 1.05 0 0 1 0-2.1z" fill="#3776AB"/><path d="M12.08 24c6.53 0 6.13-2.83 6.13-2.83l-.03-2.93h-6.21v-.88h8.69s3.34.37 3.34-6.19c0-6.55-2.9-6.33-2.9-6.33h-1.74v2.43s.1 2.9-2.84 2.9H10.3s-2.74-.05-2.74 2.65v8.34S7.2 24 12.08 24zm3.3-1.83a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1z" fill="#FFD438"/></svg>
                   </div>
                   <span class="text-xs font-bold px-3 py-1 rounded-full bg-emerald-50 text-emerald-800 border border-emerald-200">
                     Advanced Analytics
@@ -1551,7 +1637,7 @@
               <div>
                 <div class="flex items-center justify-between mb-2.5">
                   <div class="w-10 h-10 rounded-xl bg-white p-2 shadow-sm border border-slate-100 flex items-center justify-center">
-                    <svg class="w-6 h-6" viewBox="0 0 24 24" fill="#FF7A59"><path d="M17.8 7.2V4.9c.7-.4 1.2-1.1 1.2-2 0-1.2-1-2.2-2.2-2.2s-2.2 1-2.2 2.2c0 .9.5 1.6 1.2 2v2.3c-.9.3-1.7.9-2.3 1.6l-5.6-4.3c.1-.3.1-.6.1-.9 0-1.8-1.5-3.3-3.3-3.3S1.4 3.2 1.4 5s1.5 3.3 3.3 3.3c.6 0 1.2-.2 1.7-.5l5.4 4.2c-.4.8-.7 1.7-.7 2.7 0 1.2.4 2.3 1 3.2l-2 2c-.3-.1-.6-.2-.9-.2-1.5 0-2.7 1.2-2.7 2.7s1.2 2.7 2.7 2.7 2.7-1.2 2.7-2.7c0-.3-.1-.6-.2-.9l2-2c.9.6 2 1 3.2 1 3.1 0 5.6-2.5 5.6-5.6.1-3-2.3-5.5-5.4-5.7zM16.8 17.8c-1.8 0-3.3-1.5-3.3-3.3s1.5-3.3 3.3-3.3 3.3 1.5 3.3 3.3-1.5 3.3-3.3 3.3z"/></svg>
+                    <svg aria-hidden="true" focusable="false" class="w-6 h-6" viewBox="0 0 24 24" fill="#FF7A59"><path d="M17.8 7.2V4.9c.7-.4 1.2-1.1 1.2-2 0-1.2-1-2.2-2.2-2.2s-2.2 1-2.2 2.2c0 .9.5 1.6 1.2 2v2.3c-.9.3-1.7.9-2.3 1.6l-5.6-4.3c.1-.3.1-.6.1-.9 0-1.8-1.5-3.3-3.3-3.3S1.4 3.2 1.4 5s1.5 3.3 3.3 3.3c.6 0 1.2-.2 1.7-.5l5.4 4.2c-.4.8-.7 1.7-.7 2.7 0 1.2.4 2.3 1 3.2l-2 2c-.3-.1-.6-.2-.9-.2-1.5 0-2.7 1.2-2.7 2.7s1.2 2.7 2.7 2.7 2.7-1.2 2.7-2.7c0-.3-.1-.6-.2-.9l2-2c.9.6 2 1 3.2 1 3.1 0 5.6-2.5 5.6-5.6.1-3-2.3-5.5-5.4-5.7zM16.8 17.8c-1.8 0-3.3-1.5-3.3-3.3s1.5-3.3 3.3-3.3 3.3 1.5 3.3 3.3-1.5 3.3-3.3 3.3z"/></svg>
                   </div>
                   <span class="text-xs font-bold px-3 py-1 rounded-full bg-pink-50 text-pink-700 border border-pink-200">
                     Dual Certified
@@ -1571,7 +1657,7 @@
               <div>
                 <div class="flex items-center justify-between mb-2.5">
                   <div class="w-10 h-10 rounded-xl bg-white p-2 shadow-sm border border-slate-100 flex items-center justify-center">
-                    <svg class="w-6 h-6" viewBox="0 0 24 24" fill="#0081FB"><path d="M12 7.027c-2.02 0-3.57 1.34-4.82 3.12-.96 1.37-1.74 3.09-2.73 3.09-.85 0-1.45-.63-1.45-1.76 0-1.7 1.13-3.69 2.53-5.32C6.98 4.49 8.94 3.5 10.96 3.5c2.47 0 4.26 1.48 4.97 3.23.63-1.57 2.19-3.23 4.54-3.23 2.51 0 4.53 1.93 4.53 4.88 0 3.26-2.15 6.62-5.46 6.62-1.79 0-3.03-.99-4.14-2.45-.92-1.21-1.66-2.52-2.4-2.52h-.01V7.03z"/></svg>
+                    <svg aria-hidden="true" focusable="false" class="w-6 h-6" viewBox="0 0 24 24" fill="#0081FB"><path d="M12 7.027c-2.02 0-3.57 1.34-4.82 3.12-.96 1.37-1.74 3.09-2.73 3.09-.85 0-1.45-.63-1.45-1.76 0-1.7 1.13-3.69 2.53-5.32C6.98 4.49 8.94 3.5 10.96 3.5c2.47 0 4.26 1.48 4.97 3.23.63-1.57 2.19-3.23 4.54-3.23 2.51 0 4.53 1.93 4.53 4.88 0 3.26-2.15 6.62-5.46 6.62-1.79 0-3.03-.99-4.14-2.45-.92-1.21-1.66-2.52-2.4-2.52h-.01V7.03z"/></svg>
                   </div>
                   <span class="text-xs font-bold px-3 py-1 rounded-full bg-blue-50 text-blue-700 border border-blue-200">
                     Core Operations
@@ -1591,7 +1677,7 @@
               <div>
                 <div class="flex items-center justify-between mb-2.5">
                   <div class="w-10 h-10 rounded-xl bg-white p-2 shadow-sm border border-slate-100 flex items-center justify-center">
-                    <svg class="w-6 h-6" viewBox="0 0 24 24" fill="#29C85C"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 14.93c-2.25-.33-4-2.27-4-4.6 0-2.56 2.07-4.63 4.63-4.63.26 0 .52.02.77.07v9.16zm2.03-1.32V8.39c1.23.86 2.03 2.28 2.03 3.89 0 1.35-.56 2.57-1.47 3.44l-.56-.11z"/></svg>
+                    <svg aria-hidden="true" focusable="false" class="w-6 h-6" viewBox="0 0 24 24" fill="#29C85C"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 14.93c-2.25-.33-4-2.27-4-4.6 0-2.56 2.07-4.63 4.63-4.63.26 0 .52.02.77.07v9.16zm2.03-1.32V8.39c1.23.86 2.03 2.28 2.03 3.89 0 1.35-.56 2.57-1.47 3.44l-.56-.11z"/></svg>
                   </div>
                   <span class="text-xs font-bold px-3 py-1 rounded-full bg-green-50 text-green-800 border border-green-200">
                     Advanced Operator
@@ -1611,7 +1697,7 @@
               <div>
                 <div class="flex items-center justify-between mb-2.5">
                   <div class="w-10 h-10 rounded-xl bg-white p-2 shadow-sm border border-slate-100 flex items-center justify-center">
-                    <svg class="w-6 h-6" viewBox="0 0 24 24" fill="#95BF47"><path d="M19.9 6.2l-2.4-.7c-.1 0-.2 0-.2.1l-.8 1.9c-.1-.3-.2-.5-.4-.7-.9-.9-2.3-1-3.4-.4-.2.1-.4.3-.6.5l-.2-.3c-.3-.4-.8-.7-1.4-.7-.2 0-.4 0-.6.1l-4.4 1.4-1.6 4.9L2 15.3l3.6 7.4 9.8 1.3 6.9-3.9 1.8-13.9zM14.4 7c.6-.3 1.3-.2 1.8.2l.4.4-1.2 2.8-1-3.4zm-1.8.5l1.1 3.6-2.8.9-1.2-3.8 2.9-.7zm-3.8 10.3c-.6-.6-1.5-1.5-1.5-2.8 0-1.8 1.5-2.6 2.8-2.6 1.4 0 2.2.9 2.2.9l-.6 1.7s-.6-.6-1.4-.6c-.6 0-1.1.4-1.1.9 0 1 .9 1.4 1.7 1.9.9.6 1.9 1.5 1.9 3.2 0 2.3-1.7 3.5-3.6 3.5-1.5 0-2.9-.8-2.9-.8l.7-1.8s.9.7 1.9.7c.9 0 1.5-.5 1.5-1.2 0-.8-.7-1.3-1.6-1.8z"/></svg>
+                    <svg aria-hidden="true" focusable="false" class="w-6 h-6" viewBox="0 0 24 24" fill="#95BF47"><path d="M19.9 6.2l-2.4-.7c-.1 0-.2 0-.2.1l-.8 1.9c-.1-.3-.2-.5-.4-.7-.9-.9-2.3-1-3.4-.4-.2.1-.4.3-.6.5l-.2-.3c-.3-.4-.8-.7-1.4-.7-.2 0-.4 0-.6.1l-4.4 1.4-1.6 4.9L2 15.3l3.6 7.4 9.8 1.3 6.9-3.9 1.8-13.9zM14.4 7c.6-.3 1.3-.2 1.8.2l.4.4-1.2 2.8-1-3.4zm-1.8.5l1.1 3.6-2.8.9-1.2-3.8 2.9-.7zm-3.8 10.3c-.6-.6-1.5-1.5-1.5-2.8 0-1.8 1.5-2.6 2.8-2.6 1.4 0 2.2.9 2.2.9l-.6 1.7s-.6-.6-1.4-.6c-.6 0-1.1.4-1.1.9 0 1 .9 1.4 1.7 1.9.9.6 1.9 1.5 1.9 3.2 0 2.3-1.7 3.5-3.6 3.5-1.5 0-2.9-.8-2.9-.8l.7-1.8s.9.7 1.9.7c.9 0 1.5-.5 1.5-1.2 0-.8-.7-1.3-1.6-1.8z"/></svg>
                   </div>
                   <span class="text-xs font-bold px-3 py-1 rounded-full bg-slate-100 text-slate-700 border border-slate-200">
                     E-Commerce Core
@@ -1631,7 +1717,7 @@
               <div>
                 <div class="flex items-center justify-between mb-2.5">
                   <div class="w-10 h-10 rounded-xl bg-white p-2 shadow-sm border border-slate-100 flex items-center justify-center">
-                    <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="7" r="4.5" fill="#F06A6A"/><circle cx="6.5" cy="16.5" r="4.5" fill="#F06A6A"/><circle cx="17.5" cy="16.5" r="4.5" fill="#F06A6A"/></svg>
+                    <svg aria-hidden="true" focusable="false" class="w-6 h-6" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="7" r="4.5" fill="#F06A6A"/><circle cx="6.5" cy="16.5" r="4.5" fill="#F06A6A"/><circle cx="17.5" cy="16.5" r="4.5" fill="#F06A6A"/></svg>
                   </div>
                   <span class="text-xs font-bold px-3 py-1 rounded-full bg-rose-50 text-rose-800 border border-rose-200">
                     Sprint Operations
@@ -1651,7 +1737,7 @@
               <div>
                 <div class="flex items-center justify-between mb-2.5">
                   <div class="w-10 h-10 rounded-xl bg-white p-2 shadow-sm border border-slate-100 flex items-center justify-center">
-                    <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none"><circle cx="6" cy="15.5" r="3.5" fill="#FF3D57"/><rect x="10.5" y="8" width="5" height="11" rx="2.5" fill="#FFCB00"/><rect x="17" y="4" width="5" height="15" rx="2.5" fill="#00C875"/></svg>
+                    <svg aria-hidden="true" focusable="false" class="w-6 h-6" viewBox="0 0 24 24" fill="none"><circle cx="6" cy="15.5" r="3.5" fill="#FF3D57"/><rect x="10.5" y="8" width="5" height="11" rx="2.5" fill="#FFCB00"/><rect x="17" y="4" width="5" height="15" rx="2.5" fill="#00C875"/></svg>
                   </div>
                   <span class="text-xs font-bold px-3 py-1 rounded-full bg-amber-50 text-amber-800 border border-amber-200">
                     Deliverable Tracking
@@ -1671,7 +1757,7 @@
               <div>
                 <div class="flex items-center justify-between mb-2.5">
                   <div class="w-10 h-10 rounded-xl bg-white p-2 shadow-sm border border-slate-100 flex items-center justify-center">
-                    <svg class="w-6 h-6" viewBox="0 0 24 24" fill="#04D066"><path d="M12 2.5L2 19h4.8l5.2-8.8 5.2 8.8H22L12 2.5zm0 8.2l3.4 5.8H8.6l3.4-5.8z"/></svg>
+                    <svg aria-hidden="true" focusable="false" class="w-6 h-6" viewBox="0 0 24 24" fill="#04D066"><path d="M12 2.5L2 19h4.8l5.2-8.8 5.2 8.8H22L12 2.5zm0 8.2l3.4 5.8H8.6l3.4-5.8z"/></svg>
                   </div>
                   <span class="text-xs font-bold px-3 py-1 rounded-full bg-slate-100 text-slate-700 border border-slate-200">
                     SLA Operations
@@ -1691,7 +1777,7 @@
               <div>
                 <div class="flex items-center justify-between mb-2.5">
                   <div class="w-10 h-10 rounded-xl bg-white p-2 shadow-sm border border-slate-100 flex items-center justify-center">
-                    <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none"><path d="M5.04 15.12a2.52 2.52 0 0 1-2.52-2.52c0-1.39 1.13-2.52 2.52-2.52h2.52v2.52c0 1.39-1.13 2.52-2.52 2.52z" fill="#E01E5A"/><path d="M6.3 15.12a2.52 2.52 0 0 1 2.52-2.52 2.52 2.52 0 0 1 2.52 2.52v6.3a2.52 2.52 0 0 1-2.52 2.52 2.52 2.52 0 0 1-2.52-2.52v-6.3z" fill="#E01E5A"/><path d="M8.82 5.04a2.52 2.52 0 0 1-2.52-2.52C6.3 1.13 7.43 0 8.82 0s2.52 1.13 2.52 2.52v2.52H8.82z" fill="#36C5F0"/><path d="M8.82 6.3a2.52 2.52 0 0 1 2.52 2.52 2.52 2.52 0 0 1-2.52 2.52H2.52A2.52 2.52 0 0 1 0 8.82c0-1.39 1.13-2.52 2.52-2.52h6.3z" fill="#36C5F0"/><path d="M18.96 8.82a2.52 2.52 0 0 1 2.52 2.52c0 1.39-1.13 2.52-2.52 2.52h-2.52V11.34c0-1.39 1.13-2.52 2.52-2.52z" fill="#2EB67D"/><path d="M17.7 8.82a2.52 2.52 0 0 1-2.52-2.52 2.52 2.52 0 0 1-2.52-2.52V2.52C12.66 1.13 13.79 0 15.18 0c1.39 0 2.52 1.13 2.52 2.52v6.3z" fill="#2EB67D"/><path d="M15.18 18.96a2.52 2.52 0 0 1 2.52 2.52c0 1.39-1.13 2.52-2.52 2.52s-2.52-1.13-2.52-2.52v-2.52h2.52z" fill="#ECB22E"/><path d="M15.18 17.7a2.52 2.52 0 0 1-2.52-2.52 2.52 2.52 0 0 1 2.52 2.52h6.3c1.39 0 2.52 1.13 2.52 2.52 0 1.39-1.13 2.52-2.52 2.52h-6.3z" fill="#ECB22E"/></svg>
+                    <svg aria-hidden="true" focusable="false" class="w-6 h-6" viewBox="0 0 24 24" fill="none"><path d="M5.04 15.12a2.52 2.52 0 0 1-2.52-2.52c0-1.39 1.13-2.52 2.52-2.52h2.52v2.52c0 1.39-1.13 2.52-2.52 2.52z" fill="#E01E5A"/><path d="M6.3 15.12a2.52 2.52 0 0 1 2.52-2.52 2.52 2.52 0 0 1 2.52 2.52v6.3a2.52 2.52 0 0 1-2.52 2.52 2.52 2.52 0 0 1-2.52-2.52v-6.3z" fill="#E01E5A"/><path d="M8.82 5.04a2.52 2.52 0 0 1-2.52-2.52C6.3 1.13 7.43 0 8.82 0s2.52 1.13 2.52 2.52v2.52H8.82z" fill="#36C5F0"/><path d="M8.82 6.3a2.52 2.52 0 0 1 2.52 2.52 2.52 2.52 0 0 1-2.52 2.52H2.52A2.52 2.52 0 0 1 0 8.82c0-1.39 1.13-2.52 2.52-2.52h6.3z" fill="#36C5F0"/><path d="M18.96 8.82a2.52 2.52 0 0 1 2.52 2.52c0 1.39-1.13 2.52-2.52 2.52h-2.52V11.34c0-1.39 1.13-2.52 2.52-2.52z" fill="#2EB67D"/><path d="M17.7 8.82a2.52 2.52 0 0 1-2.52-2.52 2.52 2.52 0 0 1-2.52-2.52V2.52C12.66 1.13 13.79 0 15.18 0c1.39 0 2.52 1.13 2.52 2.52v6.3z" fill="#2EB67D"/><path d="M15.18 18.96a2.52 2.52 0 0 1 2.52 2.52c0 1.39-1.13 2.52-2.52 2.52s-2.52-1.13-2.52-2.52v-2.52h2.52z" fill="#ECB22E"/><path d="M15.18 17.7a2.52 2.52 0 0 1-2.52-2.52 2.52 2.52 0 0 1 2.52 2.52h6.3c1.39 0 2.52 1.13 2.52 2.52 0 1.39-1.13 2.52-2.52 2.52h-6.3z" fill="#ECB22E"/></svg>
                   </div>
                   <span class="text-xs font-bold px-3 py-1 rounded-full bg-blue-50 text-blue-700 border border-blue-200">
                     Remote Ops
@@ -1711,7 +1797,7 @@
               <div>
                 <div class="flex items-center justify-between mb-2.5">
                   <div class="w-10 h-10 rounded-xl bg-white p-2 shadow-sm border border-slate-100 flex items-center justify-center">
-                    <svg class="w-6 h-6" viewBox="0 0 24 24" fill="#00C4CC"><circle cx="12" cy="12" r="10"/><path d="M15.5 12.2c-.2 1.8-1.5 3-3.2 3-2 0-3.3-1.6-3.3-3.6 0-2.2 1.6-3.8 3.6-3.8 1.4 0 2.5.8 2.8 2h-1.3c-.3-.6-.8-.9-1.5-.9-1.3 0-2.2 1.1-2.2 2.7 0 1.4.8 2.5 2.1 2.5 1 0 1.7-.7 1.8-1.9h1.2z" fill="white"/></svg>
+                    <svg aria-hidden="true" focusable="false" class="w-6 h-6" viewBox="0 0 24 24" fill="#00C4CC"><circle cx="12" cy="12" r="10"/><path d="M15.5 12.2c-.2 1.8-1.5 3-3.2 3-2 0-3.3-1.6-3.3-3.6 0-2.2 1.6-3.8 3.6-3.8 1.4 0 2.5.8 2.8 2h-1.3c-.3-.6-.8-.9-1.5-.9-1.3 0-2.2 1.1-2.2 2.7 0 1.4.8 2.5 2.1 2.5 1 0 1.7-.7 1.8-1.9h1.2z" fill="white"/></svg>
                   </div>
                   <span class="text-xs font-bold px-3 py-1 rounded-full bg-cyan-50 text-cyan-800 border border-cyan-200">
                     Rapid Creative Production
@@ -1739,7 +1825,7 @@
     <!-- [START SECTION 7: CLIENT & COLLEAGUE TESTIMONIALS]                -->
     <!-- EXACT TESTIMONIALS FROM HER PORTFOLIO PAGES 10 & 11               -->
     <!-- ================================================================= -->
-    <section id="endorsements" class="border-t border-pink-100 bg-[#FCF9FA] py-20 lg:py-28">
+    <section id="endorsements" class="scroll-mt-20 sm:scroll-mt-24 border-t border-pink-100 bg-[#FCF9FA] py-20 lg:py-28">
       <div class="max-w-6xl mx-auto px-6">
         
         <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
@@ -1748,56 +1834,82 @@
           <p class="text-sm text-slate-600">Endorsements from executives, colleagues, and agency partners.</p>
         </div>
 
-        <div class="grid md:grid-cols-2 gap-8">
+        <!-- Testimonial carousel. Without JavaScript this stays the original 2-column grid. -->
+        <div id="testimonial-carousel" role="region" aria-roledescription="carousel" aria-label="Testimonials">
+        <div data-viewport>
+        <div data-track class="grid md:grid-cols-2 gap-8">
           
           <!-- [EDITABLE COPY: Testimonial 1 - Dr. Jill J.] -->
-          <div class="bg-white p-8 sm:p-10 rounded-3xl border border-pink-100 shadow-sm relative min-w-0">
-            <span class="font-serif text-5xl text-pink-200 absolute top-6 right-8">&ldquo;</span>
-            <p class="text-slate-700 italic leading-relaxed mb-6 text-base sm:text-lg relative z-10">
-              "Kirsten quickly captured my unique voice and style, creating posts that felt like me while gently nudging me to step outside my comfort zone. Her strategies drove substantial engagement and opened doors to exciting new opportunities."
-            </p>
-            <div class="border-t border-pink-50 pt-4">
-              <p class="font-serif font-bold text-slate-900">Dr. Jill, OD, FAAO</p>
+          <figure data-slide class="bg-white p-8 sm:p-10 rounded-3xl border border-pink-100 shadow-sm relative min-w-0">
+            <span aria-hidden="true" class="font-serif text-5xl text-pink-200 absolute top-6 right-8">&ldquo;</span>
+            <blockquote>
+              <p class="text-slate-700 italic leading-relaxed mb-6 text-base sm:text-lg relative z-10">
+                "Kirsten quickly captured my unique voice and style, creating posts that felt like me while gently nudging me to step outside my comfort zone. Her strategies drove substantial engagement and opened doors to exciting new opportunities."
+              </p>
+            </blockquote>
+            <figcaption class="border-t border-pink-50 pt-4">
+              <p class="font-serif font-bold text-slate-900"><cite class="not-italic">Dr. Jill, OD, FAAO</cite></p>
               <p class="text-sm text-pink-600 font-medium">Executive Director of Strategy &amp; Client Partner</p>
-            </div>
-          </div>
+            </figcaption>
+          </figure>
 
           <!-- [EDITABLE COPY: Testimonial 2 - Karri C. (Leadtail COO)] -->
-          <div class="bg-white p-8 sm:p-10 rounded-3xl border border-pink-100 shadow-sm relative min-w-0">
-            <span class="font-serif text-5xl text-pink-200 absolute top-6 right-8">&ldquo;</span>
-            <p class="text-slate-700 italic leading-relaxed mb-6 text-base sm:text-lg relative z-10">
-              "What sets Kirsten apart is her genuine curiosity about what drives business results. Her proactive approach to professional development and data synthesis makes her a valuable asset to any digital marketing or media team. I recommend her wholeheartedly."
-            </p>
-            <div class="border-t border-pink-50 pt-4">
-              <p class="font-serif font-bold text-slate-900">Karri C.</p>
+          <figure data-slide class="bg-white p-8 sm:p-10 rounded-3xl border border-pink-100 shadow-sm relative min-w-0">
+            <span aria-hidden="true" class="font-serif text-5xl text-pink-200 absolute top-6 right-8">&ldquo;</span>
+            <blockquote>
+              <p class="text-slate-700 italic leading-relaxed mb-6 text-base sm:text-lg relative z-10">
+                "What sets Kirsten apart is her genuine curiosity about what drives business results. Her proactive approach to professional development and data synthesis makes her a valuable asset to any digital marketing or media team. I recommend her wholeheartedly."
+              </p>
+            </blockquote>
+            <figcaption class="border-t border-pink-50 pt-4">
+              <p class="font-serif font-bold text-slate-900"><cite class="not-italic">Karri C.</cite></p>
               <p class="text-sm text-pink-600 font-medium">Chief Operating Officer, Leadtail, Inc.</p>
-            </div>
-          </div>
+            </figcaption>
+          </figure>
 
           <!-- [EDITABLE COPY: Testimonial 3 - Carisa P. (Holmes Marketing Owner)] -->
-          <div class="bg-white p-8 sm:p-10 rounded-3xl border border-pink-100 shadow-sm relative min-w-0">
-            <span class="font-serif text-5xl text-pink-200 absolute top-6 right-8">&ldquo;</span>
-            <p class="text-slate-700 italic leading-relaxed mb-6 text-base sm:text-lg relative z-10">
-              "Kirsten has determination, grit, and a work ethic that I found very refreshing. As our Customer Experience Manager, she made sure every client she interacted with felt her warmth and positivity."
-            </p>
-            <div class="border-t border-pink-50 pt-4">
-              <p class="font-serif font-bold text-slate-900">Carisa P.</p>
+          <figure data-slide class="bg-white p-8 sm:p-10 rounded-3xl border border-pink-100 shadow-sm relative min-w-0">
+            <span aria-hidden="true" class="font-serif text-5xl text-pink-200 absolute top-6 right-8">&ldquo;</span>
+            <blockquote>
+              <p class="text-slate-700 italic leading-relaxed mb-6 text-base sm:text-lg relative z-10">
+                "Kirsten has determination, grit, and a work ethic that I found very refreshing. As our Customer Experience Manager, she made sure every client she interacted with felt her warmth and positivity."
+              </p>
+            </blockquote>
+            <figcaption class="border-t border-pink-50 pt-4">
+              <p class="font-serif font-bold text-slate-900"><cite class="not-italic">Carisa P.</cite></p>
               <p class="text-sm text-pink-600 font-medium">Owner, Holmes Marketing Services</p>
-            </div>
-          </div>
+            </figcaption>
+          </figure>
 
           <!-- [EDITABLE COPY: Testimonial 4 - Mike M. (Leadtail Client Partner)] -->
-          <div class="bg-white p-8 sm:p-10 rounded-3xl border border-pink-100 shadow-sm relative min-w-0">
-            <span class="font-serif text-5xl text-pink-200 absolute top-6 right-8">&ldquo;</span>
-            <p class="text-slate-700 italic leading-relaxed mb-6 text-base sm:text-lg relative z-10">
-              "Kirsten is an organized, creative marketer with expertise in B2B. She creates efficient processes that deliver intentional and impactful outcomes, managing our content process from ideation to completion with great collaboration."
-            </p>
-            <div class="border-t border-pink-50 pt-4">
-              <p class="font-serif font-bold text-slate-900">Mike M.</p>
+          <figure data-slide class="bg-white p-8 sm:p-10 rounded-3xl border border-pink-100 shadow-sm relative min-w-0">
+            <span aria-hidden="true" class="font-serif text-5xl text-pink-200 absolute top-6 right-8">&ldquo;</span>
+            <blockquote>
+              <p class="text-slate-700 italic leading-relaxed mb-6 text-base sm:text-lg relative z-10">
+                "Kirsten is an organized, creative marketer with expertise in B2B. She creates efficient processes that deliver intentional and impactful outcomes, managing our content process from ideation to completion with great collaboration."
+              </p>
+            </blockquote>
+            <figcaption class="border-t border-pink-50 pt-4">
+              <p class="font-serif font-bold text-slate-900"><cite class="not-italic">Mike M.</cite></p>
               <p class="text-sm text-pink-600 font-medium">Leadtail Client Partner</p>
-            </div>
-          </div>
+            </figcaption>
+          </figure>
 
+        </div>
+        </div>
+        <div data-controls hidden class="mt-10 flex items-center justify-center space-x-4">
+          <button type="button" data-prev aria-label="Previous testimonials" class="w-10 h-10 rounded-full bg-white border border-pink-200 text-pink-600 hover:bg-pink-50 shadow-sm flex items-center justify-center transition">
+            <svg aria-hidden="true" focusable="false" class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+          </button>
+          <div data-dots class="flex items-center space-x-2"></div>
+          <button type="button" data-next aria-label="Next testimonials" class="w-10 h-10 rounded-full bg-white border border-pink-200 text-pink-600 hover:bg-pink-50 shadow-sm flex items-center justify-center transition">
+            <svg aria-hidden="true" focusable="false" class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+          </button>
+          <button type="button" data-toggle aria-label="Pause automatic rotation" class="w-10 h-10 rounded-full bg-white border border-pink-200 text-slate-500 hover:text-pink-600 hover:bg-pink-50 shadow-sm flex items-center justify-center transition">
+            <svg aria-hidden="true" focusable="false" data-icon-pause class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M7 5h3v14H7zM14 5h3v14h-3z"/></svg>
+            <svg aria-hidden="true" focusable="false" data-icon-play class="w-4 h-4 hidden" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+          </button>
+        </div>
         </div>
 
       </div>
@@ -1812,7 +1924,7 @@
   <!-- [START SECTION 8: FOOTER & CONTACT SECTION]                       -->
   <!-- FEATURING HER FULL LOGO LOCKUP, EXACT PHONE, EMAIL & LINKEDIN     -->
   <!-- ================================================================= -->
-  <footer id="contact" class="bg-slate-900 text-white py-20 border-t border-slate-800">
+  <footer id="contact" class="scroll-mt-20 sm:scroll-mt-24 bg-slate-900 text-white py-20 border-t border-slate-800">
     <div class="max-w-6xl mx-auto px-6">
       
       <div class="grid md:grid-cols-12 gap-12 items-center pb-12 border-b border-slate-800">
@@ -1820,7 +1932,7 @@
         <!-- Left: Full Brand Lockup & Contact Info -->
         <div class="md:col-span-7 space-y-5 text-center md:text-left">
           <div class="inline-block bg-white/95 p-3 rounded-2xl shadow-sm">
-            <img src="brand_logo_transparent.png" alt="Peoples Social | Digital Marketing" class="h-16 w-auto object-contain">
+            <picture class="contents"><source hidden type="image/webp" srcset="assets/img/brand-logo.webp"><img src="assets/img/brand-logo.png" width="480" height="321" alt="Peoples Social | Digital Marketing" loading="lazy" decoding="async" class="h-16 w-auto object-contain"></picture>
           </div>
           
           <p class="text-slate-300 text-sm max-w-md leading-relaxed">
@@ -1829,9 +1941,9 @@
           
           <!-- [EDITABLE COPY: Direct Contact Information & Phone/Email] -->
           <div class="pt-2 text-sm text-slate-200 space-y-2 font-sans">
-            <p class="text-slate-300">📍 Englewood, OH &bull; Open to Fully Remote</p>
-            <p>📞 <a href="tel:9376411625" class="hover:text-pink-400 transition">937-641-1625</a></p>
-            <p>✉️ <a href="mailto:peoples.socialmarketing@gmail.com" class="hover:text-pink-400 transition">peoples.socialmarketing@gmail.com</a></p>
+            <p class="text-slate-300"><span aria-hidden="true">📍</span> Englewood, OH &bull; Open to Fully Remote</p>
+            <p><span aria-hidden="true">📞</span> <a href="tel:9376411625" data-gc-event="phone" class="hover:text-pink-400 transition">937-641-1625</a></p>
+            <p><span aria-hidden="true">✉️</span> <a href="mailto:peoples.socialmarketing@gmail.com" data-gc-event="email-address" class="hover:text-pink-400 transition">peoples.socialmarketing@gmail.com</a></p>
           </div>
         </div>
 
@@ -1839,18 +1951,18 @@
         <div class="md:col-span-5 flex flex-col sm:flex-row items-center justify-center md:justify-end gap-3 text-sm">
           
           <!-- Exact LinkedIn Link: in/kirstenpeoples -->
-          <a href="https://www.linkedin.com/in/kirstenpeoples" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto text-center text-slate-300 hover:text-white transition px-5 py-3 border border-slate-700 rounded-full hover:border-pink-500 hover:bg-slate-800 flex items-center justify-center space-x-2">
-            <svg class="w-4 h-4 fill-current text-pink-400" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.45c-.9 0-1.63.73-1.63 1.63s.73 1.63 1.63 1.63 1.63-.73 1.63-1.63-.73-1.63-1.63Z"/></svg>
+          <a href="https://www.linkedin.com/in/kirstenpeoples" data-gc-event="linkedin" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto text-center text-slate-300 hover:text-white transition px-5 py-3 border border-slate-700 rounded-full hover:border-pink-500 hover:bg-slate-800 flex items-center justify-center space-x-2">
+            <svg aria-hidden="true" focusable="false" class="w-4 h-4 fill-current text-pink-400" viewBox="0 0 24 24"><path d="M19 3A2 2 0 0 1 21 5V19A2 2 0 0 1 19 21H5A2 2 0 0 1 3 19V5A2 2 0 0 1 5 3H19M18.5 18.5V13.2A3.26 3.26 0 0 0 15.24 9.94C14.39 9.94 13.4 10.46 12.92 11.24V10.13H10.13V18.5H12.92V13.57C12.92 12.8 13.54 12.17 14.31 12.17A1.4 1.4 0 0 1 15.71 13.57V18.5H18.5M6.88 8.56A1.68 1.68 0 0 0 8.56 6.88C8.56 5.95 7.81 5.19 6.88 5.19A1.69 1.69 0 0 0 5.19 6.88C5.19 7.81 5.95 8.56 6.88 8.56M8.27 18.5V10.13H5.5V18.5H8.27Z"/></svg>
             <span>LinkedIn Profile</span>
           </a>
 
           <!-- Copy Email Button -->
-          <button id="copy-email-btn" type="button" class="w-full sm:w-auto text-center text-slate-300 hover:text-white transition px-5 py-3 border border-slate-700 rounded-full hover:border-pink-500 hover:bg-slate-800 flex items-center justify-center space-x-2">
+          <button id="copy-email-btn" type="button" data-gc-event="copy-email" class="w-full sm:w-auto text-center text-slate-300 hover:text-white transition px-5 py-3 border border-slate-700 rounded-full hover:border-pink-500 hover:bg-slate-800 flex items-center justify-center space-x-2">
             <span id="copy-email-text">Copy Email</span>
           </button>
 
           <!-- Direct Email Button -->
-          <a href="mailto:peoples.socialmarketing@gmail.com?subject=Digital%20Marketing%20Inquiry%20via%20Portfolio" class="w-full sm:w-auto text-center bg-pink-600 hover:bg-pink-700 text-white px-6 py-3 rounded-full font-medium transition shadow-md">
+          <a data-gc-event="email-button" href="mailto:peoples.socialmarketing@gmail.com?subject=Digital%20Marketing%20Inquiry%20via%20Portfolio" class="w-full sm:w-auto text-center bg-pink-600 hover:bg-pink-700 text-white px-6 py-3 rounded-full font-medium transition shadow-md">
             Email Kirsten
           </a>
 
@@ -1870,57 +1982,55 @@
   <!-- [END SECTION 8: FOOTER & CONTACT SECTION]                         -->
   <!-- ================================================================= -->
 
+  <!-- Back-to-top button (appears after scrolling) -->
+  <button id="back-to-top" type="button" aria-label="Back to top" class="fixed bottom-6 right-6 z-40 w-12 h-12 rounded-full bg-pink-600 hover:bg-pink-700 text-white shadow-md hover:shadow-lg flex items-center justify-center transition duration-300 opacity-0 invisible translate-y-2 data-[show]:opacity-100 data-[show]:visible data-[show]:translate-y-0">
+    <svg aria-hidden="true" focusable="false" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/></svg>
+  </button>
+
+  <!-- Chart lightbox (tap-to-enlarge) -->
+  <dialog id="lightbox" aria-labelledby="lightbox-caption" class="p-0 m-0 w-screen h-screen max-w-none max-h-none bg-slate-900/95 backdrop:bg-slate-900/80">
+    <div class="flex items-center justify-between gap-4 px-4 sm:px-6 h-16">
+      <p id="lightbox-caption" class="text-xs sm:text-sm text-slate-300 truncate"></p>
+      <button type="button" data-lightbox-close aria-label="Close enlarged chart" class="flex-shrink-0 w-10 h-10 rounded-full bg-white/10 hover:bg-pink-600 text-white flex items-center justify-center transition">
+        <svg aria-hidden="true" focusable="false" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+    </div>
+    <div data-lightbox-scroller class="overflow-auto h-[calc(100%-4rem)] px-4 sm:px-6 pb-6">
+      <img id="lightbox-img" src="data:," alt="" class="block max-w-none w-[1600px] lg:w-full h-auto mx-auto rounded-lg bg-white">
+      <p class="lg:hidden text-center text-xs text-slate-400 mt-3">Scroll or drag to pan</p>
+    </div>
+  </dialog>
+
+  <script src="assets/js/site.js" defer></script>
+
   <!-- ================================================================= -->
-  <!-- [MINIMAL JAVASCRIPT: MOBILE MENU & CLIPBOARD HELPER]              -->
+  <!-- [ANALYTICS: GoatCounter]  (ignores localhost/private IPs by default) -->
   <!-- ================================================================= -->
+  <script data-goatcounter="https://peoplessocial.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
   <script>
-    // 1. Mobile Menu Drawer Toggle
-    const menuBtn = document.getElementById('mobile-menu-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
-    const barsIcon = document.getElementById('menu-icon-bars');
-    const closeIcon = document.getElementById('menu-icon-close');
-
-    if (menuBtn && mobileMenu) {
-      menuBtn.addEventListener('click', () => {
-        const isHidden = mobileMenu.classList.contains('hidden');
-        if (isHidden) {
-          mobileMenu.classList.remove('hidden');
-          barsIcon.classList.add('hidden');
-          closeIcon.classList.remove('hidden');
-        } else {
-          mobileMenu.classList.add('hidden');
-          barsIcon.classList.remove('hidden');
-          closeIcon.classList.add('hidden');
+    // Outbound-click events (Copy Email, email, phone, LinkedIn, résumé). Safe no-op if GoatCounter is blocked.
+    (function () {
+      function track(name) {
+        try {
+          if (window.goatcounter && typeof window.goatcounter.count === 'function') {
+            window.goatcounter.count({ path: 'click-' + name, title: name, event: true });
+          }
+        } catch (e) { /* analytics must never break the page */ }
+      }
+      document.addEventListener('click', function (e) {
+        var el = e.target.closest && e.target.closest('a[href], button[data-gc-event]');
+        if (!el) return;
+        var name = el.getAttribute('data-gc-event');
+        if (!name && el.tagName === 'A') {
+          var href = el.getAttribute('href') || '';
+          if (/^mailto:/i.test(href)) name = 'email';
+          else if (/^tel:/i.test(href)) name = 'phone';
+          else if (/linkedin\.com/i.test(href)) name = 'linkedin';
+          else if (el.hasAttribute('data-resume') || /\.pdf($|[?#])/i.test(href)) name = 'resume';
         }
-      });
-
-      // Auto-close menu when a nav link is clicked
-      document.querySelectorAll('.mobile-nav-link').forEach(link => {
-        link.addEventListener('click', () => {
-          mobileMenu.classList.add('hidden');
-          barsIcon.classList.remove('hidden');
-          closeIcon.classList.add('hidden');
-        });
-      });
-    }
-
-    // 2. One-Click Copy Email to Clipboard with Visual Feedback
-    const copyBtn = document.getElementById('copy-email-btn');
-    const copyText = document.getElementById('copy-email-text');
-    if (copyBtn && copyText) {
-      copyBtn.addEventListener('click', () => {
-        navigator.clipboard.writeText('peoples.socialmarketing@gmail.com').then(() => {
-          copyText.textContent = 'Copied to Clipboard!';
-          copyBtn.classList.add('border-pink-500', 'text-pink-300');
-          setTimeout(() => {
-            copyText.textContent = 'Copy Email';
-            copyBtn.classList.remove('border-pink-500', 'text-pink-300');
-          }, 2500);
-        }).catch(() => {
-          window.location.href = 'mailto:peoples.socialmarketing@gmail.com';
-        });
-      });
-    }
+        if (name) track(name);
+      }, true);
+    })();
   </script>
 
 </body>
