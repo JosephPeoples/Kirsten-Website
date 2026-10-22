@@ -220,4 +220,75 @@
     window.addEventListener('resize', render);
     buildDots(); syncToggle(); render(); start();
   }
+  /* 9. Leadtail calendar stack: 3 screenshots layered by ~1/3, front card rotates to the back */
+  var calRoot = document.getElementById('calendar-stack');
+  if (calRoot) {
+    var calStage = calRoot.querySelector('[data-cal-stage]');
+    var calCards = Array.prototype.slice.call(calRoot.querySelectorAll('[data-cal-card]'));
+    var calDots = Array.prototype.slice.call(calRoot.querySelectorAll('[data-cal-dot]'));
+    var calLabel = calRoot.querySelector('[data-cal-label]');
+    var calToggle = calRoot.querySelector('[data-cal-toggle]');
+    var lightboxDlg = document.getElementById('lightbox');
+    var calCur = 0, calTimer = null, calUserStopped = reduceMotion, calHover = false, calInView = true;
+    var calN = calCards.length;
+    calRoot.querySelector('[data-cal-controls]').hidden = false;
+
+    function calRender(announce) {
+      calCards.forEach(function (c, i) {
+        var pos = (i - calCur + calN) % calN;
+        var name = c.getAttribute('data-cal-name');
+        c.setAttribute('data-pos', pos);
+        if (pos === 0) {
+          c.setAttribute('aria-label', 'Enlarge: ' + c.getAttribute('data-lightbox-alt'));
+          c.removeAttribute('tabindex');
+        } else {
+          c.setAttribute('aria-label', 'Bring ' + name + ' calendar to front');
+          c.setAttribute('tabindex', '-1');
+        }
+      });
+      calDots.forEach(function (d, i) {
+        var on = i === calCur;
+        d.classList.toggle('bg-pink-600', on); d.classList.toggle('w-6', on);
+        d.classList.toggle('bg-pink-200', !on); d.classList.toggle('w-2.5', !on);
+        if (on) d.setAttribute('aria-current', 'true'); else d.removeAttribute('aria-current');
+      });
+      if (announce !== false) {
+        calLabel.textContent = 'Showing ' + calCards[calCur].getAttribute('data-cal-name') + ' calendar (' + (calCur + 1) + ' of ' + calN + ')';
+      }
+    }
+    function calGo(n) { calCur = (n + calN) % calN; calRender(); }
+    function calStop() { clearInterval(calTimer); calTimer = null; }
+    function calStart() {
+      calStop();
+      if (!calUserStopped && !calHover && calInView) {
+        calTimer = setInterval(function () { if (!(lightboxDlg && lightboxDlg.open)) calGo(calCur + 1); }, 4000);
+      }
+    }
+    function calSyncToggle() {
+      calToggle.setAttribute('aria-label', calUserStopped ? 'Start automatic rotation' : 'Pause automatic rotation');
+      calToggle.querySelector('[data-icon-pause]').classList.toggle('hidden', calUserStopped);
+      calToggle.querySelector('[data-icon-play]').classList.toggle('hidden', !calUserStopped);
+    }
+    // A back card comes to the front instead of opening the lightbox (capture phase runs before the lightbox handler)
+    calStage.addEventListener('click', function (e) {
+      var card = e.target.closest('[data-cal-card]');
+      if (!card || card.getAttribute('data-pos') === '0') return;
+      e.preventDefault(); e.stopPropagation();
+      calGo(calCards.indexOf(card)); calStart();
+    }, true);
+    calRoot.querySelector('[data-cal-prev]').addEventListener('click', function () { calGo(calCur - 1); calStart(); });
+    calRoot.querySelector('[data-cal-next]').addEventListener('click', function () { calGo(calCur + 1); calStart(); });
+    calDots.forEach(function (d, i) { d.addEventListener('click', function () { calGo(i); calStart(); }); });
+    calToggle.addEventListener('click', function () { calUserStopped = !calUserStopped; calSyncToggle(); calStart(); });
+    calRoot.addEventListener('mouseenter', function () { calHover = true; calStop(); });
+    calRoot.addEventListener('mouseleave', function () { calHover = false; calStart(); });
+    calRoot.addEventListener('focusin', function () { calHover = true; calStop(); });
+    calRoot.addEventListener('focusout', function (e) { if (!calRoot.contains(e.relatedTarget)) { calHover = false; calStart(); } });
+    if ('IntersectionObserver' in window) {
+      new IntersectionObserver(function (entries) {
+        entries.forEach(function (en) { calInView = en.isIntersecting; calStart(); });
+      }, { threshold: 0.2 }).observe(calStage);
+    }
+    calSyncToggle(); calRender(); calStart();
+  }
 })();
