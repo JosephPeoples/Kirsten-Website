@@ -11,7 +11,7 @@ description: "AI is everywhere, but people still trust people. Kirsten Peoples o
 keyphrase: "AI"
 # Cover: swap this one path to change the cover, the social preview and the schema image (1200x630 is ideal)
 cover: /assets/blog/human-touch-ai-marketing-cover.jpg
-cover_alt: "Pink cover graphic with the post title: The Human Touch Still Wins, Even When AI Is Everywhere"
+cover_alt: "A robotic hand and a human hand reaching toward each other under the title The Human Touch Still Wins, Even When AI Is Everywhere"
 ---
 
 I have a confession, I use AI at work. It helps me automate the tedious, manual parts of my job, and I'm glad it exists. So please don't read this as a "stay away from AI" message.
