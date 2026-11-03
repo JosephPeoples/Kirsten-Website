@@ -4,6 +4,21 @@
 
 url: "https://peoplessocialmarketing.com"
 baseurl: ""
+
+# SEO defaults for the blog pages (used by _includes/seo-head.html).
+# Each post can override them in its own front matter; see BLOG-HOW-TO.md.
+title: "Kirsten Peoples"
+description: "Writing and content creation examples from Kirsten Peoples."
+lang: en
+locale: en_US
+author:
+  name: "Kirsten Peoples"
+  url: "/"
+publisher:
+  name: "Peoples Social | Digital Marketing"
+  logo: /assets/img/brand-logo.png
+# Social preview picture when a page has no cover (1200x630)
+default_image: /assets/img/og-image.jpg
 timezone: America/New_York
 markdown: kramdown
 

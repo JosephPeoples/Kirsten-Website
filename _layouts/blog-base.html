@@ -1,21 +1,9 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  {%- assign page_title = page.title | default: "Blog" -%}
-  {%- assign page_desc = page.excerpt | default: page.description | default: "Writing and content creation examples from Kirsten Peoples." | strip_html | strip_newlines | truncate: 160 -%}
-  <title>{{ page_title | escape }} | Kirsten Peoples</title>
-  <link rel="canonical" href="{{ page.url | absolute_url }}">
-  <meta name="description" content="{{ page_desc | escape }}">
-  <meta name="author" content="Kirsten Peoples">
-  <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
-  <meta property="og:url" content="{{ page.url | absolute_url }}">
-  <meta property="og:site_name" content="Peoples Social | Digital Marketing">
-  <meta property="og:title" content="{{ page_title | escape }}">
-  <meta property="og:description" content="{{ page_desc | escape }}">
-  <meta property="og:image" content="{% if page.cover %}{{ page.cover | absolute_url }}{% else %}{{ '/assets/img/og-image.jpg' | absolute_url }}{% endif %}">
-  <meta name="twitter:card" content="summary_large_image">
+  {% include seo-head.html %}
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23FFF0F9'/><path d='M16 7c1 3-1 5-1 5s2-2 5-1c-2 2-2 4-2 4s3-1 4 2c-3 1-4 0-4 0s2 3 0 5c-2-2-2-4-2-4s0 3-3 3c1-3 0-4 0-4s-3 2-4 0c2-2 4-2 4-2s-3-2-2-5c2 2 3 3 3 3s0-3 2-4z' fill='%23E62E8A'/><circle cx='16' cy='16' r='2' fill='%23FDE047'/></svg>">
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
