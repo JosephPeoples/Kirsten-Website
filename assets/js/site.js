@@ -220,9 +220,9 @@
     window.addEventListener('resize', render);
     buildDots(); syncToggle(); render(); start();
   }
-  /* 9. Leadtail calendar stack: 3 screenshots layered by ~1/3, front card rotates to the back */
-  var calRoot = document.getElementById('calendar-stack');
-  if (calRoot) {
+  /* 9. Rotating card stacks: the Leadtail calendar stack (3 screenshots layered by ~1/3) and the Microsun
+     content deck (data-cal-stack). The front card rotates to the back; data-cal-noun names the cards. */
+  function initCalStack(calRoot) {
     var calStage = calRoot.querySelector('[data-cal-stage]');
     var calCards = Array.prototype.slice.call(calRoot.querySelectorAll('[data-cal-card]'));
     var calDots = Array.prototype.slice.call(calRoot.querySelectorAll('[data-cal-dot]'));
@@ -231,19 +231,23 @@
     var lightboxDlg = document.getElementById('lightbox');
     var calCur = 0, calTimer = null, calUserStopped = reduceMotion, calHover = false, calInView = true;
     var calN = calCards.length;
+    var calNoun = calRoot.getAttribute('data-cal-noun') || 'calendar';
     calRoot.querySelector('[data-cal-controls]').hidden = false;
 
     function calRender(announce) {
       calCards.forEach(function (c, i) {
         var pos = (i - calCur + calN) % calN;
         var name = c.getAttribute('data-cal-name');
+        // The card itself opens the lightbox (calendars), or holds an image button that does (content deck)
+        var btn = c.hasAttribute('data-lightbox') ? c : c.querySelector('[data-lightbox]');
         c.setAttribute('data-pos', pos);
+        if (!btn) return;
         if (pos === 0) {
-          c.setAttribute('aria-label', 'Enlarge: ' + c.getAttribute('data-lightbox-alt'));
-          c.removeAttribute('tabindex');
+          btn.setAttribute('aria-label', 'Enlarge: ' + btn.getAttribute('data-lightbox-alt'));
+          btn.removeAttribute('tabindex');
         } else {
-          c.setAttribute('aria-label', 'Bring ' + name + ' calendar to front');
-          c.setAttribute('tabindex', '-1');
+          btn.setAttribute('aria-label', 'Bring ' + name + ' ' + calNoun + ' to front');
+          btn.setAttribute('tabindex', '-1');
         }
       });
       calDots.forEach(function (d, i) {
@@ -253,7 +257,7 @@
         if (on) d.setAttribute('aria-current', 'true'); else d.removeAttribute('aria-current');
       });
       if (announce !== false) {
-        calLabel.textContent = 'Showing ' + calCards[calCur].getAttribute('data-cal-name') + ' calendar (' + (calCur + 1) + ' of ' + calN + ')';
+        calLabel.textContent = 'Showing ' + calCards[calCur].getAttribute('data-cal-name') + ' ' + calNoun + ' (' + (calCur + 1) + ' of ' + calN + ')';
       }
     }
     function calGo(n) { calCur = (n + calN) % calN; calRender(); }
@@ -291,4 +295,5 @@
     }
     calSyncToggle(); calRender(); calStart();
   }
+  document.querySelectorAll('#calendar-stack, [data-cal-stack]').forEach(initCalStack);
 })();

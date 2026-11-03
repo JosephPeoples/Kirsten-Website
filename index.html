@@ -114,6 +114,25 @@
     @media (prefers-reduced-motion: reduce) {
       .cal-card, .cal-card::after, .cal-card .cal-badge { transition: none; }
     }
+
+    /* Microsun content deck: same rotation as the calendar stack, but text + image cards of any height.
+       Cards share one grid cell so the stage grows with the tallest card; back cards peek out up and right. */
+    .deck-stage {
+      display: grid; padding-bottom: 0;
+      --cal-w: 90%; --cal-dx1: 3.33%; --cal-dx2: 6.66%; --cal-dx3: 10%; --deck-dy: 0.75rem;
+      padding-top: calc(var(--deck-dy) * 3);
+    }
+    @media (min-width: 640px) {
+      .deck-stage { --cal-w: 88%; --cal-dx1: 4%; --cal-dx2: 8%; --cal-dx3: 12%; --deck-dy: 1rem; }
+    }
+    .deck-stage > .cal-card { position: relative; grid-area: 1 / 1; aspect-ratio: auto; }
+    .deck-stage > .cal-card[data-pos="0"] { cursor: auto; }
+    .deck-stage > .cal-card[data-pos="1"] { transform: translate(var(--cal-dx1), calc(var(--deck-dy) * -1)) scale(0.98); }
+    .deck-stage > .cal-card[data-pos="2"] { transform: translate(var(--cal-dx2), calc(var(--deck-dy) * -2)) scale(0.96); }
+    .deck-stage > .cal-card[data-pos="3"] { z-index: 0; transform: translate(var(--cal-dx3), calc(var(--deck-dy) * -3)) scale(0.94); cursor: pointer; }
+    .deck-stage > .cal-card[data-pos="3"]::after { opacity: 0.7; }
+    .deck-stage > .cal-card[data-pos="3"]:hover::after { opacity: 0.15; }
+    .deck-img { aspect-ratio: 3 / 2; object-position: top; }
   </style>
 
   <!-- Charts carry aspect-[w/h] of the original full-size files so resized copies keep identical layout. -->
@@ -742,6 +761,102 @@
               <p class="font-serif text-3xl font-bold text-slate-900">44.4%</p>
               <p class="text-xs sm:text-sm text-pink-600 font-semibold uppercase tracking-wider mt-1.5">Top Engagement Rate</p>
               <p class="text-xs text-slate-500 mt-1">Multi-channel organic social reach</p>
+            </div>
+          </div>
+
+          <!-- Content examples: "how I got there" before the funnel result -->
+          <div class="bg-white p-6 sm:p-8 rounded-3xl border border-pink-100 shadow-sm space-y-5">
+            <div class="flex flex-wrap items-center justify-between gap-3 border-b border-pink-50 pb-4">
+              <div>
+                <span class="text-xs sm:text-sm font-bold uppercase tracking-wider text-pink-600">Organic Social Content in Action</span>
+                <h4 class="font-serif text-xl sm:text-2xl font-bold text-slate-900 mt-1">
+                  How I Got There
+                </h4>
+              </div>
+              <span class="text-xs sm:text-sm font-semibold bg-pink-50 text-pink-700 px-3 py-1 rounded-full border border-pink-200/60">
+                YouTube • Instagram • LinkedIn • Facebook
+              </span>
+            </div>
+
+            <p class="text-sm sm:text-base text-slate-600 leading-relaxed">
+              Here's some of the content that fed the funnel below, one platform at a time. Tap a post to see it up close.
+            </p>
+
+            <!-- Rotating 4-card deck (YouTube, Instagram, LinkedIn, Facebook). Same rotation script as the Leadtail calendar stack; see assets/js/site.js -->
+            <div id="microsun-deck" data-cal-stack data-cal-noun="post" role="region" aria-roledescription="carousel" aria-label="Microsun content examples">
+              <div data-cal-stage class="cal-stack-stage deck-stage">
+                <div data-cal-card data-cal-name="YouTube" data-pos="0" class="cal-card deck-card overflow-hidden rounded-2xl border border-pink-100 bg-white shadow-md">
+                  <div class="p-5 sm:p-6 grid md:grid-cols-2 gap-5 items-center">
+                    <div>
+                      <div class="flex items-center space-x-3">
+                        <span aria-hidden="true" class="w-10 h-10 rounded-full bg-pink-50 border border-pink-100 text-pink-600 flex items-center justify-center flex-shrink-0"><svg aria-hidden="true" focusable="false" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></span>
+                        <h5 class="font-serif text-lg sm:text-xl font-bold text-slate-900">YouTube</h5>
+                      </div>
+                      <p class="text-xs sm:text-sm text-pink-600 font-semibold uppercase tracking-wider mt-3">Focus</p>
+                      <p class="text-sm sm:text-base text-slate-600 leading-relaxed mt-1.5">Tutorial on lamp design and assembly, walking viewers through how the MicrosunXL is put together.</p>
+                    </div>
+                    <button type="button" data-lightbox="assets/img/microsun-youtube-large.webp" data-lightbox-alt="Microsun YouTube video titled Introducing the MicrosunXL, Advanced Illumination for Eye Health, showing a silver table lamp with a white shade against a brick wall" aria-label="Enlarge: Microsun YouTube video titled Introducing the MicrosunXL, Advanced Illumination for Eye Health, showing a silver table lamp with a white shade against a brick wall" class="relative block w-full cursor-zoom-in overflow-hidden rounded-xl border border-pink-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-pink-500 focus-visible:ring-offset-2"><picture class="contents"><source hidden type="image/webp" srcset="assets/img/microsun-youtube.webp"><img src="assets/img/microsun-youtube.jpg" width="800" height="539" alt="Microsun YouTube video titled Introducing the MicrosunXL, Advanced Illumination for Eye Health, showing a silver table lamp with a white shade against a brick wall" class="deck-img w-full object-cover block" loading="lazy" decoding="async"></picture><span aria-hidden="true" class="cal-badge absolute bottom-2 right-2 inline-flex items-center space-x-1.5 bg-white/95 text-pink-600 text-xs font-semibold px-3 py-1.5 rounded-full border border-pink-100 shadow-sm"><svg aria-hidden="true" focusable="false" class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35M11 8v6m-3-3h6m5 0a8 8 0 11-16 0 8 8 0 0116 0z"/></svg><span>Enlarge</span></span></button>
+                  </div>
+                </div>
+                <div data-cal-card data-cal-name="Instagram" data-pos="1" class="cal-card deck-card overflow-hidden rounded-2xl border border-pink-100 bg-white shadow-md">
+                  <div class="p-5 sm:p-6 grid md:grid-cols-2 gap-5 items-center">
+                    <div>
+                      <div class="flex items-center space-x-3">
+                        <span aria-hidden="true" class="w-10 h-10 rounded-full bg-pink-50 border border-pink-100 text-pink-600 flex items-center justify-center flex-shrink-0"><svg aria-hidden="true" focusable="false" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg></span>
+                        <h5 class="font-serif text-lg sm:text-xl font-bold text-slate-900">Instagram</h5>
+                      </div>
+                      <p class="text-xs sm:text-sm text-pink-600 font-semibold uppercase tracking-wider mt-3">Focus</p>
+                      <p class="text-sm sm:text-base text-slate-600 leading-relaxed mt-1.5">Product highlights and customer education on CRI. This Halloween post compares three pumpkins lit at 60, 80 and 95 CRI.</p>
+                    </div>
+                    <button type="button" data-lightbox="assets/img/microsun-instagram-large.webp" data-lightbox-alt="Microsun Instagram Halloween post asking if you want the best light to carve your perfect pumpkin, comparing three jack-o&#x27;-lanterns lit at 60, 80 and 95 CRI" aria-label="Enlarge: Microsun Instagram Halloween post asking if you want the best light to carve your perfect pumpkin, comparing three jack-o&#x27;-lanterns lit at 60, 80 and 95 CRI" class="relative block w-full cursor-zoom-in overflow-hidden rounded-xl border border-pink-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-pink-500 focus-visible:ring-offset-2"><picture class="contents"><source hidden type="image/webp" srcset="assets/img/microsun-instagram.webp"><img src="assets/img/microsun-instagram.jpg" width="800" height="507" alt="Microsun Instagram Halloween post asking if you want the best light to carve your perfect pumpkin, comparing three jack-o&#x27;-lanterns lit at 60, 80 and 95 CRI" class="deck-img w-full object-cover block" loading="lazy" decoding="async"></picture><span aria-hidden="true" class="cal-badge absolute bottom-2 right-2 inline-flex items-center space-x-1.5 bg-white/95 text-pink-600 text-xs font-semibold px-3 py-1.5 rounded-full border border-pink-100 shadow-sm"><svg aria-hidden="true" focusable="false" class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35M11 8v6m-3-3h6m5 0a8 8 0 11-16 0 8 8 0 0116 0z"/></svg><span>Enlarge</span></span></button>
+                  </div>
+                </div>
+                <div data-cal-card data-cal-name="LinkedIn" data-pos="2" class="cal-card deck-card overflow-hidden rounded-2xl border border-pink-100 bg-white shadow-md">
+                  <div class="p-5 sm:p-6 grid md:grid-cols-2 gap-5 items-center">
+                    <div>
+                      <div class="flex items-center space-x-3">
+                        <span aria-hidden="true" class="w-10 h-10 rounded-full bg-pink-50 border border-pink-100 text-pink-600 flex items-center justify-center flex-shrink-0"><svg aria-hidden="true" focusable="false" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></span>
+                        <h5 class="font-serif text-lg sm:text-xl font-bold text-slate-900">LinkedIn</h5>
+                      </div>
+                      <p class="text-xs sm:text-sm text-pink-600 font-semibold uppercase tracking-wider mt-3">Focus</p>
+                      <p class="text-sm sm:text-base text-slate-600 leading-relaxed mt-1.5">Building trust with real customer reviews, paired with Microsun's 30-day risk-free guarantee.</p>
+                    </div>
+                    <button type="button" data-lightbox="assets/img/microsun-linkedin-large.webp" data-lightbox-alt="Microsun LinkedIn post with two customer quotes styled as postage stamps, one calling it the most marvelous light to read under, next to a caption about the 30-day risk-free guarantee" aria-label="Enlarge: Microsun LinkedIn post with two customer quotes styled as postage stamps, one calling it the most marvelous light to read under, next to a caption about the 30-day risk-free guarantee" class="relative block w-full cursor-zoom-in overflow-hidden rounded-xl border border-pink-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-pink-500 focus-visible:ring-offset-2"><picture class="contents"><source hidden type="image/webp" srcset="assets/img/microsun-linkedin.webp"><img src="assets/img/microsun-linkedin.jpg" width="800" height="524" alt="Microsun LinkedIn post with two customer quotes styled as postage stamps, one calling it the most marvelous light to read under, next to a caption about the 30-day risk-free guarantee" class="deck-img w-full object-cover block" loading="lazy" decoding="async"></picture><span aria-hidden="true" class="cal-badge absolute bottom-2 right-2 inline-flex items-center space-x-1.5 bg-white/95 text-pink-600 text-xs font-semibold px-3 py-1.5 rounded-full border border-pink-100 shadow-sm"><svg aria-hidden="true" focusable="false" class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35M11 8v6m-3-3h6m5 0a8 8 0 11-16 0 8 8 0 0116 0z"/></svg><span>Enlarge</span></span></button>
+                  </div>
+                </div>
+                <div data-cal-card data-cal-name="Facebook" data-pos="3" class="cal-card deck-card overflow-hidden rounded-2xl border border-pink-100 bg-white shadow-md">
+                  <div class="p-5 sm:p-6 grid md:grid-cols-2 gap-5 items-center">
+                    <div>
+                      <div class="flex items-center space-x-3">
+                        <span aria-hidden="true" class="w-10 h-10 rounded-full bg-pink-50 border border-pink-100 text-pink-600 flex items-center justify-center flex-shrink-0"><svg aria-hidden="true" focusable="false" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg></span>
+                        <h5 class="font-serif text-lg sm:text-xl font-bold text-slate-900">Facebook</h5>
+                      </div>
+                      <p class="text-xs sm:text-sm text-pink-600 font-semibold uppercase tracking-wider mt-3">Focus</p>
+                      <p class="text-sm sm:text-base text-slate-600 leading-relaxed mt-1.5">A behind-the-scenes video from the Microsun workshop, showing the care and quality that go into every lamp.</p>
+                    </div>
+                    <button type="button" data-lightbox="assets/img/microsun-facebook-large.webp" data-lightbox-alt="Microsun Facebook video post showing a technician assembling a lamp at a workbench, with a caption about quality and trust" aria-label="Enlarge: Microsun Facebook video post showing a technician assembling a lamp at a workbench, with a caption about quality and trust" class="relative block w-full cursor-zoom-in overflow-hidden rounded-xl border border-pink-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-pink-500 focus-visible:ring-offset-2"><picture class="contents"><source hidden type="image/webp" srcset="assets/img/microsun-facebook.webp"><img src="assets/img/microsun-facebook.jpg" width="677" height="542" alt="Microsun Facebook video post showing a technician assembling a lamp at a workbench, with a caption about quality and trust" class="deck-img w-full object-cover block" loading="lazy" decoding="async"></picture><span aria-hidden="true" class="cal-badge absolute bottom-2 right-2 inline-flex items-center space-x-1.5 bg-white/95 text-pink-600 text-xs font-semibold px-3 py-1.5 rounded-full border border-pink-100 shadow-sm"><svg aria-hidden="true" focusable="false" class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35M11 8v6m-3-3h6m5 0a8 8 0 11-16 0 8 8 0 0116 0z"/></svg><span>Enlarge</span></span></button>
+                  </div>
+                </div>
+              </div>
+              <div data-cal-controls hidden class="mt-5 flex items-center justify-center space-x-4">
+                <button type="button" data-cal-prev aria-label="Previous post" class="w-10 h-10 rounded-full bg-white border border-pink-200 text-pink-600 hover:bg-pink-50 shadow-sm flex items-center justify-center transition">
+                  <svg aria-hidden="true" focusable="false" class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+                </button>
+                <div data-cal-dots class="flex items-center space-x-2">
+                  <button type="button" data-cal-dot="0" aria-label="Show YouTube post" class="h-2.5 w-2.5 rounded-full transition-all duration-300 bg-pink-200 hover:bg-pink-400"></button>
+                  <button type="button" data-cal-dot="1" aria-label="Show Instagram post" class="h-2.5 w-2.5 rounded-full transition-all duration-300 bg-pink-200 hover:bg-pink-400"></button>
+                  <button type="button" data-cal-dot="2" aria-label="Show LinkedIn post" class="h-2.5 w-2.5 rounded-full transition-all duration-300 bg-pink-200 hover:bg-pink-400"></button>
+                  <button type="button" data-cal-dot="3" aria-label="Show Facebook post" class="h-2.5 w-2.5 rounded-full transition-all duration-300 bg-pink-200 hover:bg-pink-400"></button>
+                </div>
+                <button type="button" data-cal-next aria-label="Next post" class="w-10 h-10 rounded-full bg-white border border-pink-200 text-pink-600 hover:bg-pink-50 shadow-sm flex items-center justify-center transition">
+                  <svg aria-hidden="true" focusable="false" class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                </button>
+                <button type="button" data-cal-toggle aria-label="Pause automatic rotation" class="w-10 h-10 rounded-full bg-white border border-pink-200 text-slate-500 hover:text-pink-600 hover:bg-pink-50 shadow-sm flex items-center justify-center transition">
+                  <svg aria-hidden="true" focusable="false" data-icon-pause class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M7 5h3v14H7zM14 5h3v14h-3z"/></svg>
+                  <svg aria-hidden="true" focusable="false" data-icon-play class="w-4 h-4 hidden" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                </button>
+              </div>
+              <p data-cal-label aria-live="polite" class="mt-3 text-center text-xs sm:text-sm text-slate-500"></p>
             </div>
           </div>
 
