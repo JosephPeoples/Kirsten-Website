@@ -18,15 +18,15 @@ I have a confession, I use AI at work. It helps me automate the tedious, manual 
 
 I want to talk about ***what's happening to the people on the other side of the screen.***
 
-## What People Are Telling Us
+## What People Are Telling Us About AI
 
-Gartner surveyed 1,539 U.S. consumers, and the results released this March told us that, [50% said they'd prefer brands that avoid using generative AI in consumer-facing content](https://www.gartner.com/en/newsroom/press-releases/2026-03-16-gartner-marketing-survey-finds-50-percent-of-consumers-prefer-brands-that-avoid-using-genai-in-consumer-facing-content0). Another 68% said they frequently wonder whether the content they see is real. Half the room is squinting at their feed, wondering who wrote it.
+Gartner surveyed 1,539 U.S. consumers, and the results released this March told us that, [50% said they'd prefer brands that avoid using generative AI in consumer-facing content](https://www.gartner.com/en/newsroom/press-releases/2026-03-16-gartner-marketing-survey-finds-50-percent-of-consumers-prefer-brands-that-avoid-using-genai-in-consumer-facing-content0). Another 68% said they frequently wonder whether the content they see is real. In other words, half the room is squinting at their feed, wondering who wrote it.
 
-Gartner's follow-up survey in September found the same thing from another angle. [65% of consumers said brands produce too much AI content, and 57% said it makes them trust brand messaging less](https://www.gartner.com/en/newsroom/press-releases/2026-09-22-gartner-marketing-survuey-finds-35-percent-of-consumers-rely-on-influencers-less-due-to-ai). Gartner's own advice was not to avoid AI. In their words, "The answer is not to avoid AI. The answer is to use it thoughtfully."
+Gartner's follow-up survey in September found the same thing from another angle. [65% of consumers said brands produce too much AI content, and 57% said it makes them trust brand messaging less](https://www.gartner.com/en/newsroom/press-releases/2026-09-22-gartner-marketing-survuey-finds-35-percent-of-consumers-rely-on-influencers-less-due-to-ai). However, Gartner's own advice was not to avoid AI. In their words, "The answer is not to avoid AI. The answer is to use it thoughtfully."
 
 I agree, but "thoughtfully" is doing a lot of work in that sentence, so here's what it means to me.
 
-## Hiding it Doesn't Work Either
+## Hiding AI Doesn't Work Either
 
 You might think the fix is to use AI quietly and hope nobody notices. A set of experiments by researchers Schilke and Reimann found the opposite risk. Across thirteen experiments, [people who disclosed using AI were trusted less, but people who got caught using it without saying so were trusted even less](https://par.nsf.gov/servlets/purl/10597787). Trust is fragile either way, so the real fix is making sure there's a person in the work.
 
