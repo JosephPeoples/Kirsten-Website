@@ -2052,7 +2052,7 @@
   <!-- ================================================================= -->
   <script data-goatcounter="https://peoplessocial.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
   <script>
-    // Outbound-click events (Copy Email, email, LinkedIn, résumé). Safe no-op if GoatCounter is blocked.
+    // Outbound-click events (Copy Email, email, LinkedIn, résumé) and in-page menu clicks. Safe no-op if GoatCounter is blocked.
     (function () {
       function track(name) {
         try {
@@ -2071,7 +2071,21 @@
           else if (/linkedin\.com/i.test(href)) name = 'linkedin';
           else if (el.hasAttribute('data-resume') || /\.pdf($|[?#])/i.test(href)) name = 'resume';
         }
-        if (name) track(name);
+        if (name) { track(name); return; }
+        // In-page navigation (top menu, Case Studies dropdown, mobile menu, page buttons):
+        // logged as "nav-<section>" so the dashboard shows where people go.
+        var h = el.tagName === 'A' ? (el.getAttribute('href') || '') : '';
+        if (h.length > 1 && h.charAt(0) === '#' && h !== '#main') {
+          var where = el.closest('#work-menu') ? 'Case Studies dropdown'
+                    : el.closest('#mobile-menu') ? 'Mobile menu'
+                    : el.closest('nav, header') ? 'Top menu' : 'Page button';
+          var label = (el.textContent || '').replace(/\s+/g, ' ').trim().slice(0, 60);
+          try {
+            if (window.goatcounter && typeof window.goatcounter.count === 'function') {
+              window.goatcounter.count({ path: 'nav-' + h.slice(1), title: label + ' (' + where + ')', event: true });
+            }
+          } catch (e2) { /* analytics must never break the page */ }
+        }
       }, true);
     })();
   </script>
