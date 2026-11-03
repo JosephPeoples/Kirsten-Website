@@ -1,0 +1,31 @@
+# GitHub Pages builds this site with Jekyll on every push.
+# index.html and 404.html have no front matter, so Jekyll copies them exactly as they are.
+# Only the blog (blog/, _posts/, _layouts/, _includes/) is generated.
+
+url: "https://peoplessocialmarketing.com"
+baseurl: ""
+timezone: America/New_York
+markdown: kramdown
+
+# Blog post addresses look like /blog/2026/11/02/my-post-title/
+permalink: /blog/:year/:month/:day/:title/
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+
+# Files that are not published. The first eight are the GitHub Pages defaults
+# (kept so nothing else about the site changes); BLOG-HOW-TO.md is a note for editors.
+exclude:
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - BLOG-HOW-TO.md

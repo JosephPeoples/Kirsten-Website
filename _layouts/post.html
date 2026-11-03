@@ -1,0 +1,32 @@
+---
+layout: blog-base
+---
+<!-- One blog post. The title, date, cover image and text all come from the post's Markdown file in _posts. -->
+<article class="py-12">
+  <div class="max-w-3xl mx-auto px-6">
+    <a href="{{ '/blog/' | relative_url }}" class="inline-flex items-center space-x-2 text-sm font-semibold text-pink-600 blog-back transition">
+      <svg aria-hidden="true" focusable="false" class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg>
+      <span>Back to blog</span>
+    </a>
+
+    <header class="mt-5 space-y-3">
+      <time datetime="{{ page.date | date_to_xmlschema }}" class="block text-xs sm:text-sm text-pink-600 font-semibold uppercase tracking-wider">{{ page.date | date: "%B %-d, %Y" }}</time>
+      <h1 class="font-serif text-3xl sm:text-4xl font-bold text-slate-900 leading-tight">{{ page.title }}</h1>
+    </header>
+
+    {% if page.cover %}
+    <img src="{{ page.cover | relative_url }}" alt="{{ page.cover_alt | default: '' | escape }}" class="w-full h-auto block rounded-2xl border border-pink-100 shadow-sm mt-10" decoding="async">
+    {% endif %}
+
+    <div class="blog-prose mt-10">
+{{ content }}
+    </div>
+
+    <div class="mt-10 pt-6 border-t border-pink-100">
+      <a href="{{ '/blog/' | relative_url }}" class="inline-flex items-center space-x-2 text-sm font-semibold text-pink-600 blog-back transition">
+        <svg aria-hidden="true" focusable="false" class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg>
+        <span>Back to blog</span>
+      </a>
+    </div>
+  </div>
+</article>

@@ -1,0 +1,96 @@
+<!-- Copy of the header in index.html (links point back to the homepage). If the nav changes there, change it here too. -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-pink-100 shadow-[0_2px_15px_-3px_rgba(244,114,182,0.07)]">
+    <div class="max-w-6xl mx-auto px-6 h-20 sm:h-24 flex items-center justify-between">
+      
+      <!-- Complete Brand Logo (Flower + Peoples Social | Digital Marketing) -->
+      <a href="/" class="flex items-center space-x-3 group py-2">
+        <picture class="contents"><source hidden type="image/webp" srcset="/assets/img/brand-logo.webp"><img src="/assets/img/brand-logo.png" width="480" height="321" alt="Peoples Social | Digital Marketing Logo" class="h-12 sm:h-14 w-auto object-contain transition duration-300 group-hover:scale-105"></picture>
+      </a>
+      
+      <!-- Desktop Navigation Links (Clean Garet Typography) -->
+      <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-600">
+        <a href="/#about" data-nav="about" class="hover:text-pink-600 transition">About</a>
+        <a href="/#what-i-do" data-nav="what-i-do" class="hover:text-pink-600 transition">What I Do</a>
+
+        <!-- Case Studies + dropdown (opens on hover, keyboard focus, or the chevron button) -->
+        <div id="work-nav" class="relative group">
+          <div class="flex items-center space-x-1">
+            <a href="/#work" data-nav="work" class="hover:text-pink-600 transition">Case Studies</a>
+            <button id="work-menu-btn" type="button" aria-expanded="false" aria-controls="work-menu" aria-label="Show case study list" class="p-1 rounded-md text-slate-500 hover:text-pink-600 hover:bg-pink-50 transition">
+              <svg aria-hidden="true" focusable="false" class="w-3.5 h-3.5 transition group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+          </div>
+          <div id="work-menu" class="absolute left-1/2 -translate-x-1/2 top-full pt-4 w-72 invisible opacity-0 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100 data-[open]:visible data-[open]:opacity-100 data-[closed]:!invisible data-[closed]:!opacity-0 transition duration-200">
+            <div class="bg-white border border-pink-100 rounded-2xl shadow-lg p-2">
+              <p class="px-3 pt-2 pb-1 text-xs font-bold uppercase tracking-wider text-pink-600">Case Studies</p>
+              <a href="/#case-microsun-funnel" class="work-menu-link block px-3 py-2 rounded-xl hover:bg-pink-50 transition">
+                <span class="block font-semibold text-slate-800">Microsun</span>
+                <span class="block text-xs text-slate-500">Conversion Funnel Attribution</span>
+              </a>
+              <a href="/#case-real-chemistry" class="work-menu-link block px-3 py-2 rounded-xl hover:bg-pink-50 transition">
+                <span class="block font-semibold text-slate-800">Real Chemistry</span>
+                <span class="block text-xs text-slate-500">Executive Engagement Lift</span>
+              </a>
+              <a href="/#case-sisense" class="work-menu-link block px-3 py-2 rounded-xl hover:bg-pink-50 transition">
+                <span class="block font-semibold text-slate-800">Sisense</span>
+                <span class="block text-xs text-slate-500">Motion Creative &amp; Rollout</span>
+              </a>
+              <a href="/#case-microsun-blog" class="work-menu-link block px-3 py-2 rounded-xl hover:bg-pink-50 transition">
+                <span class="block font-semibold text-slate-800">Microsun Blog</span>
+                <span class="block text-xs text-slate-500">Editorial Content &amp; Creative Direction</span>
+              </a>
+              <a href="/#case-only-one-you" class="work-menu-link block px-3 py-2 rounded-xl hover:bg-pink-50 transition">
+                <span class="block font-semibold text-slate-800">Only One You</span>
+                <span class="block text-xs text-slate-500">Social Growth</span>
+              </a>
+              <a href="/#case-leadtail" class="work-menu-link block px-3 py-2 rounded-xl hover:bg-pink-50 transition">
+                <span class="block font-semibold text-slate-800">Leadtail Inc.</span>
+                <span class="block text-xs text-slate-500">Multi-Brand Operations</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <a href="/#skills" data-nav="skills" class="hover:text-pink-600 transition">Skills</a>
+        <a href="/#endorsements" data-nav="endorsements" class="hover:text-pink-600 transition">Testimonials</a>
+        <a href="/blog/" aria-current="page" class="text-pink-600 hover:text-pink-600 transition">Blog</a>
+        <a href="/#contact" data-nav="contact" class="hover:text-pink-600 transition">Contact</a>
+      </nav>
+
+      <!-- Contact CTA Button -->
+      <div class="flex items-center space-x-3">
+        <a href="/#contact" class="hidden sm:inline-flex items-center space-x-2 text-xs font-semibold uppercase tracking-wider bg-pink-600 hover:bg-pink-700 text-white px-5 py-2.5 rounded-full transition shadow-sm hover:shadow-md">
+          <span>Let's Connect</span>
+          <svg aria-hidden="true" focusable="false" class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobile-menu-btn" type="button" class="md:hidden p-2 rounded-lg text-slate-600 hover:text-pink-600 hover:bg-pink-50 transition" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobile-menu">
+          <svg aria-hidden="true" focusable="false" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path id="menu-icon-bars" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            <path id="menu-icon-close" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-menu" class="hidden md:hidden border-t border-pink-100 bg-white px-6 py-5 space-y-3">
+      <a href="/#about" data-nav="about" class="mobile-nav-link block text-sm font-medium text-slate-700 hover:text-pink-600 py-1 transition">About</a>
+      <a href="/#what-i-do" data-nav="what-i-do" class="mobile-nav-link block text-sm font-medium text-slate-700 hover:text-pink-600 py-1 transition">What I Do</a>
+      <a href="/#work" data-nav="work" class="mobile-nav-link block text-sm font-medium text-slate-700 hover:text-pink-600 py-1 transition">Case Studies</a>
+      <div class="ml-1 pl-4 border-l border-pink-100 space-y-1">
+        <a href="/#case-microsun-funnel" class="mobile-nav-link block text-sm text-slate-500 hover:text-pink-600 py-1 transition">Microsun</a>
+        <a href="/#case-real-chemistry" class="mobile-nav-link block text-sm text-slate-500 hover:text-pink-600 py-1 transition">Real Chemistry</a>
+        <a href="/#case-sisense" class="mobile-nav-link block text-sm text-slate-500 hover:text-pink-600 py-1 transition">Sisense</a>
+        <a href="/#case-microsun-blog" class="mobile-nav-link block text-sm text-slate-500 hover:text-pink-600 py-1 transition">Microsun Blog</a>
+        <a href="/#case-only-one-you" class="mobile-nav-link block text-sm text-slate-500 hover:text-pink-600 py-1 transition">Only One You</a>
+        <a href="/#case-leadtail" class="mobile-nav-link block text-sm text-slate-500 hover:text-pink-600 py-1 transition">Leadtail Inc.</a>
+      </div>
+      <a href="/#skills" data-nav="skills" class="mobile-nav-link block text-sm font-medium text-slate-700 hover:text-pink-600 py-1 transition">Skills &amp; Tools</a>
+      <a href="/#endorsements" data-nav="endorsements" class="mobile-nav-link block text-sm font-medium text-slate-700 hover:text-pink-600 py-1 transition">Testimonials</a>
+      <a href="/blog/" aria-current="page" class="mobile-nav-link block text-sm font-medium text-pink-600 hover:text-pink-600 py-1 transition">Blog</a>
+      <a href="/#contact" data-nav="contact" class="mobile-nav-link block text-sm font-medium text-slate-700 hover:text-pink-600 py-1 transition">Contact</a>
+      <a href="/#contact" class="mobile-nav-link block text-center text-xs font-semibold uppercase tracking-wider bg-pink-600 text-white px-4 py-2.5 rounded-full mt-2">Get in Touch</a>
+    </div>
+  </header>
