@@ -111,9 +111,6 @@
     .cal-card[data-pos="1"]:hover::after, .cal-card[data-pos="2"]:hover::after { opacity: 0.15; }
     .cal-card .cal-badge { transition: opacity 0.3s ease; }
     .cal-card:not([data-pos="0"]) .cal-badge { opacity: 0; }
-    @media (prefers-reduced-motion: reduce) {
-      .cal-card, .cal-card::after, .cal-card .cal-badge { transition: none; }
-    }
 
     /* Microsun content deck: same rotation as the calendar stack, but text + image cards of any height.
        Cards share one grid cell so the stage grows with the tallest card; back cards peek out up and right. */

@@ -229,7 +229,7 @@
     var calLabel = calRoot.querySelector('[data-cal-label]');
     var calToggle = calRoot.querySelector('[data-cal-toggle]');
     var lightboxDlg = document.getElementById('lightbox');
-    var calCur = 0, calTimer = null, calUserStopped = reduceMotion, calHover = false, calInView = true;
+    var calCur = 0, calTimer = null, calUserStopped = false, calHover = false, calInView = true;
     var calN = calCards.length;
     var calNoun = calRoot.getAttribute('data-cal-noun') || 'calendar';
     calRoot.querySelector('[data-cal-controls]').hidden = false;
